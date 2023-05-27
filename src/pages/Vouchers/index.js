@@ -29,7 +29,7 @@ const Vouchers = () => {
       </div>
 
       <div className="w-full my-16 flex justify-center items-center  ">
-        {changeVoucherItems == "Generate" && (
+        {changeVoucherItems === "Generate" && (
           <div className="rounded-2xl max-w-3xl w-full bg-gray-900 text-white py-6 px-10 shadow-md ">
             <h2 className="font-semibold text-3xl mb-6 border-b-2 text-left pb-4">
               Generate Voucher

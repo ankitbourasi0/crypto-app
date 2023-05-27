@@ -3,8 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import { FaGoogleWallet } from "react-icons/fa";
 import { FiLink } from "react-icons/fi";
-import LinearProgress from "@mui/material/LinearProgress";
-import { Box } from "@mui/material";
+
 const Dashboard = () => {
   return (
     <div className="  w-full  ">
@@ -13,27 +12,27 @@ const Dashboard = () => {
       <div className="max-w-7xl w-full mx-auto  ">
         <Carousel>
           <div className="rounded-lg">
-            <img src="./images/Carousel/ad1.jpg" />
+            <img src="./images/Carousel/ad1.jpg" alt="carousel1" />
             {/* <p className="legend">Legend 1</p> */}
           </div>
           <div className="rounded-lg">
-            <img src="./images/Carousel/ad3.jpg" />
+            <img src="./images/Carousel/ad3.jpg"  alt="carousel1"/>
             {/* <p className="legend">Legend 2</p> */}
           </div>
           <div className="rounded-lg">
-            <img src="./images/Carousel/ad4.jpg" />
+            <img src="./images/Carousel/ad4.jpg" alt="carousel1" />
             {/* <p className="legend">Legend 3</p> */}
           </div>
           <div className="rounded-lg">
-            <img src="./images/Carousel/ad5.jpg" />
+            <img src="./images/Carousel/ad5.jpg" alt="carousel1" />
             {/* <p className="legend">Legend 3</p> */}
           </div>
           <div className="rounded-lg">
-            <img src="./images/Carousel/ad13.jpg" />
+            <img src="./images/Carousel/ad13.jpg" alt="carousel1" />
             {/* <p className="legend">Legend 3</p> */}
           </div>
           <div className="rounded-lg">
-            <img src="./images/Carousel/ad14.jpg" />
+            <img src="./images/Carousel/ad14.jpg" alt="carousel1" />
             {/* <p className="legend">Legend 3</p> */}
           </div>
           <div className="rounded-lg">

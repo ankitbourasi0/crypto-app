@@ -16,7 +16,7 @@ const Reports = () => {
         </div>
 
         {/* BI Report */}
-        <div className="min-w-[250px]   hover:scale-105 transition duration-500 transform flex justify-center text-white font-semibold text-4xl items-center shadow-md rounded-lg bg-gradient-to-r from-voilet to-fyuchia ">
+        <div className="min-w-[250px]   hover:scale-105 transition duration-500 transform flex justify-center text-white font-semibold text-4xl items-center shadow-md rounded-lg bg-gradient-to-r from-violet-500 to-fuchsia-500 ">
           <button className="w-full h-full uppercase">BI Report</button>
         </div>
 
