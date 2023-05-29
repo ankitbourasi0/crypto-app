@@ -23,22 +23,22 @@ const AboutUs = () => {
 
           <div className="space-y-2 px-4">
             <li className="">
-              <p className={""}>
+              
                 You can follow cryptos by investing from all banking platforms.
-              </p>
+            
             </li>
             <li>
-              <p className={""}>
+             
                 {/* <HiMail fontSize={" 18px"} className={"mr-2"}/> */}
                 You can quickly buy and transfer cryptocurrencies with your
                 credit card.
-              </p>
+              
             </li>
             <li>
-              <p className={""}>
+            
                 {/* <BsFillTelephoneFill fontSize={" 18px"}  className={"mr-2"}/> */}
                 You can exchange and send tokens in complete safety.
-              </p>
+             
             </li>
           </div>
         </div>

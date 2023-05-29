@@ -4,6 +4,7 @@ import { GiSpellBook } from "react-icons/gi";
 import { SiBitcoincash } from "react-icons/si";
 
 import "swiper/css";
+import ParticleComponent from "../components/particle";
 const Home = () => {
   
   return (
@@ -348,6 +349,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <ParticleComponent />
 
       {/* Testimonals  */}
       <div class="py-16 w-full flex justify-center items-center h-full mb-20 ">
