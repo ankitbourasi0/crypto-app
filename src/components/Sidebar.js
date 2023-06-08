@@ -93,6 +93,7 @@ const Drawer = styled(MuiDrawer, {
 })(({ theme, open }) => ({
   width: drawerWidth,
   flexShrink: 0,
+ 
   whiteSpace: "nowrap",
   boxSizing: "border-box",
   ...(open && {
@@ -132,7 +133,7 @@ export default function Sidebar() {
     <>
       <Box sx={{ display: "flex" ,}}>
         <CssBaseline />
-        <AppBar position="fixed" sx={{ backgroundColor: "#000000" }}>
+        <AppBar position="fixed" sx={{ backgroundColor: "rgb(25 25 25 )" }} elevation={0}>
           <Toolbar>
             <IconButton
               color="inherit"
@@ -198,8 +199,10 @@ export default function Sidebar() {
           open={open}
           PaperProps={{
             sx: {
-              backgroundColor:" rgb(245 245 245)",
-            
+              backgroundColor: "#1B1D21",
+              color: "#fff",
+              
+              
             },
           }}
 
@@ -231,7 +234,7 @@ export default function Sidebar() {
               Personal
             </Typography>
           </Box>
-          <List>
+          <List >
             <ListItem
               disablePadding
               sx={{ display: "block" }}
@@ -251,7 +254,7 @@ export default function Sidebar() {
                     justifyContent: "center",
                   }}
                 >
-                  <RxDashboard fontSize={28} />
+                  <RxDashboard fontSize={28} className="text-white" />
                 </ListItemIcon>
                 <ListItemText
                   primary={"D A S H B O A R D"}
@@ -279,7 +282,7 @@ export default function Sidebar() {
                     justifyContent: "center",
                   }}
                 >
-                  <BsFillPersonFill fontSize={28} />
+                  <BsFillPersonFill fontSize={28}n className="text-white"/>
                 </ListItemIcon>
                 <ListItemText
                   primary={"P R O F I L E"}
@@ -324,7 +327,7 @@ export default function Sidebar() {
                     justifyContent: "center",
                   }}
                 >
-                  <IoAnalyticsSharp fontSize={28} />
+                  <IoAnalyticsSharp fontSize={28}n className="text-white"/>
                 </ListItemIcon>
                 <ListItemText
                   primary={"I N V E S T M E N T S"}
@@ -352,7 +355,7 @@ export default function Sidebar() {
                     justifyContent: "center",
                   }}
                 >
-                  <IoIosAnalytics fontSize={28} />
+                  <IoIosAnalytics fontSize={28}n className="text-white"/>
                 </ListItemIcon>
                 <ListItemText
                   primary={"G E N E A L O G Y"}
@@ -361,7 +364,7 @@ export default function Sidebar() {
               </ListItemButton>
             </ListItem>
 
-            <ListItem
+            {/* <ListItem
               disablePadding
               sx={{ display: "block" }}
               onClick={() => setMenuItems("Vouchers")}
@@ -380,14 +383,14 @@ export default function Sidebar() {
                     justifyContent: "center",
                   }}
                 >
-                  <TbCards fontSize={28} />
+                  <TbCards fontSize={28}n className="text-white"/>
                 </ListItemIcon>
                 <ListItemText
                   primary={"V O U C H E R S"}
                   sx={{ opacity: open ? 1 : 0 }}
                 />
               </ListItemButton>
-            </ListItem>
+            </ListItem> */}
 
             <ListItem
               disablePadding
@@ -408,7 +411,7 @@ export default function Sidebar() {
                     justifyContent: "center",
                   }}
                 >
-                  <BiTransferAlt fontSize={28} />
+                  <BiTransferAlt fontSize={28}n className="text-white"/>
                 </ListItemIcon>
                 <ListItemText
                   primary={"T R A N S F E R S"}
@@ -436,7 +439,7 @@ export default function Sidebar() {
                     justifyContent: "center",
                   }}
                 >
-                  <BiMoneyWithdraw fontSize={28} />
+                  <BiMoneyWithdraw fontSize={28}n className="text-white"/>
                 </ListItemIcon>
                 <ListItemText
                   primary={"W I T H D R A W A L S"}
@@ -463,7 +466,7 @@ export default function Sidebar() {
                     justifyContent: "center",
                   }}
                 >
-                  <IoTicketSharp fontSize={28} />
+                  <IoTicketSharp fontSize={28}n className="text-white"/>
                 </ListItemIcon>
                 <ListItemText
                   primary={"T I C K E T S"}
@@ -490,7 +493,7 @@ export default function Sidebar() {
                     justifyContent: "center",
                   }}
                 >
-                  <TbReportAnalytics fontSize={28} />
+                  <TbReportAnalytics fontSize={28}n className="text-white"/>
                 </ListItemIcon>
                 <ListItemText
                   primary={"R E P O R T S"}
@@ -500,7 +503,7 @@ export default function Sidebar() {
             </ListItem>
           </List>
         </Drawer>
-        <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+        <Box component="main" sx={{ flexGrow: 1, p: 3,backgroundColor: "rgb(33 33 33)", }}>
           <DrawerHeader />
           {menuItems == "Dashboard" && <Dashboard />}
           {menuItems == "Profile" && <Profile />}

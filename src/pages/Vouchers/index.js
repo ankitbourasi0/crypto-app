@@ -8,7 +8,7 @@ const Vouchers = () => {
     setValue(event.target.value);
   };
   return (
-    <div className="flex flex-col items-center ">
+    <div className="flex flex-col min-h-[90vh] items-center ">
       <div className="w-full max-w-7xl   space-x-4  justify-center flex  ">
         <div className="min-w-[250px] px-6 py-3 hover:scale-105 transition duration-500 transform flex justify-center  text-white font-semibold text-3xl items-center shadow-md rounded-lg bg-gradient-to-r from-sky to-indigo-500 ">
           <button
@@ -18,7 +18,7 @@ const Vouchers = () => {
             Generate Voucher
           </button>
         </div>
-        <div className="min-w-[250px] px-6 py-3 hover:scale-105 transition duration-500 transform flex justify-center text-white font-semibold text-3xl items-center shadow-md rounded-lg bg-gradient-to-r from-voilet to-fyuchia ">
+        <div className="min-w-[250px] px-6 py-3 hover:scale-105 transition duration-500 transform flex justify-center text-white font-semibold text-3xl items-center shadow-md rounded-lg bg-gradient-to-r from-violet-500 to-fuchsia-500 ">
           <button
             className="w-full h-full "
             onClick={() => setVoucherItems("List")}
@@ -38,7 +38,7 @@ const Vouchers = () => {
               <select
                 value={value}
                 onChange={handleChange}
-                className="border-2 border-gray-200 py-4 w-full bg-gray-700 rounded-2xl px-6"
+                className="border-2 border-gray-200 py-4 w-full bg-[#1B1D21] rounded-2xl px-6"
               >
                 <option value="Tec">TEC Wallet</option>
 
@@ -47,7 +47,7 @@ const Vouchers = () => {
                 <option value="Trade">Trade</option>
               </select>
               <input
-                className="border-2 border-gray-200 py-4 w-full bg-gray-700 rounded-2xl px-6"
+                className="border-2 border-gray-200 py-4 w-full bg-[#1B1D21] rounded-2xl px-6"
                 placeholder="Amount"
               />
 

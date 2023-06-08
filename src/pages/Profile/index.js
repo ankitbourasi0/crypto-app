@@ -9,7 +9,7 @@ const Profile = () => {
 
       <div className="space-y-4 w-full ">
      {/* Profile Card */}
-     <div className="flex flex-col justify-center  max-w-[500px] h-72  p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 text-white bg-gray-900">
+     <div className="flex flex-col justify-center  max-w-[500px] h-72  p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 text-white bg-[#1B1D21]">
         <img
           src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZSUyMHBob3RvfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
           alt=""
@@ -26,7 +26,7 @@ const Profile = () => {
       </div>
 
       {/* Chain  */}
-      <div className="flex justify-between items-center w-full rounded-3xl shadow-md max-w-[500px]  py-8 px-6 space-y-3 bg-gray-900 text-gray-200">
+      <div className="flex justify-between items-center w-full rounded-3xl shadow-md max-w-[500px]  py-8 px-6 space-y-3 bg-[#1B1D21] text-gray-200">
         <div className="flex flex-col justify-center items-center space-y-3">
           <p className="text-2xl font-bold">9</p>
           <p className="text-xl font-semibold">Left Users</p>
@@ -44,7 +44,7 @@ const Profile = () => {
       </div>
 
       {/* Personal Information */}
-      <div className="rounded-3xl shadow-md max-w-[500px] p-10 space-y-3 bg-gray-900 text-gray-200">
+      <div className="rounded-3xl shadow-md max-w-[500px] p-10 space-y-3 bg-[#1B1D21] text-gray-200">
         <h2 className="font-semibold text-2xl mb-2 pb-4 border-b-2 text-left">
           Personal Information
         </h2>
@@ -68,8 +68,8 @@ const Profile = () => {
         </div>
       </div>
       </div>
-
-      <div className="rounded-3xl bg-gray-900  p-10 text-white max-w-7xl  w-full h-[70vh] ">
+1B1D21
+      <div className="rounded-3xl bg-[#1B1D21]  p-10 text-white max-w-7xl  w-full h-[70vh] ">
         <h1 className="text-left font-semibold text-3xl mb-8">Personal</h1>
           
           <div className="flex flex-col space-y-4 items-center">

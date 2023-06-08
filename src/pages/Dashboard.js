@@ -43,18 +43,18 @@ const Dashboard = () => {
       </div>
 
       {/* Heading  */}
-      <h1 className="font-semibold text-5xl mb-6 pt-10  text-gray-800 ">
+      <h1 className="font-semibold text-5xl mb-6 pt-10  text-white text-center ">
         Analysis
       </h1>
 
-      <div className="grid grid-cols-3 gap-y-3 w-full max-w-7xl mx-auto">
+      <div className="grid grid-cols-3 gap-y-6  w-full max-w-7xl mx-auto">
         <div className="max-w-[400px] h-80 bg-gradient-to-r from-cyan-500 to-blue-500 text-white shadow-md rounded-lg flex flex-col justify-around items-center p-6">
           <FaGoogleWallet fontSize="120px" />
           <p className="flex flex-col font-semibold text-2xl text-center">
             TEC Wallet <span>$0.00</span>
           </p>
         </div>
-        <div className="max-w-[400px]  h-80 bg-gradient-to-r from-voilet to-fyuchia text-white shadow-md rounded-lg flex flex-col  justify-around items-center p-6">
+        <div className="max-w-[400px]  h-80 bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-md rounded-lg flex flex-col  justify-around items-center p-6">
           <FaGoogleWallet fontSize="96px" />
           <p className="flex flex-col  font-semibold text-2xl text-center">
             MAC Wallet <span>$0.00</span>
@@ -67,7 +67,7 @@ const Dashboard = () => {
           </p>
         </div>
 
-        <div className="max-w-[400px] h-80 bg-gradient-to-r from-voilet to-fyuchia text-white shadow-md rounded-lg flex flex-col  justify-around items-center p-6">
+        <div className="max-w-[400px] h-80 bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-md rounded-lg flex flex-col  justify-around items-center p-6">
           <FaGoogleWallet fontSize="96px" />
           <p className="flex flex-col  font-semibold text-2xl text-center">
             Total Investments <span>$0.00</span>
@@ -92,7 +92,7 @@ const Dashboard = () => {
       <div className="w-full flex mx-auto py-16 justify-evenly text-white ">
         {/* Left refrel  */}
         <div className=" max-w-[450px] w-full">
-          <button className="rounded-full bg-gray-900 py-5  w-full flex items-center justify-around">
+          <button className="rounded-full bg-[#1B1D21] py-5  w-full flex items-center justify-around">
             <FiLink fontSize="54px" />
 
             <p className="font-semibold text-lg ">
@@ -102,7 +102,7 @@ const Dashboard = () => {
         </div>
         {/* Right refrel  */}
         <div className=" max-w-[450px] w-full">
-          <button className="rounded-full bg-gray-900 w-full py-5 flex items-center justify-around">
+          <button className="rounded-full bg-[#1B1D21] w-full py-5 flex items-center justify-around">
             <FiLink fontSize="54px" />
             <p className="font-semibold text-lg ">
               Click to copy left refrral link

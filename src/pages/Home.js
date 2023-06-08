@@ -1,20 +1,38 @@
 import React from "react";
-import { TbAlertTriangleFilled } from "react-icons/tb";
-import { GiSpellBook } from "react-icons/gi";
-import { SiBitcoincash } from "react-icons/si";
+// import { TbAlertTriangleFilled } from "react-icons/tb";
+// import { GiSpellBook } from "react-icons/gi";
+// import { SiBitcoincash } from "react-icons/si";
+// import {BiSolidBank} from "react-icons/bi";
+// import {BsFillCreditCard2BackFill} from "react-icons/bs";
+// import {FaMoneyBillTransfer} from "react-icons/fa";
 
 import "swiper/css";
 import ParticleComponent from "../components/particle";
 const Home = () => {
-  
   return (
     <div className="w-full flex items-start justify-center  flex-col">
+      <video
+          autoplay="true"
+          loop="true"
+          muted="true"
+          class="absolute z-0 w-auto 
+            min-w-full object-cover h-full opacity-40 max-w-none"
+        >
+          <source src="./images/video/bganimation.mp4" />
+        </video>
       {/* Main Page  */}
-      <div className="w-full flex min-h-[90vh] relative justify-center items-center ">
-        <img src="./images/vec.jpeg" className="z-0 opacity-40  bg-black/40"/>
+      <div className="w-full flex min-h-[100vh] relative justify-center items-center ">
+        <video
+          autoplay="true"
+          loop="true"
+          muted="true"
+          class="absolute z-0 w-auto 
+            min-w-full object-cover max-h-screen max-w-none"
+        >
+          <source src="./images/video/bgvideo.mp4" />
+        </video>
         <div className="flex w-full max-w-7xl top-40 absolute items-center">
           <div className="w-1/2 text-left">
-
             <h1 className="text-5xl mt-10  mb-12 font-semibold font-poppins">
               Highly Profitable Cryptocurrency Platform
             </h1>
@@ -23,61 +41,59 @@ const Home = () => {
               safely to whomever you want, whenever you want. Trade crypto with
               your credit card or bank transfer anytime from anywhere in the
               world.
-            
             </p>
-           <div className="flex space-x-3">
-           <button className="text-white my-2   bg-violet-700  shadow-white-700 shadow-md hover:bg-violet-800 hover:text-white  transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 border-2 rounded-full px-7 py-4 font-semibold text-lg tracking-wide">
-                 Buy Tokens
-                </button>
-                <button className="text-white my-2  bg-violet-700 shadow-white-700 shadow-md hover:bg-violet-800 hover:text-white transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 border-2 rounded-full px-7 py-4 font-semibold text-lg tracking-wide">
+            <div className="flex space-x-3">
+              <button className="text-white my-2   bg-violet-700  shadow-white-700 shadow-md hover:bg-violet-800 hover:text-white  transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 border-2 rounded-full px-7 py-4 font-semibold text-lg tracking-wide">
+                Buy Tokens
+              </button>
+              <button className="text-white my-2  bg-violet-700 shadow-white-700 shadow-md hover:bg-violet-800 hover:text-white transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 border-2 rounded-full px-7 py-4 font-semibold text-lg tracking-wide">
                 Download Business Plan
-                </button>
-           </div>
+              </button>
+            </div>
           </div>
 
           <div className="w-1/2 h-full  flex justify-center items-center">
-            <img src="./images/logo2.png" className="max-w-[450px]" />
+            <video src="./images/logo2.png" className="max-w-[450px]" />
           </div>
         </div>
       </div>
 
       {/* What is OZo Trade  */}
       <div className="w-full flex min-h-[90vh] relative justify-center items-center  ">
-   
-        <img src="./images/vec.jpeg" className="z-0 opacity-40 "/>
+        <img src="./images/vec.jpeg" className="z-0 opacity-40 " />
 
         <div className="flex justify-center absolute items-center px-16">
-        <div className="w-1/2 h-full  flex justify-center items-center">
-          <img src="./images/logo2.png" className="max-w-[450px]" />
-        </div>
-        <div className="w-1/2 text-left">
-          <h1 className="text-5xl mt-16  mb-12 font-semibold font-serif">
-            OZO Trade
-          </h1>
-          <p className="font-poppins text-justify">
-            Tecmactrade is one of the platforms for trading cryptocurrencies and
-            foreign exchange. We are focusing on better internet investment
-            opportunities for the general public, assisting people in increasing
-            their personal wealth and generating long-term profitability,
-            transforming lives and help them in making wise financial decisions.
-            Our service offers customers transparent and successful
-            cryptocurrency investing solutions that enable them to enhance their
-            personal money.
-            <br />
-            <br />
-            As an organisation Tecmactrade is able to use statistical models,
-            trade-related examples, and analytical algorithms to ensure a secure
-            and simple market for everyone to join. We demonstrate many
-            approaches with key information and trading guidelines for various
-            coins. All of these have been successfully combined to produce
-            favourable trading results.
-          </p>
-        </div>
+          <div className="w-1/2 h-full  flex justify-center items-center">
+            <img src="./images/logo2.png" className="max-w-[450px]" />
+          </div>
+          <div className="w-1/2 text-left">
+            <h1 className="text-5xl mt-16  mb-12 font-semibold font-serif">
+              OZO Trade
+            </h1>
+            <p className="font-poppins text-justify">
+              Tecmactrade is one of the platforms for trading cryptocurrencies
+              and foreign exchange. We are focusing on better internet
+              investment opportunities for the general public, assisting people
+              in increasing their personal wealth and generating long-term
+              profitability, transforming lives and help them in making wise
+              financial decisions. Our service offers customers transparent and
+              successful cryptocurrency investing solutions that enable them to
+              enhance their personal money.
+              <br />
+              <br />
+              As an organisation Tecmactrade is able to use statistical models,
+              trade-related examples, and analytical algorithms to ensure a
+              secure and simple market for everyone to join. We demonstrate many
+              approaches with key information and trading guidelines for various
+              coins. All of these have been successfully combined to produce
+              favourable trading results.
+            </p>
+          </div>
         </div>
       </div>
 
       {/* What we do  */}
-      <div className="w-full flex justify-center mb-16 items-center flex-col">
+      {/* <div className="w-full flex justify-center mb-16 items-center flex-col">
         
         <h1 className="text-4xl mt-16  mb-12 uppercase font-semibold font-poppins">
           What WE do
@@ -122,6 +138,91 @@ const Home = () => {
             </p>
           </div>
         </div>
+      </div> */}
+
+      <div className="flex max-w-7xl mx-auto min-h-[90vh]  mb-12 w-full  justify-center items-center">
+        
+        
+        {/* left  */}
+
+        <div className="max-w-2xl w-full text-left ">
+          <h1 className="font-semibold font-poppins text-5xl mb-6">
+            Stunning Crypto Platform <br />
+            <span className="text-4xl font-medium">
+              It's Great For Your Icon
+            </span>{" "}
+          </h1>
+          <p className="  text-base mb-6">
+            From day one we designed and built a modern crypto template for
+            beginners and experts alike. Make easy deposits and withdrawals,
+            measure the performance of your portfolio, and track all your
+            cryptocurrencies in one place.
+          </p>
+
+          <div className="space-y-6 ">
+            <div className="flex items-center space-x-4">
+              <img src="./images/transfer-money.png" className="w-12" />
+              <div className="font-poppins  text-xl">
+                Bank Transfer
+                <p className="font-poppins text-base">
+                  You can follow cryptos by investing from all banking
+                  platforms.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center space-x-4">
+              <img src="./images/debit.png" className="w-12" />
+              <div className="font-poppins  text-xl">
+                Credit Card
+                <p className="font-poppins text-base">
+                  You can quickly buy and transfer cryptocurrencies with your
+                  credit card.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center space-x-4">
+              <img src="./images/safety.png" className="w-12" />
+              <div className="font-poppins  text-xl">
+                Safe Transfer
+                <p className="font-poppins text-base">
+                  You can exchange and send tokens in complete safety.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* right  */}
+        <div className=" pl-2  flex justify-center items-center">
+          <img src="./images/home2.png" className=" " />
+        </div>
+      </div>
+
+      {/* Center Div  */}
+      <div className="max-w-6xl w-full mx-auto  h-full p-16 min-h-[50vh] my-24  grid grid-cols-4 gap-8 ">
+        
+        <div className="min-w-[150px] min-h-[150px] hover:scale-105  transition duration-500 transform  flex flex-col space-y-4 justify-center text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 shadow-cyan-500 ">
+          <img src="./images/icons/interface.png" className="w-16" />
+
+          <p className="">Interface</p>
+        </div>
+
+        <div className=" min-h-[150px] min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center  text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-sky to-indigo-500 shadow-indigo-500">
+          <img src="./images/icons/exchange.png" className="w-16" />
+
+          <p className="">Exchange</p>
+        </div>
+
+        <div className=" min-h-[150px]  min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-violet-500 to-fuchsia-500 shadow-fuchsia-500 ">
+          <img src="./images/icons/secure.png" className="w-16" />
+
+          <p className="">Security</p>
+        </div>
+
+        <div className="min-h-[150px]  min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center  text-white font-semibold text-xl items-center shadow-2xl rounded-lg  bg-gradient-to-r from-purple-500 to-pink-500 shadow-purple-500 ">
+          <img src="./images/icons/profit.png" className="w-16" />
+          <p className="">Investment </p>
+        </div>
       </div>
 
       {/* Investment Package  */}
@@ -134,10 +235,16 @@ const Home = () => {
           {/*Micro */}
           <div className={"w-full flex flex-col  justify-center items-center"}>
             <div className="max-w-[350px] shadow-2xl hover:cursor-pointer ease-in-out delay-150 hover:scale-95  hover:translate-y-1  shadow-cyan-500 w-full transition duration-500 transform pb-5 bg-gradient-to-r from-cyan-500 to-blue-500  text-white border-4 flex-col rounded-2xl">
-              <h1 className={"my-4 text-center pb-4 border-b-2 text-5xl font-bold "}>
+              <h1
+                className={
+                  "my-4 text-center pb-4 border-b-2 text-5xl font-bold "
+                }
+              >
                 MICRO
               </h1>
-              <h3 className={"my-4 text-center pb-4 text-3xl font-bold "}>$25 - $4999</h3>
+              <h3 className={"my-4 text-center pb-4 text-3xl font-bold "}>
+                $25 - $4999
+              </h3>
               <div
                 className={"w-full flex space-y-3 flex-col  items-center px-6"}
               >
@@ -205,7 +312,11 @@ const Home = () => {
           {/*NANO */}
           <div className={"w-full flex flex-col justify-center items-center"}>
             <div className="max-w-[350px] shadow-2xl  ease-in-out delay-150 hover:scale-95  hover:translate-y-1  shadow-purple-500  hover:cursor-pointer  transition duration-500 transform w-full pb-5 bg-gradient-to-r  from-purple-500 to-pink-500 text-white border-4 flex-col rounded-2xl">
-              <h1 className={"my-4 text-center pb-4 border-b-2 text-5xl font-bold "}>
+              <h1
+                className={
+                  "my-4 text-center pb-4 border-b-2 text-5xl font-bold "
+                }
+              >
                 NANO
               </h1>
               <h3 className={"my-4 text-center pb-4 text-3xl font-bold "}>
@@ -278,7 +389,11 @@ const Home = () => {
           {/*PICO*/}
           <div className={"w-full flex flex-col justify-center items-center"}>
             <div className="max-w-[350px] shadow-2xl ease-in-out delay-150 hover:scale-95  hover:translate-y-1  shadow-cyan-500     hover:cursor-pointer transition duration-500 transform w-full bg-gradient-to-r from-sky to-indigo-500 pb-5  text-white border-4 flex-col rounded-2xl">
-              <h1 className={"my-4 text-center pb-4 border-b-2 text-5xl font-bold "}>
+              <h1
+                className={
+                  "my-4 text-center pb-4 border-b-2 text-5xl font-bold "
+                }
+              >
                 PICO
               </h1>
               <h3 className={"my-4 pb-4 text-center text-3xl font-bold "}>
@@ -350,7 +465,117 @@ const Home = () => {
         </div>
       </div>
 
-      <ParticleComponent />
+      {/* Cryptocurrency says  */}
+      {/* Parent  */}
+      <h1 className="text-4xl text-center mb-16 mt-24 w-full">
+        Cryptocurrency Use Case
+      </h1>
+
+      <div className="grid grid-cols-2 mb-24 mx-auto max-w-7xl gap-x-16 gap-y-12">
+        {/* 1  */}
+        <div className="max-w-[450px] space-x-6 w-full flex items-center">
+          {/* left  */}
+          <img src="./images/icons/profit.png" className="w-16" />
+          {/* right  */}
+          <div className="font-poppins  text-lg">
+            Purchases
+            <p className="font-poppins mt-2 text-sm">
+              You can invest in cryptocurrency regularly over time by scheduling
+              purchases on a daily, weekly or monthly basis.
+            </p>
+          </div>
+        </div>
+        {/* 2  */}
+        <div className="max-w-[450px] space-x-6  w-full flex items-center">
+          {/* left  */}
+          <img src="./images/icons/interface.png" className="w-16" />
+          {/* right  */}
+          <div className="font-poppins  text-lg">
+            Easy Interface
+            <p className="font-poppins mt-2 text-sm">
+              You don't need to look for what or where. You can easily manage
+              your accounts with our user-friendly panel.
+            </p>
+          </div>
+        </div>
+        {/* 3 */}
+        <div className="max-w-[450px] space-x-6  w-full flex items-center">
+          {/* left  */}
+          <img src="./images/icons/secure.png" className="w-16" />
+          {/* right  */}
+          <div className="font-poppins  text-lg">
+            High Security
+            <p className="font-poppins mt-2 text-sm">
+              With the highest level of system security, your crypto-asset
+              investments and all your data are safe.
+            </p>
+          </div>
+        </div>
+        {/* 4 */}
+        <div className="max-w-[450px] space-x-6  w-full flex items-center">
+          {/* left  */}
+          <img src="./images/icons/api.png" className="w-16" />
+          {/* right  */}
+          <div className="font-poppins  text-lg">
+            API Support
+            <p className="font-poppins mt-2 text-sm">
+              Execute the orders yourself if you want, or let the algorithms you
+              write do it for you.
+            </p>
+          </div>
+        </div>
+        {/* 5 */}
+        <div className="max-w-[450px]  space-x-6  w-full flex items-center">
+          {/* left  */}
+          <img src="./images/icons/analytics.png" className="w-16" />
+          {/* right  */}
+          <div className="font-poppins  text-lg">
+            Market Analysis
+            <p className="font-poppins mt-2 text-sm">
+              Analysis that can guide your investment strategies; research
+              reports, video analyzes and expert opinions.
+            </p>
+          </div>
+        </div>
+        {/* 6 */}
+        <div className="max-w-[450px] space-x-6  w-full flex items-center">
+          {/* left  */}
+          <img src="./images/icons/certified.png" className="w-16" />
+          {/* right  */}
+          <div className="font-poppins  text-lg">
+            Licensed Organization
+            <p className="font-poppins mt-2 text-sm">
+              We are among the important investment institutions with our
+              world-class technological infrastructure.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-6xl w-full mx-auto  h-full p-16 min-h-[50vh] my-24  grid grid-cols-4 gap-8 ">
+        <div className="min-w-[150px] min-h-[150px] hover:scale-105  transition duration-500 transform  flex flex-col space-y-4 justify-center text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-green-500 shadow-green-500 ">
+          <img src="./images/icons/document.png" className="w-16" />
+
+          <p className="">Privacy</p>
+        </div>
+
+        <div className=" min-h-[150px] min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center  text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-green-500 shadow-green-500">
+          <img src="./images/icons/document.png" className="w-16" />
+
+          <p className="">Terms</p>
+        </div>
+
+        <div className=" min-h-[150px]  min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-green-500 shadow-green-500">
+          <img src="./images/icons/document.png" className="w-16" />
+
+          <p className="">Subscription</p>
+        </div>
+
+        <div className="min-h-[150px]  min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center  text-white font-semibold text-xl items-center shadow-2xl rounded-lg  bg-green-500 shadow-green-500 ">
+          <img src="./images/icons/document.png" className="w-16" />
+          <p className="">White Papers </p>
+        </div>
+      </div>
 
       {/* Testimonals  */}
       <div class="py-16 w-full flex justify-center items-center h-full mb-20 ">

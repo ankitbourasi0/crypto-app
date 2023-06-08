@@ -13,14 +13,14 @@ const Navbar = () => {
   };
   return (
     <React.Fragment>
-      <div class="flex flex-wrap">
+      <div class="flex flex-wrap z-10">
         <section class="relative mx-auto">
           {/*//        <!-- navbar -->*/}
           <nav class="flex justify-between  bg-black text-opacity-100 text-white w-screen">
             <div class="px-5 xl:px-12 py-6 flex w-full items-center">
               <a class="text-3xl font-bold font-heading" href="#">
                 <img class="h-10" src="./images/logo1.png" alt="logo" />
-                {/*Logo Here.*/}
+                {/*Logo Here.*/}     
               </a>
               {/*//            <!-- Nav Links -->*/}
               <ul class="hidden md:flex px-4 mx-auto font-semibold font-poppins text-xl uppercase font-heading space-x-12">
