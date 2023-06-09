@@ -7,19 +7,19 @@ import React from "react";
 // import {FaMoneyBillTransfer} from "react-icons/fa";
 
 import "swiper/css";
-import ParticleComponent from "../components/particle";
+
 const Home = () => {
   return (
     <div className="w-full flex items-start justify-center  flex-col">
-      <video
-          autoplay="true"
-          loop="true"
-          muted="true"
-          class="absolute z-0 w-auto 
+      {/* <video
+        autoplay="true"
+        loop="true"
+        muted="true"
+        class="absolute z-0 w-auto 
             min-w-full object-cover h-full opacity-40 max-w-none"
-        >
-          <source src="./images/video/bganimation.mp4" />
-        </video>
+      >
+        <source src="./images/video/bganimation.mp4" />
+      </video> */}
       {/* Main Page  */}
       <div className="w-full flex min-h-[100vh] relative justify-center items-center ">
         <video
@@ -29,48 +29,50 @@ const Home = () => {
           class="absolute z-0 w-auto 
             min-w-full object-cover max-h-screen max-w-none"
         >
-          <source src="./images/video/bgvideo.mp4" />
+          <source src="./images/video/finalbgvideo.mp4" />
         </video>
         <div className="flex w-full max-w-7xl top-40 absolute items-center">
           <div className="w-1/2 text-left">
-            <h1 className="text-5xl mt-10  mb-12 font-semibold font-poppins">
-              Highly Profitable Cryptocurrency Platform
-            </h1>
-            <p className="font-poppins text-justify mb-6 ">
-              Buy and sell the highest volume cryptocurrencies. Send money
-              safely to whomever you want, whenever you want. Trade crypto with
-              your credit card or bank transfer anytime from anywhere in the
-              world.
+            {/* <h1 className="text-5xl mt-10  mb-12 font-poppins ">
+              Step into a World of <span className="font-extrabold font-poppins text-6xl  text-teal-300 -600 -700 -400 ">Financial Freedom with Ozo Trade.</span>
+            </h1> */}
+            <img src="./images/text2.png" className="mb-2 "/>
+            <p className="font-poppins text-justify mb-3 ">
+              Ozo Trade is a leading investment platform that empowers
+              individuals to invest their money wisely and achieve significant
+              returns. With our user-friendly platform, you can confidently
+              navigate the financial markets and make informed investment
+              decisions. Join us today and unlock your earning potential.
             </p>
             <div className="flex space-x-3">
-              <button className="text-white my-2   bg-violet-700  shadow-white-700 shadow-md hover:bg-violet-800 hover:text-white  transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 border-2 rounded-full px-7 py-4 font-semibold text-lg tracking-wide">
+              {/* <button className="text-white my-2   bg-violet-700  shadow-white-700 shadow-md hover:bg-violet-800 hover:text-white  transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 border-2 rounded-full px-7 py-4 font-semibold text-lg tracking-wide">
                 Buy Tokens
-              </button>
-              <button className="text-white my-2  bg-violet-700 shadow-white-700 shadow-md hover:bg-violet-800 hover:text-white transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 border-2 rounded-full px-7 py-4 font-semibold text-lg tracking-wide">
-                Download Business Plan
+              </button> */}
+              <button className="text-white w-56  shadow-white-700 shadow-md  hover:text-white transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 rounded-full  font-semibold text-lg tracking-wide">
+                <img src="./images/button.png"/>
               </button>
             </div>
           </div>
 
-          <div className="w-1/2 h-full  flex justify-center items-center">
-            <video src="./images/logo2.png" className="max-w-[450px]" />
-          </div>
+          {/* <div className="w-1/2 h-full  flex justify-center items-center">
+            <img src="./images/video/logovideo.gif" className="max-w-[450px]" />
+          </div> */}
         </div>
       </div>
 
       {/* What is OZo Trade  */}
-      <div className="w-full flex min-h-[90vh] relative justify-center items-center  ">
-        <img src="./images/vec.jpeg" className="z-0 opacity-40 " />
+      <div className="w-full flex h-full min-h-[100vh] relative justify-center items-center  ">
+        <img src="./images/bg3.jpg" className="z-0 opacity-60 object-cover " />
 
-        <div className="flex justify-center absolute items-center px-16">
+        <div className="flex justify-center absolute top-60 items-center  px-16">
           <div className="w-1/2 h-full  flex justify-center items-center">
             <img src="./images/logo2.png" className="max-w-[450px]" />
           </div>
           <div className="w-1/2 text-left">
-            <h1 className="text-5xl mt-16  mb-12 font-semibold font-serif">
+            <h1 className="text-5xl   mb-12 font-semibold font-serif">
               OZO Trade
             </h1>
-            <p className="font-poppins text-justify">
+            <p className="font-poppins text-lg text-justify">
               Tecmactrade is one of the platforms for trading cryptocurrencies
               and foreign exchange. We are focusing on better internet
               investment opportunities for the general public, assisting people
@@ -92,6 +94,12 @@ const Home = () => {
         </div>
       </div>
 
+      <div className=" w-full flex min-h-[80vh] h-full relative justify-center items-center ">
+        <img src="./images/bg5.png " className="object-cover  " />
+      </div>
+      {/* <div className=" w-full flex min-h-[80vh] h-full relative justify-center items-center ">
+        <img src="./images/bg4.jpg " className="object-cover  " />
+      </div> */}
       {/* What we do  */}
       {/* <div className="w-full flex justify-center mb-16 items-center flex-col">
         
@@ -140,9 +148,7 @@ const Home = () => {
         </div>
       </div> */}
 
-      <div className="flex max-w-7xl mx-auto min-h-[90vh]  mb-12 w-full  justify-center items-center">
-        
-        
+      <div className="flex max-w-7xl mx-auto min-h-[100vh]   mb-12 w-full  justify-center items-center">
         {/* left  */}
 
         <div className="max-w-2xl w-full text-left ">
@@ -194,13 +200,12 @@ const Home = () => {
 
         {/* right  */}
         <div className=" pl-2  flex justify-center items-center">
-          <img src="./images/home2.png" className=" " />
+          <img src="./images/ai.png" className=" " />
         </div>
       </div>
 
       {/* Center Div  */}
       <div className="max-w-6xl w-full mx-auto  h-full p-16 min-h-[50vh] my-24  grid grid-cols-4 gap-8 ">
-        
         <div className="min-w-[150px] min-h-[150px] hover:scale-105  transition duration-500 transform  flex flex-col space-y-4 justify-center text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 shadow-cyan-500 ">
           <img src="./images/icons/interface.png" className="w-16" />
 
@@ -467,17 +472,19 @@ const Home = () => {
 
       {/* Cryptocurrency says  */}
       {/* Parent  */}
-      <h1 className="text-4xl text-center mb-16 mt-24 w-full">
+      <h1 className="text-4xl text-center font-poppins font-bold  mb-16 mt-24 w-full">
         Cryptocurrency Use Case
       </h1>
 
       <div className="grid grid-cols-2 mb-24 mx-auto max-w-7xl gap-x-16 gap-y-12">
         {/* 1  */}
-        <div className="max-w-[450px] space-x-6 w-full flex items-center">
+        <div className="max-w-[480px]  relative space-x-6 w-full flex items-center">
           {/* left  */}
-          <img src="./images/icons/profit.png" className="w-16" />
+          <img src="./images/animation/circleanimation.png" className="animate-spin-slow absolute left-0 w-32"/>
+
+          <img src="./images/icons/profit.png" className="w-16 pl-2 " />
           {/* right  */}
-          <div className="font-poppins  text-lg">
+          <div className="font-poppins pl-6   text-lg">
             Purchases
             <p className="font-poppins mt-2 text-sm">
               You can invest in cryptocurrency regularly over time by scheduling
@@ -486,11 +493,12 @@ const Home = () => {
           </div>
         </div>
         {/* 2  */}
-        <div className="max-w-[450px] space-x-6  w-full flex items-center">
+        <div className="max-w-[480px] space-x-6 relative w-full flex items-center">
           {/* left  */}
-          <img src="./images/icons/interface.png" className="w-16" />
+          <img src="./images/animation/circleanimation.png" className="animate-spin-slow absolute left-0 w-32"/>
+          <img src="./images/icons/interface.png" className="w-16 pl-2 " />
           {/* right  */}
-          <div className="font-poppins  text-lg">
+          <div className="font-poppins pl-6 text-lg">
             Easy Interface
             <p className="font-poppins mt-2 text-sm">
               You don't need to look for what or where. You can easily manage
@@ -499,11 +507,13 @@ const Home = () => {
           </div>
         </div>
         {/* 3 */}
-        <div className="max-w-[450px] space-x-6  w-full flex items-center">
+        <div className="max-w-[450px] relative space-x-6  w-full flex items-center">
           {/* left  */}
-          <img src="./images/icons/secure.png" className="w-16" />
+          <img src="./images/animation/circleanimation.png" className="animate-spin-slow absolute left-0 w-32"/>
+
+          <img src="./images/icons/secure.png" className="w-16 pl-2 " />
           {/* right  */}
-          <div className="font-poppins  text-lg">
+          <div className="font-poppins pl-6 text-lg">
             High Security
             <p className="font-poppins mt-2 text-sm">
               With the highest level of system security, your crypto-asset
@@ -512,11 +522,13 @@ const Home = () => {
           </div>
         </div>
         {/* 4 */}
-        <div className="max-w-[450px] space-x-6  w-full flex items-center">
+        <div className="max-w-[480px] relative space-x-6  w-full flex items-center">
           {/* left  */}
-          <img src="./images/icons/api.png" className="w-16" />
+          <img src="./images/animation/circleanimation.png" className="animate-spin-slow absolute left-0 w-32"/>
+
+          <img src="./images/icons/api.png" className="w-16 pl-2 " />
           {/* right  */}
-          <div className="font-poppins  text-lg">
+          <div className="font-poppins pl-6   text-lg">
             API Support
             <p className="font-poppins mt-2 text-sm">
               Execute the orders yourself if you want, or let the algorithms you
@@ -525,11 +537,13 @@ const Home = () => {
           </div>
         </div>
         {/* 5 */}
-        <div className="max-w-[450px]  space-x-6  w-full flex items-center">
+        <div className="max-w-[480px]  relative space-x-6  w-full flex items-center">
           {/* left  */}
-          <img src="./images/icons/analytics.png" className="w-16" />
+          <img src="./images/animation/circleanimation.png" className="animate-spin-slow absolute left-0 w-32"/>
+
+          <img src="./images/icons/analytics.png" className="w-16 pl-2 " />
           {/* right  */}
-          <div className="font-poppins  text-lg">
+          <div className="font-poppins pl-6   text-lg">
             Market Analysis
             <p className="font-poppins mt-2 text-sm">
               Analysis that can guide your investment strategies; research
@@ -538,11 +552,13 @@ const Home = () => {
           </div>
         </div>
         {/* 6 */}
-        <div className="max-w-[450px] space-x-6  w-full flex items-center">
+        <div className="max-w-[480px]  relative space-x-6  w-full flex items-center">
           {/* left  */}
-          <img src="./images/icons/certified.png" className="w-16" />
+          <img src="./images/animation/circleanimation.png" className="animate-spin-slow absolute left-0 w-32"/>
+  
+          <img src="./images/icons/certified.png" className="w-16 pl-2 " />
           {/* right  */}
-          <div className="font-poppins  text-lg">
+          <div className="font-poppins pl-6  text-lg">
             Licensed Organization
             <p className="font-poppins mt-2 text-sm">
               We are among the important investment institutions with our
@@ -552,26 +568,29 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="max-w-6xl w-full mx-auto  h-full p-16 min-h-[50vh] my-24  grid grid-cols-4 gap-8 ">
-        <div className="min-w-[150px] min-h-[150px] hover:scale-105  transition duration-500 transform  flex flex-col space-y-4 justify-center text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-green-500 shadow-green-500 ">
+      <h1 className="text-5xl font-poppins font-bold text-center  mt-24 w-full">
+        Document
+      </h1>
+      <div className="max-w-6xl w-full mx-auto  h-full p-16 min-h-[50vh] mb-24  grid grid-cols-4 gap-8 ">
+        <div className="min-w-[150px] min-h-[150px] hover:scale-105  transition duration-500 transform  flex flex-col space-y-4 justify-center text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-violet-500 to-fuchsia-500 shadow-fuchsia-500">
           <img src="./images/icons/document.png" className="w-16" />
 
           <p className="">Privacy</p>
         </div>
 
-        <div className=" min-h-[150px] min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center  text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-green-500 shadow-green-500">
+        <div className=" min-h-[150px] min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center  text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-violet-500 to-fuchsia-500 shadow-fuchsia-500">
           <img src="./images/icons/document.png" className="w-16" />
 
           <p className="">Terms</p>
         </div>
 
-        <div className=" min-h-[150px]  min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-green-500 shadow-green-500">
+        <div className=" min-h-[150px]  min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-violet-500 to-fuchsia-500 shadow-fuchsia-500">
           <img src="./images/icons/document.png" className="w-16" />
 
           <p className="">Subscription</p>
         </div>
 
-        <div className="min-h-[150px]  min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center  text-white font-semibold text-xl items-center shadow-2xl rounded-lg  bg-green-500 shadow-green-500 ">
+        <div className="min-h-[150px]  min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center  text-white font-semibold text-xl items-center shadow-2xl rounded-lg  bg-gradient-to-r from-violet-500 to-fuchsia-500 shadow-fuchsia-500 ">
           <img src="./images/icons/document.png" className="w-16" />
           <p className="">White Papers </p>
         </div>

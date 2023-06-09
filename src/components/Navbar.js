@@ -17,13 +17,14 @@ const Navbar = () => {
         <section class="relative mx-auto">
           {/*//        <!-- navbar -->*/}
           <nav class="flex justify-between  bg-black text-opacity-100 text-white w-screen">
-            <div class="px-5 xl:px-12 py-6 flex w-full items-center">
-              <a class="text-3xl font-bold font-heading" href="#">
-                <img class="h-10" src="./images/logo1.png" alt="logo" />
+            <div class="px-5 xl:px-12 py-2 flex w-full items-center">
+             
+              {/*//            <!-- Nav Links -->*/}
+              <ul class="hidden md:flex px-4 mx-auto font-semibold font-poppins text-sm text-gray-400 items-center font-heading space-x-12 ">
+              <a class="text-3xl  font-bold font-heading" href="#">
+                <img class="h-10 pt-2 pl-2" src="./images/navlogo.png" alt="logo" />
                 {/*Logo Here.*/}     
               </a>
-              {/*//            <!-- Nav Links -->*/}
-              <ul class="hidden md:flex px-4 mx-auto font-semibold font-poppins text-xl uppercase font-heading space-x-12">
                 <li>
                   <Link class="hover:text-gray-200" to="/">
                     Home
@@ -36,7 +37,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link class="hover:text-gray-200" to="/earning">
-                    EARNING
+                    Earning
                   </Link>
                 </li>
                 <li>
@@ -46,7 +47,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link class="hover:text-gray-200" to="/legal">
-                    LEGAL
+                    Legal
                   </Link>
                 </li>
                 <li>
@@ -64,9 +65,15 @@ const Navbar = () => {
                     Blog
                   </Link>
                 </li>
+                <a class="text-3xl  font-bold font-heading" href="#">
+                <img class="h-12" src="./images/dashboard.png" alt="logo" />
+                     
+              </a>
+
               </ul>
               {/*//            <!-- Header Icons -->*/}
-              <div class="hidden xl:flex  space-x-5 items-center">
+{/*               
+             <div class="hidden xl:flex  space-x-5 items-center">
                 <Link class="hover:text-gray-200">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +110,7 @@ const Navbar = () => {
                     <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500"></span>
                   </span>
                 </Link>
-                {/*//              <!-- Sign In / Register      -->*/}
+           
                 <Link class="flex items-center hover:text-gray-200" href="#">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +127,8 @@ const Navbar = () => {
                     />
                   </svg>
                 </Link>
-              </div>
+              </div> */}
+
             </div>
             {/*//          <!-- Responsive navbar -->*/}
             <a class="xl:hidden flex mr-6 items-center" href="#">
