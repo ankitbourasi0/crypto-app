@@ -288,9 +288,23 @@ const Home = () => {
 
       </div>
 
-      <div className="flex max-w-7xl mx-auto min-h-[100vh] font-poppins  mb-12 w-full  justify-center items-center">
+      <div className="flex  mx-auto min-h-[100vh] font-poppins relative  w-full  justify-center items-center">
         {/* left  */}
 
+        {/* <img
+          src="./images/bg3.jpg"
+          className="z-0 opacity-60 object-cover "
+        /> */}
+         <video
+          autoplay="true"
+          loop="true"
+          muted="true"
+          class="absolute z-0 w-auto opacity-50
+            min-w-full object-cover max-h-screen max-w-none"
+        >
+          <source src="./images/video/finalbgvideo1.mp4" />
+        </video>
+        <div className="absolute  max-w-7xl  flex justify-center items-center">
         <div className="max-w-2xl w-full text-left ">
           <h1 className="font-semibold font-poppins text-5xl mb-6">
             Stunning Crypto Platform <br />
@@ -342,10 +356,22 @@ const Home = () => {
         <div className=" pl-2  flex justify-center items-center">
           <img src="./images/ai.png" className=" " />
         </div>
+        </div>
       </div>
 
       {/* Center Div  */}
-      <div className="max-w-6xl w-full mx-auto  h-full p-16 min-h-[50vh] my-24  grid grid-cols-4 gap-8 ">
+      <div className="w-full flex justify-center mb-16 min-h-[100vh]  items-center relative ">
+      <video
+          autoplay="true"
+          loop="true"
+          muted="true"
+          class="absolute z-0 w-auto 
+            min-w-full object-cover max-h-screen max-w-none"
+        >
+          <source src="./images/video/finalbgvideo1.mp4" />
+        </video>
+        
+      <div className="max-w-6xl w-full mx-auto absolute  p-16 min-h-[50vh] my-24  grid grid-cols-4 gap-8 ">
         <div className="min-w-[150px] min-h-[150px] hover:scale-105  transition duration-500 transform  flex flex-col space-y-4 justify-center text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 shadow-cyan-500 ">
           <img src="./images/icons/interface.png" className="w-16" />
 
@@ -368,6 +394,7 @@ const Home = () => {
           <img src="./images/icons/profit.png" className="w-16" />
           <p className="">Investment </p>
         </div>
+      </div>
       </div>
 
       {/* Investment Package  */}
