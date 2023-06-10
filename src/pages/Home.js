@@ -29,14 +29,14 @@ const Home = () => {
           class="absolute z-0 w-auto 
             min-w-full object-cover max-h-screen max-w-none"
         >
-          <source src="./images/video/finalbgvideo.mp4" />
+          <source src="./images/video/bgvideofinal.mp4" />
         </video>
         <div className="flex w-full max-w-7xl top-40 absolute items-center">
           <div className="w-1/2 text-left">
             {/* <h1 className="text-5xl mt-10  mb-12 font-poppins ">
               Step into a World of <span className="font-extrabold font-poppins text-6xl  text-teal-300 -600 -700 -400 ">Financial Freedom with Ozo Trade.</span>
             </h1> */}
-            <img src="./images/text2.png" className="mb-2 "/>
+            <img src="./images/text2.png" className="mb-2 " />
             <p className="font-poppins text-justify mb-3 ">
               Ozo Trade is a leading investment platform that empowers
               individuals to invest their money wisely and achieve significant
@@ -49,7 +49,7 @@ const Home = () => {
                 Buy Tokens
               </button> */}
               <button className="text-white w-56  shadow-white-700 shadow-md  hover:text-white transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 rounded-full  font-semibold text-lg tracking-wide">
-                <img src="./images/button.png"/>
+                <img src="./images/button.png" />
               </button>
             </div>
           </div>
@@ -59,24 +59,36 @@ const Home = () => {
           </div> */}
         </div>
       </div>
-
+      {/* <div className="w-full min-h-[3vh] bg-gradient-to-b opacity-40 from-cyan-950 ">
+            </div> */}
       {/* What is OZo Trade  */}
       <div className="w-full flex h-full min-h-[100vh] relative justify-center items-center  ">
-        <img src="./images/bg3.jpg" className="z-0 opacity-60 object-cover " />
-
-        <div className="flex justify-center absolute top-60 items-center  px-16">
+        <img
+          src="./images/homesection.jpeg"
+          className="z-0 opacity-40 object-cover "
+        />
+        {/* <video
+          autoplay="true"
+          loop="true"
+          muted="true"
+          class="absolute z-0 w-auto opacity-70
+            min-w-full object-cover max-h-screen max-w-none"
+        >
+          <source src="./images/video/2ndVideo.mp4" />
+        </video> */}
+        <div className="flex justify-center absolute top-40 items-center  px-16">
           <div className="w-1/2 h-full  flex justify-center items-center">
-            <img src="./images/logo2.png" className="max-w-[450px]" />
+            <img src="./images/navlogo.png" className="max-w-[550px]" />
           </div>
-          <div className="w-1/2 text-left">
-            <h1 className="text-5xl   mb-12 font-semibold font-serif">
-              OZO Trade
+          <div className="w-1/2 text-left ">
+            <h1 className="text-5xl   mb-12 font-semibold font-poppins">
+              OZO Pay
             </h1>
             <p className="font-poppins text-lg text-justify">
-              Tecmactrade is one of the platforms for trading cryptocurrencies
-              and foreign exchange. We are focusing on better internet
-              investment opportunities for the general public, assisting people
-              in increasing their personal wealth and generating long-term
+              Ozo pay is one of the platforms for trading cryptocurrencies and
+              foreign exchange. We are focusing on better internet investment
+              opportunities for the general public, assisting people in
+              increasing their personal wealth and generating long-term
               profitability, transforming lives and help them in making wise
               financial decisions. Our service offers customers transparent and
               successful cryptocurrency investing solutions that enable them to
@@ -94,9 +106,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div className=" w-full flex min-h-[80vh] h-full relative justify-center items-center ">
+      {/* <div className=" w-full flex min-h-[80vh] h-full relative justify-center items-center ">
         <img src="./images/bg5.png " className="object-cover  " />
-      </div>
+      </div> */}
       {/* <div className=" w-full flex min-h-[80vh] h-full relative justify-center items-center ">
         <img src="./images/bg4.jpg " className="object-cover  " />
       </div> */}
@@ -148,7 +160,135 @@ const Home = () => {
         </div>
       </div> */}
 
-      <div className="flex max-w-7xl mx-auto min-h-[100vh]   mb-12 w-full  justify-center items-center">
+      {/* Design 1  */}
+      <div className="w-full min-h-[100vh] relative flex  items-center  ">
+        <img
+          src="./images/designbg1.jpg"
+          className="z-0 opacity-80 object-cover  "
+        />
+
+        <div className=" absolute px-52 w-full font-poppins   bg-opacity-40 py-[202px] ">
+          <h1 className="text-8xl font-semibold  mb-6">
+            we take your money <br />
+            matters seriously
+          </h1>
+          <p className="text-3xl font-semibold    ">
+            so that you don’t have to.
+          </p>
+          <p className="text-xl font-semibold mb-10 ">
+            never miss a due date with reminders to help you pay your bills on
+            time,
+            <br /> instant settlements mean you never wait for your payments to
+            go through
+            <br /> and statement analysis lets you know where your money goes,
+            always.
+          </p>
+          <button className="rounded-full bg-white px-14 py-6 ">
+            <span className="text-black text-2xl font-semibold">
+              Experience the upgrade
+            </span>{" "}
+          </button>
+        </div>
+      </div>
+
+      {/* Design 2  */}
+      <div className="w-full min-h-[100vh] relative flex font-poppins items-center  ">
+        <img
+          src="./images/security2.jpg"
+          className="z-0  opacity-50 object-cover "
+        />
+
+        <div className=" absolute px-52 w-full  bg-opacity-40 py-[202px] ">
+          <h1 className="text-8xl font-semibold mb-6">
+            security first.
+            <br />
+            and second.
+          </h1>
+          <p className="text-3xl font-semibold   ">
+            what’s yours remains only yours.
+          </p>
+          <p className="text-xl font-semibold mb-10 ">
+            Ozo ensures that all your personal data and transactions are
+            encrypted,
+            <br /> and secured so what’s yours remains only yours. there’s no
+            room for
+            <br /> mistakes because we didn’t leave any
+          </p>
+          <button className="rounded-full bg-white px-14 py-6 ">
+            <span className="text-black text-2xl font-semibold">
+              Become a member
+            </span>{" "}
+          </button>
+        </div>
+      </div>
+
+      {/* Design 3  */}
+      <div className="w-full min-h-[100vh]    font-poppins relative flex  items-center  ">
+        <img
+          src="./images/storybg.jpg"
+          className="z-0 opacity-50  object-cover "
+        />
+
+        <div className=" absolute w-full flex px-16 bg-opacity-40  justify-around  ">
+          <h1 className="text-7xl font-semibold  max-w-[500px] pb-2 max-h-max flex items-end ">
+            the story of OZO begins with trust.
+          </h1>
+          <p className="text-xl max-w-[550px]   ">
+            trust as a virtue has consistently played an essential role in every
+            great human achievement. and consistently, its importance has been
+            overlooked. not just by individuals, but by entire societies. we
+            felt it was time someone gave it the spotlight it deserves.
+            especially for the ones who live by this virtue: the trustworthy. 
+            <br/>
+            <br/>
+
+            so
+            we thought of creating a system that rewards its members for doing
+            good and being trustworthy. this way, trust as a virtue becomes
+            something to aspire to, just the way it should be. then we went one
+            step ahead: we built it. we know we are on the right track because
+            here you are.
+            <br/>
+            <br/>
+
+             if you make it to OZO, congratulations and welcome.
+            we have a lot of things planned for you.
+          </p>
+        </div>
+      </div>
+
+      {/* Calculator  */}
+      <div className="w-full min-h-[100vh] font-poppins  relative  ">
+      <img
+          src="./images/bg.png"
+          className="z-0  object-cover "
+        />
+       <div className="absolute flex top-40 items-center w-full">
+       <div className="max-w-[550px] bg-neutral-900 -600 rounded-2xl  ml-48 py-12 px-10 ">
+          <h1 className="mb-6 text-2xl border-b-2 pb-6 text-center ">Calculate Your Income</h1>
+          <div className="grid grid-cols-2 gap-x-4 gap-y-4 mb-5">
+          <p  className="border-2 border-gray-200 py-4 w-full bg-gray-700 rounded-2xl px-6" >Package Name</p>
+          <p  className="border-2 border-gray-200 py-4 w-full bg-gray-700 rounded-2xl px-6" >Daily Returns</p>
+          <p  className="border-2 border-gray-200 py-4 w-full bg-gray-700 rounded-2xl px-6"  >Referral Income</p>
+          <p  className="border-2 border-gray-200 py-4 w-full bg-gray-700 rounded-2xl px-6" >Binary Income</p>
+          <p  className="border-2 border-gray-200 py-4 w-full bg-gray-700 rounded-2xl px-6" >Capping Limit</p>
+          <p  className="border-2 border-gray-200 py-4 w-full bg-gray-700 rounded-2xl px-6" >Principle Returns</p>
+          
+          </div>
+          <p  className="border-2 border-gray-200 py-4 w-full bg-gray-700 rounded-2xl px-6 mb-6" >Earnings</p>
+          <input  className="border-2 border-gray-200 py-4 w-full bg-gray-700 rounded-2xl px-6" placeholder="Enter amount"/>
+
+
+        </div>
+        <div className="max-w-[550px]  border-r-4 pr-2 ml-16 flex items-center min-h-[40vh]">
+        <h1 className="mb-6 text-7xl text-right ">get Income information with Ozo calculator.</h1>
+
+        </div>
+       </div>
+
+      </div>
+
+      <div className="flex max-w-7xl mx-auto min-h-[100vh] font-poppins  mb-12 w-full  justify-center items-center">
         {/* left  */}
 
         <div className="max-w-2xl w-full text-left ">
@@ -480,7 +620,10 @@ const Home = () => {
         {/* 1  */}
         <div className="max-w-[480px]  relative space-x-6 w-full flex items-center">
           {/* left  */}
-          <img src="./images/animation/circleanimation.png" className="animate-spin-slow absolute left-0 w-32"/>
+          <img
+            src="./images/animation/circleanimation.png"
+            className="animate-spin-slow absolute left-0 w-32"
+          />
 
           <img src="./images/icons/profit.png" className="w-16 pl-2 " />
           {/* right  */}
@@ -495,7 +638,10 @@ const Home = () => {
         {/* 2  */}
         <div className="max-w-[480px] space-x-6 relative w-full flex items-center">
           {/* left  */}
-          <img src="./images/animation/circleanimation.png" className="animate-spin-slow absolute left-0 w-32"/>
+          <img
+            src="./images/animation/circleanimation.png"
+            className="animate-spin-slow absolute left-0 w-32"
+          />
           <img src="./images/icons/interface.png" className="w-16 pl-2 " />
           {/* right  */}
           <div className="font-poppins pl-6 text-lg">
@@ -509,7 +655,10 @@ const Home = () => {
         {/* 3 */}
         <div className="max-w-[450px] relative space-x-6  w-full flex items-center">
           {/* left  */}
-          <img src="./images/animation/circleanimation.png" className="animate-spin-slow absolute left-0 w-32"/>
+          <img
+            src="./images/animation/circleanimation.png"
+            className="animate-spin-slow absolute left-0 w-32"
+          />
 
           <img src="./images/icons/secure.png" className="w-16 pl-2 " />
           {/* right  */}
@@ -524,7 +673,10 @@ const Home = () => {
         {/* 4 */}
         <div className="max-w-[480px] relative space-x-6  w-full flex items-center">
           {/* left  */}
-          <img src="./images/animation/circleanimation.png" className="animate-spin-slow absolute left-0 w-32"/>
+          <img
+            src="./images/animation/circleanimation.png"
+            className="animate-spin-slow absolute left-0 w-32"
+          />
 
           <img src="./images/icons/api.png" className="w-16 pl-2 " />
           {/* right  */}
@@ -539,7 +691,10 @@ const Home = () => {
         {/* 5 */}
         <div className="max-w-[480px]  relative space-x-6  w-full flex items-center">
           {/* left  */}
-          <img src="./images/animation/circleanimation.png" className="animate-spin-slow absolute left-0 w-32"/>
+          <img
+            src="./images/animation/circleanimation.png"
+            className="animate-spin-slow absolute left-0 w-32"
+          />
 
           <img src="./images/icons/analytics.png" className="w-16 pl-2 " />
           {/* right  */}
@@ -554,8 +709,11 @@ const Home = () => {
         {/* 6 */}
         <div className="max-w-[480px]  relative space-x-6  w-full flex items-center">
           {/* left  */}
-          <img src="./images/animation/circleanimation.png" className="animate-spin-slow absolute left-0 w-32"/>
-  
+          <img
+            src="./images/animation/circleanimation.png"
+            className="animate-spin-slow absolute left-0 w-32"
+          />
+
           <img src="./images/icons/certified.png" className="w-16 pl-2 " />
           {/* right  */}
           <div className="font-poppins pl-6  text-lg">
@@ -572,13 +730,13 @@ const Home = () => {
         Document
       </h1>
       <div className="max-w-6xl w-full mx-auto  h-full p-16 min-h-[50vh] mb-24  grid grid-cols-4 gap-8 ">
-        <div className="min-w-[150px] min-h-[150px] hover:scale-105  transition duration-500 transform  flex flex-col space-y-4 justify-center text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-violet-500 to-fuchsia-500 shadow-fuchsia-500">
+        <div className="min-w-[150px] min-h-[150px] hover:scale-105  transition duration-500 transform  flex flex-col space-y-4 justify-center text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 shadow-purple-500 ">
           <img src="./images/icons/document.png" className="w-16" />
 
           <p className="">Privacy</p>
         </div>
 
-        <div className=" min-h-[150px] min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center  text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-violet-500 to-fuchsia-500 shadow-fuchsia-500">
+        <div className=" min-h-[150px] min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center  text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 shadow-cyan-500 ">
           <img src="./images/icons/document.png" className="w-16" />
 
           <p className="">Terms</p>
@@ -590,7 +748,7 @@ const Home = () => {
           <p className="">Subscription</p>
         </div>
 
-        <div className="min-h-[150px]  min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center  text-white font-semibold text-xl items-center shadow-2xl rounded-lg  bg-gradient-to-r from-violet-500 to-fuchsia-500 shadow-fuchsia-500 ">
+        <div className="min-h-[150px]  min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center  text-white font-semibold text-xl items-center shadow-2xl rounded-lg  bg-gradient-to-r from-sky to-indigo-500 shadow-indigo-500">
           <img src="./images/icons/document.png" className="w-16" />
           <p className="">White Papers </p>
         </div>

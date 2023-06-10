@@ -65,8 +65,8 @@ const Navbar = () => {
                     Blog
                   </Link>
                 </li>
-                <a class="text-3xl  font-bold font-heading" href="#">
-                <img class="h-12" src="./images/dashboard.png" alt="logo" />
+                <a className="" href="#">
+                <img class="h-14" src="./images/dashboard.png" alt="logo" />
                      
               </a>
 
