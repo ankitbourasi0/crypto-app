@@ -29,7 +29,7 @@ const Home = () => {
           class="absolute z-0 w-auto 
             min-w-full object-cover max-h-screen max-w-none"
         >
-          <source src="./images/video/bgvideofinal.mp4" />
+          <source src="./images/video/firstvideo.mp4" />
         </video>
         {/* <img src="./images/animation/mainintro.gif" className=""/> */}
         <div className="flex w-full max-w-7xl top-40 absolute items-center">
@@ -62,6 +62,7 @@ const Home = () => {
       </div>
       {/* <div className="w-full min-h-[3vh] bg-gradient-to-b opacity-40 from-cyan-950 ">
             </div> */}
+
       {/* What is OZo Trade  */}
       <div className="w-full flex h-full max-h-[100vh] relative justify-center items-center  ">
         <img
@@ -79,7 +80,7 @@ const Home = () => {
         </video> */}
         <div className="flex justify-center absolute top-40 items-center  px-16">
           <div className="w-1/2 h-full  flex justify-center items-center">
-            <img src="./images/navlogo.png" className="max-w-[550px]" />
+            <img src="./images/laptop.png" className="max-w-[550px]" />
           </div>
           <div className="w-1/2 text-left ">
             <h1 className="text-5xl   mb-12 font-semibold font-poppins">
@@ -107,64 +108,48 @@ const Home = () => {
         </div>
       </div>
 
-      {/* <div className=" w-full flex min-h-[80vh] h-full relative justify-center items-center ">
-        <img src="./images/bg5.png " className="object-cover  " />
-      </div> */}
-      {/* <div className=" w-full flex min-h-[80vh] h-full relative justify-center items-center ">
-        <img src="./images/bg4.jpg " className="object-cover  " />
-      </div> */}
-      {/* What we do  */}
-      {/* <div className="w-full flex justify-center mb-16 items-center flex-col">
-        
-        <h1 className="text-4xl mt-16  mb-12 uppercase font-semibold font-poppins">
-          What WE do
-        </h1>
-        <h1 className="text-4xl text-center mb-12 uppercase font-semibold font-poppins">
-          THE VALUE OF THESE <span className="text-blue-500"> MODELS</span> IS
-          IN <br />
-          THE <span className="text-green-500"> MINIMIZATION</span> OF{" "}
-          <span className="text-rose-600">RISK</span>
-        </h1>
-        <div className="flex space-x-4 font-poppins text-2xl items-center max-w-[calc(100%-4rem)]">
-          <div className="max-w-[400px] bg-zinc-900  backdrop-blur-md  border-2 p-8 min-h-[350px]  rounded-2xl flex justify-center items-center flex-col  shadow-md">
-            <GiSpellBook fontSize={"56px"} className="mb-2" />
-            <h3 className="">Knowledge</h3>
-            <p className="text-lg">
-              Our team of experts has a deep understanding of the crypto market.
-              We monitor the market 24/7, looking for opportunities to make a
-              profit. We use our knowledge and experience to make informed
-              trading decisions.
-            </p>
+      {/* Center Div  */}
+      <div className="w-full flex justify-center mb-16 min-h-[100vh]  items-center relative ">
+        {/* <video
+          autoplay="true"
+          loop="true"
+          muted="true"
+          class="absolute z-0 w-auto 
+            min-w-full object-cover max-h-screen max-w-none"
+        >
+          <source src="./images/video/finalbgvideo1.mp4" />
+        </video> */}
+
+        <div className="max-w-6xl w-full mx-auto absolute  p-16 min-h-[50vh] my-24  grid grid-cols-4 gap-8 ">
+          <div className="min-w-[150px] min-h-[150px] hover:scale-105  transition duration-500 transform  flex flex-col space-y-4 justify-center text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 shadow-cyan-500 ">
+            <img src="./images/icons/interface.png" className="w-16" />
+
+            <p className="">Interface</p>
           </div>
 
-          <div className="max-w-[400px] bg-neutral-900 border-2 p-8 min-h-[355px] flex justify-center items-center flex-col rounded-2xl shadow-md">
-            <SiBitcoincash fontSize={"56px"} className="" />
-            <h3 className="">Earnings</h3>
-            <p className="text-lg">
-              We have a proven track record of success in the crypto market. We
-              have generated consistent profits for our clients. We are
-              confident that we can continue to generate profits for our clients
-              in the future.
-            </p>
+          <div className=" min-h-[150px] min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center  text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-sky to-indigo-500 shadow-indigo-500">
+            <img src="./images/icons/exchange.png" className="w-16" />
+
+            <p className="">Exchange</p>
           </div>
 
-          <div className="max-w-[400px] bg-neutral-900  border-2 p-8  min-h-[350px]  flex justify-center items-center flex-col rounded-2xl shadow-md">
-            <TbAlertTriangleFilled fontSize={"56px"} className="mb-1" />
-            <h3 className="">Risk Reduction</h3>
-            <p className="text-lg">
-              We use statistical modeling and machine learning to identify and
-              execute trades. We believe that the value of these models is in
-              the minimization of risk. We use a variety of risk management
-              techniques to protect our capital.
-            </p>
+          <div className=" min-h-[150px]  min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-violet-500 to-fuchsia-500 shadow-fuchsia-500 ">
+            <img src="./images/icons/secure.png" className="w-16" />
+
+            <p className="">Security</p>
+          </div>
+
+          <div className="min-h-[150px]  min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center  text-white font-semibold text-xl items-center shadow-2xl rounded-lg  bg-gradient-to-r from-purple-500 to-pink-500 shadow-purple-500 ">
+            <img src="./images/icons/profit.png" className="w-16" />
+            <p className="">Investment </p>
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* Design 1  */}
-      <div className="w-full min-h-[100vh] relative flex  items-center  ">
+      <div className="w-full min-h-[100vh] relative flex mb-16 items-center  ">
         <img
-          src="./images/designbg1.jpg"
+          src="./images/seriousmoney.jpg"
           className="z-0 opacity-80 object-cover  "
         />
 
@@ -434,10 +419,7 @@ const Home = () => {
 
       {/* Design 2  */}
       <div className="w-full min-h-[100vh] relative flex font-poppins items-center  ">
-        <img
-          src="./images/security2.jpg"
-          className="z-0  opacity-50 object-cover "
-        />
+        <img src="./images/dog.jpg" className="z-0  opacity-60 object-cover " />
 
         <div className=" absolute px-52 w-full  bg-opacity-40 py-[202px] ">
           <h1 className="text-8xl font-semibold mb-6">
@@ -445,7 +427,7 @@ const Home = () => {
             <br />
             and second.
           </h1>
-          <p className="text-3xl font-semibold   ">
+          <p className="text-3xl font-semibold mb-6   ">
             what’s yours remains only yours.
           </p>
           <p className="text-xl font-semibold mb-10 ">
@@ -463,50 +445,6 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Calculator  */}
-      <div className="w-full min-h-[100vh] font-poppins  relative  ">
-        <img src="./images/bg.png" className="z-0  object-cover " />
-        <div className="absolute flex top-40 items-center w-full">
-          <div className="max-w-[550px] bg-neutral-900 -600 rounded-2xl  ml-48 py-12 px-10 ">
-            <h1 className="mb-6 text-2xl border-b-2 pb-6 text-center ">
-              Calculate Your Income
-            </h1>
-            <div className="grid grid-cols-2 gap-x-4 gap-y-4 mb-5">
-              <p className="border-2 border-gray-200 py-4 w-full bg-gray-700 rounded-2xl px-6">
-                Package Name
-              </p>
-              <p className="border-2 border-gray-200 py-4 w-full bg-gray-700 rounded-2xl px-6">
-                Daily Returns
-              </p>
-              <p className="border-2 border-gray-200 py-4 w-full bg-gray-700 rounded-2xl px-6">
-                Referral Income
-              </p>
-              <p className="border-2 border-gray-200 py-4 w-full bg-gray-700 rounded-2xl px-6">
-                Binary Income
-              </p>
-              <p className="border-2 border-gray-200 py-4 w-full bg-gray-700 rounded-2xl px-6">
-                Capping Limit
-              </p>
-              <p className="border-2 border-gray-200 py-4 w-full bg-gray-700 rounded-2xl px-6">
-                Principle Returns
-              </p>
-            </div>
-            <p className="border-2 border-gray-200 py-4 w-full bg-gray-700 rounded-2xl px-6 mb-6">
-              Earnings
-            </p>
-            <input
-              className="border-2 border-gray-200 py-4 w-full bg-gray-700 rounded-2xl px-6"
-              placeholder="Enter amount"
-            />
-          </div>
-          <div className="max-w-[550px]  border-r-4 pr-2 ml-16 flex items-center min-h-[40vh]">
-            <h1 className="mb-6 text-7xl text-right ">
-              get Income information with Ozo calculator.
-            </h1>
-          </div>
-        </div>
-      </div>
-
       <div className="flex  mx-auto min-h-[100vh] font-poppins relative  w-full  justify-center items-center">
         {/* left  */}
 
@@ -521,9 +459,9 @@ const Home = () => {
           class="absolute z-0 w-auto opacity-50
             min-w-full object-cover max-h-screen max-w-none"
         >
-          <source src="./images/video/finalbgvideo1.mp4" />
+          <source src="./images/video/ozotokenvideo.mp4" />
         </video>
-        <div className="absolute  max-w-7xl  flex justify-center items-center">
+        <div className="absolute w-full ml-44  flex justify-start items-center">
           <div className="max-w-2xl w-full text-left ">
             <h1 className="font-semibold font-poppins text-5xl mb-6">
               Stunning Crypto Platform <br />
@@ -572,81 +510,10 @@ const Home = () => {
           </div>
 
           {/* right  */}
-          <div className=" pl-2  flex justify-center items-center">
+          {/* <div className=" pl-2  flex justify-center items-center">
             <img src="./images/ai.png" className=" " />
-          </div>
-        </div>
-      </div>
-
-      <div className="w-full min-h-[100vh] font-poppins  relative  ">
-        <img
-          src="./images/holobg.jpg"
-          className="z-0  object-cover opacity-90 "
-        />
-        <div className="absolute  flex justify-around items-center top-40 min-h-[80vh] w-full">
-          <div className="w-1/2 flex justify-center items-center  py-12 px-10 ">
-            <img
-              src="./images/hologrambg.png"
-              className="w-4/5 relative opacity-90 animate-pulse "
-            />
-            <img src="./images/navlogo.png" className="absolute w-96 mt-8" />
-          </div>
-          <div className=" w-1/2 min-h-[80vh] py-16 px-16  flex flex-col justify-center ">
-            <h1 className="text-3xl mb-3  ">PERKS OF CONNECTING</h1>
-            <p className="text-6xl mb-8">with Ozo Pay</p>
-            <div className="text-lg space-y-5">
-              {" "}
-              <li>Minimum investment is just $25</li>
-              <li>Earn upto 325% profit just through your investments</li>
-              <li>
-                Tec and Mac wallet withdrawal gates will be open on every
-                tuesday
-              </li>
-              <li>Earn upto 25% of networking bonus</li>
-              <li>Principle returns upto 50%</li>
-              <li>24X7 backend support available</li>
-              <li>A registered business in 3 countries</li>
-              <li>Our office can be visited with a proper appointment</li>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Center Div  */}
-      <div className="w-full flex justify-center mb-16 min-h-[100vh]  items-center relative ">
-        {/* <video
-          autoplay="true"
-          loop="true"
-          muted="true"
-          class="absolute z-0 w-auto 
-            min-w-full object-cover max-h-screen max-w-none"
-        >
-          <source src="./images/video/finalbgvideo1.mp4" />
-        </video> */}
-
-        <div className="max-w-6xl w-full mx-auto absolute  p-16 min-h-[50vh] my-24  grid grid-cols-4 gap-8 ">
-          <div className="min-w-[150px] min-h-[150px] hover:scale-105  transition duration-500 transform  flex flex-col space-y-4 justify-center text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 shadow-cyan-500 ">
-            <img src="./images/icons/interface.png" className="w-16" />
-
-            <p className="">Interface</p>
-          </div>
-
-          <div className=" min-h-[150px] min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center  text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-sky to-indigo-500 shadow-indigo-500">
-            <img src="./images/icons/exchange.png" className="w-16" />
-
-            <p className="">Exchange</p>
-          </div>
-
-          <div className=" min-h-[150px]  min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-violet-500 to-fuchsia-500 shadow-fuchsia-500 ">
-            <img src="./images/icons/secure.png" className="w-16" />
-
-            <p className="">Security</p>
-          </div>
-
-          <div className="min-h-[150px]  min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center  text-white font-semibold text-xl items-center shadow-2xl rounded-lg  bg-gradient-to-r from-purple-500 to-pink-500 shadow-purple-500 ">
-            <img src="./images/icons/profit.png" className="w-16" />
-            <p className="">Investment </p>
-          </div>
+          
+          </div> */}
         </div>
       </div>
 
@@ -766,81 +633,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="w-full font-poppins min-h-[100vh]">
-        <h2 className="text-2xl text-center mb-6">ROADMAP</h2>
-        <h1 className="text-4xl  text-center mb-6 font-semibold ">
-          Ozo Pay STRATEGY AND PROJECT PLAN
-        </h1>
-        <div className="w-full min-h-[80vh] px-32  overflow-scroll  overflow-x-auto ">
-         {/* 1 */}
-          <div className="flex  space-x-4 py-4 px-4 ">
-            
-            <div className="max-w-[450px] p-8 rounded-2xl shadow-lg   bg-purple-800 -700 -400">
-              <h1 className="font-semibold  text-xl mb-3">Manpower</h1>
-              <p className="">
-                CEO Benjamin B Turbin is on the hunt for talent. Hiring
-                potential members, reaching out the experts to discuss the
-                business idea and leads. Finally forming a learned team from the
-                best available options for the smooth flow of operations.
-              </p>
-            </div>
-            <div className="max-w-[450px] p-8 rounded-2xl shadow-lg   bg-rose-400">
-              <h1 className="font-semibold  text-xl mb-3">Upgrading Services</h1>
-              <p className="">
-              A lot of backend struggle finally gives way for AI software integration. Helping the website to improve and creating our own trading systems using the AI software to analyse and provide secure and risk-free trades.
-              </p>
-            </div>
-            <div className="max-w-[450px] p-8 rounded-2xl shadow-lg   bg-red-400">
-              <h1 className="font-semibold  text-xl mb-3">Global Services</h1>
-              <p className="">
-              A global platform seeking to setup multiple branches and offices to spread the business on a global scale. Reaching out to business ventures, experts and audiences for setting up services and encouraging people to gain financial strength.
-              </p>
-            </div>
-            <div className="max-w-[450px] p-8 rounded-2xl shadow-lg   bg-orange-400">
-              <h1 className="font-semibold  text-xl mb-3">
-The First Idea</h1>
-              <p className="">
-              Forming a business to setup services related to cryptocurrency. Providing quality inputs, completing the checklists and setting an online base for users to reach out for investments and financing options for a better-quality life.
-              </p>
-            </div>
-          </div>
-
-          {/* 2 */}
-          <div className="flex  space-x-4 py-4  px-4 " >
-            <div className="max-w-[450px] p-8 rounded-2xl shadow-lg   bg-yellow-600">
-              <h1 className="font-semibold  text-xl mb-3">Business Execution</h1>
-              <p className="">
-              The ideas, manpower and finances put together to execute a business like never before. Uploading the best software systems to generate fluent work systems. Protecting the integrity of the company against external issues.
-              </p>
-            </div>
-
-            <div className="max-w-[450px] p-8 rounded-2xl shadow-lg   bg-brown-400">
-              <h1 className="font-semibold  text-xl mb-3">A Website For Everyone</h1>
-              <p className="">
-              Acknowledging the changes and making improvements to help every user understand the website better. Making subtle changes to help users with easier options and reach global audience in their individual capacity.
-              </p>
-            </div>
-
-            <div className="max-w-[450px] p-8 rounded-2xl shadow-lg   bg-light-green-500 -400">
-              <h1 className="font-semibold  text-xl mb-3">A New Face</h1>
-              <p className="">
-              With different parameters in perfect synchronisation, we will look to strengthen the grip in the financial markets and be the complete business a user can access. Tecmactrade will be a new
-              </p>
-            </div>
-
-            <div className="max-w-[450px] p-8 rounded-2xl shadow-lg   bg-light-blue-500 -400">
-              <h1 className="font-semibold  text-xl mb-3">Manpower</h1>
-              <p className="">
-                CEO Benjamin B Turbin is on the hunt for talent. Hiring
-                potential members, reaching out the experts to discuss the
-                business idea and leads. Finally forming a learned team from the
-                best available options for the smooth flow of operations.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      {/* Document  */}
       <h1 className="text-5xl font-poppins font-bold text-center  mt-24 w-full">
         Document
       </h1>
@@ -866,6 +659,380 @@ The First Idea</h1>
         <div className="min-h-[150px]  min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center  text-white font-semibold text-xl items-center shadow-2xl rounded-lg  bg-gradient-to-r from-sky to-indigo-500 shadow-indigo-500">
           <img src="./images/icons/document.png" className="w-16" />
           <p className="">White Papers </p>
+        </div>
+      </div>
+
+      {/* Design 3  */}
+      <div className="w-full min-h-[100vh]    font-poppins relative flex  items-center  ">
+        <img
+          src="./images/storybg.jpg"
+          className="z-0 opacity-50  object-cover "
+        />
+
+        <div className=" absolute w-full flex px-16 bg-opacity-40  justify-around  ">
+          <h1 className="text-7xl font-semibold  max-w-[500px] pb-2 max-h-max flex items-end ">
+            the story of OZO begins with trust.
+          </h1>
+          <p className="text-xl max-w-[550px]   ">
+            trust as a virtue has consistently played an essential role in every
+            great human achievement. and consistently, its importance has been
+            overlooked. not just by individuals, but by entire societies. we
+            felt it was time someone gave it the spotlight it deserves.
+            especially for the ones who live by this virtue: the trustworthy.
+            <br />
+            <br />
+            so we thought of creating a system that rewards its members for
+            doing good and being trustworthy. this way, trust as a virtue
+            becomes something to aspire to, just the way it should be. then we
+            went one step ahead: we built it. we know we are on the right track
+            because here you are.
+            <br />
+            <br />
+            if you make it to OZO, congratulations and welcome. we have a lot of
+            things planned for you.
+          </p>
+        </div>
+      </div>
+
+      {/* Calculator  */}
+      <div className="w-full min-h-[100vh] font-poppins mb-24 relative  ">
+        {/* <img src="./images/bg.png" className="z-0  object-cover " /> */}
+        <video
+          autoplay="true"
+          loop="true"
+          muted="true"
+          class="absolute z-0 w-auto opacity-50
+            min-w-full object-cover max-h-[110vh] max-w-none"
+        >
+          <source src="./images/video/finalbgvideo1.mp4" />
+        </video>
+        <div className="absolute flex top-40 items-center w-full">
+          <div className="max-w-[550px] bg-neutral-900 -600 rounded-2xl  ml-48 py-12 px-10 ">
+            <h1 className="mb-6 text-2xl border-b-2 pb-6 text-center ">
+              Calculate Your Income
+            </h1>
+            <div className="grid grid-cols-2 gap-x-4 gap-y-4 mb-5">
+              <p className="border-2 border-gray-200 py-4 w-full bg-gray-700 rounded-2xl px-6">
+                Package Name
+              </p>
+              <p className="border-2 border-gray-200 py-4 w-full bg-gray-700 rounded-2xl px-6">
+                Daily Returns
+              </p>
+              <p className="border-2 border-gray-200 py-4 w-full bg-gray-700 rounded-2xl px-6">
+                Referral Income
+              </p>
+              <p className="border-2 border-gray-200 py-4 w-full bg-gray-700 rounded-2xl px-6">
+                Binary Income
+              </p>
+              <p className="border-2 border-gray-200 py-4 w-full bg-gray-700 rounded-2xl px-6">
+                Capping Limit
+              </p>
+              <p className="border-2 border-gray-200 py-4 w-full bg-gray-700 rounded-2xl px-6">
+                Principle Returns
+              </p>
+            </div>
+            <p className="border-2 border-gray-200 py-4 w-full bg-gray-700 rounded-2xl px-6 mb-6">
+              Earnings
+            </p>
+            <input
+              className="border-2 border-gray-200 py-4 w-full bg-gray-700 rounded-2xl px-6"
+              placeholder="Enter amount"
+            />
+          </div>
+          <div className="max-w-[550px]  border-r-4 pr-2 ml-16 flex items-center min-h-[40vh]">
+            <h1 className="mb-6 text-7xl text-right ">
+              get Income information with Ozo calculator.
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      {/* youtube videos oage  */}
+      <div className="font-poppins mb-24   w-full max-h-[110vh]">
+        <h1 className="text-6xl text-center mt-12">
+          Finance simplified,
+          <br />
+          in your language
+        </h1>
+
+        <div className="w-full mt-24 flex justify-center space-x-14 items-center">
+          <button className="text-white w-56 border-2  py-4 shadow-grey-700 shadow-2xl  hover:text-white transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 rounded-full  font-semibold text-lg tracking-wide">
+            Youtube
+          </button>
+          <button className="text-white w-56 border-2 py-4 shadow-grey-700 shadow-2xl  hover:text-white transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 rounded-full  font-semibold text-lg tracking-wide">
+            Groww Digest
+          </button>
+        </div>
+      </div>
+
+      <div className="font-poppins  flex justify-center w-full relative h-full max-h-[50vh] text-black">
+        <div className="max-w-[380px] max-h-[280px] ease-in-out z-10 duration-300 h-full hover:rotate-0 hover:z-50 hover:cursor-pointer transform transition delay-300 hover:-translate-y-36 absolute left-[280px] bottom-6  -rotate-6 px-6 py-8 w-full bg-white rounded-2xl shadow-xl">
+          <h2 className="mb-4 text-gray-600">Lorem ipsum</h2>
+          <p>
+            rem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+        </div>
+
+        <div className="max-w-[420px] absolute z-20 left-[500px] ease-in-out  duration-300 bottom-0 hover:z-50  hover:rotate-0 hover:cursor-pointer transform transition delay-300 hover:-translate-y-36  rotate-12 max-h-[250px] h-full  rounded-2xl bg-white  p-3">
+          <img src="./images/yt2.jpg" className="rounded-2xl" />
+        </div>
+        <div className="max-w-[420px] absolute z-30 bottom-12 hover:rotate-0  duration-300 ease-in-out hover:z-50 hover:cursor-pointer transform transition delay-300 hover:-translate-y-36 -rotate-3 right-[500px]  max-h-[250px] h-full rounded-2xl bg-white  p-3">
+          <img src="./images/yt1.jpg" className="rounded-2xl" />
+        </div>
+
+        <div className="max-w-[380px] rotate-6 hover:rotate-0 hover:z-50  duration-300 ease-in-out hover:cursor-pointer transform delay-300 hover:-translate-y-36 z-40 -bottom-12 absolute right-[320px]  px-6 py-8   w-full bg-white rounded-2xl shadow-xl">
+          <h2 className="mb-4 text-gray-600">Word of the day</h2>
+          <h2 className="mb-4 text-3xl">Additionally Survillence Measure</h2>
+
+          <p className="text-gray-500">
+            rem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+        </div>
+        <div className="w-full min-h-[200px] h-full mt-[350px] z-50 px-6 py-8  bg-black  shadow-xl">
+          <div>afsevsevse</div>
+        </div>
+      </div>
+
+      <div className="w-full max-h-[100px] h-full   px-6 py-8    shadow-xl">
+        <div></div>
+      </div>
+      {/* FAQ  */}
+
+      <div className="w-full my-28 ">
+        <div className="font-poppins mx-auto max-w-6xl space-y-16 ">
+          <h1 className="text-3xl text-center mb-16">FAQs</h1>
+
+          <div className="text-xl   ">
+            <p className="font-semibold mb-6">
+              how does CRED reward their users?
+            </p>
+            <p className="text-gray-500">
+              CRED partners with the best premier and luxury brands to bring you
+              an unmatched experience at the end of every credit card bill
+              payment cycle.
+            </p>
+          </div>
+          <div className="text-xl   ">
+            <p className="font-semibold mb-6">how to earn rewards on CRED?</p>
+            <p className="text-gray-500">
+              members can earn rewards in two different ways. CRED coins & gems.
+              CRED Coin Rewards: - when you pay your credit card bill on CRED,
+              for every rupee cleared on your bill you earn a CRED coin. - you
+              can then use earned CRED coins to claim exclusive rewards from
+              different brands. CRED Gem Rewards: - for every person that you
+              refer to CRED who makes a bill payment, you earn 10 gems.
+            </p>
+          </div>
+
+          <div className="text-xl   ">
+            <p className="font-semibold mb-6">
+              what do you get as a CRED Member?
+            </p>
+            <p className="text-gray-500">
+              as a CRED member, you instantly make your credit card payment
+              experience hassle-free by unlocking several perks only available
+              to CRED members. - seamless bill payment experience through modes
+              like upi, net banking and debit cards - timely credit card bill
+              payment reminders - automate your credit card bill payments -
+              expose hidden charges on your credit card with cred protect - get
+              real-time alerts on duplicate transactions on your credit card -
+              manage multiple credit cards on a single portal - keep a realtime
+              check on your credit score
+            </p>
+          </div>
+
+          <div className="text-xl   ">
+            <p className="font-semibold mb-6">
+              how does one become a member of CRED?
+            </p>
+            <p className="text-gray-500">
+              you can apply to be a member by signing up on CRED with your name
+              and valid mobile number(issued within India). CRED is India’s most
+              trustworthy and creditworthy community. This means we are
+              selective about the members we take. For membership an Experian
+              credit score of 750 or above is mandatory.
+            </p>
+          </div>
+
+          <div className="text-xl   ">
+            <p className="font-semibold mb-6">how to know your credit score?</p>
+            <p className="text-gray-500">
+              upon becoming a member, you can check and refresh your credit
+              score with a single click. CRED then proceeds to acquire your
+              updated credit score through a CIBIL score soft inquiry. on CRED,
+              you can access your credit score data anytime without any extra
+              charges. as a member, this helps you keep regular checks on your
+              credit score and re-evaluate your spending patterns to maintain a
+              healthy credit status. CRED offers Equifax credit score checker,
+              find your CRIF credit score for free, Experian credit score
+              checker for free.
+            </p>
+          </div>
+          <div className="text-xl   ">
+            <p className="font-semibold mb-6">banks supported on CRED</p>
+            <p className="text-gray-500">
+              CRED supports credit card bill payment for American Express,
+              Standard Chartered, Citibank, HSBC, HDFC, ICICI, SBI, AXIS, RBL,
+              PNB, and other top Indian banks. We support VISA, MasterCard,
+              American Express & RuPay cards.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className=" w-full flex min-h-[80vh] h-full relative justify-center items-center ">
+        <img src="./images/bg5.png " className="object-cover  " />
+      </div> */}
+      {/* <div className=" w-full flex min-h-[80vh] h-full relative justify-center items-center ">
+        <img src="./images/bg4.jpg " className="object-cover  " />
+      </div> */}
+      {/* What we do  */}
+      {/* <div className="w-full flex justify-center mb-16 items-center flex-col">
+        
+        <h1 className="text-4xl mt-16  mb-12 uppercase font-semibold font-poppins">
+          What WE do
+        </h1>
+        <h1 className="text-4xl text-center mb-12 uppercase font-semibold font-poppins">
+          THE VALUE OF THESE <span className="text-blue-500"> MODELS</span> IS
+          IN <br />
+          THE <span className="text-green-500"> MINIMIZATION</span> OF{" "}
+          <span className="text-rose-600">RISK</span>
+        </h1>
+        <div className="flex space-x-4 font-poppins text-2xl items-center max-w-[calc(100%-4rem)]">
+          <div className="max-w-[400px] bg-zinc-900  backdrop-blur-md  border-2 p-8 min-h-[350px]  rounded-2xl flex justify-center items-center flex-col  shadow-md">
+            <GiSpellBook fontSize={"56px"} className="mb-2" />
+            <h3 className="">Knowledge</h3>
+            <p className="text-lg">
+              Our team of experts has a deep understanding of the crypto market.
+              We monitor the market 24/7, looking for opportunities to make a
+              profit. We use our knowledge and experience to make informed
+              trading decisions.
+            </p>
+          </div>
+
+          <div className="max-w-[400px] bg-neutral-900 border-2 p-8 min-h-[355px] flex justify-center items-center flex-col rounded-2xl shadow-md">
+            <SiBitcoincash fontSize={"56px"} className="" />
+            <h3 className="">Earnings</h3>
+            <p className="text-lg">
+              We have a proven track record of success in the crypto market. We
+              have generated consistent profits for our clients. We are
+              confident that we can continue to generate profits for our clients
+              in the future.
+            </p>
+          </div>
+
+          <div className="max-w-[400px] bg-neutral-900  border-2 p-8  min-h-[350px]  flex justify-center items-center flex-col rounded-2xl shadow-md">
+            <TbAlertTriangleFilled fontSize={"56px"} className="mb-1" />
+            <h3 className="">Risk Reduction</h3>
+            <p className="text-lg">
+              We use statistical modeling and machine learning to identify and
+              execute trades. We believe that the value of these models is in
+              the minimization of risk. We use a variety of risk management
+              techniques to protect our capital.
+            </p>
+          </div>
+        </div>
+      </div> */}
+
+      <div className="w-full font-poppins min-h-[100vh]">
+        <h2 className="text-2xl text-center mb-6">ROADMAP</h2>
+        <h1 className="text-4xl  text-center mb-6 font-semibold ">
+          Ozo Pay STRATEGY AND PROJECT PLAN
+        </h1>
+        <div className="w-full min-h-[80vh] px-32  overflow-scroll  overflow-x-auto ">
+          {/* 1 */}
+          <div className="flex  space-x-4 py-4 px-4 ">
+            <div className="max-w-[450px] p-8 rounded-2xl shadow-lg   bg-purple-800 -700 -400">
+              <h1 className="font-semibold  text-xl mb-3">Manpower</h1>
+              <p className="">
+                CEO Benjamin B Turbin is on the hunt for talent. Hiring
+                potential members, reaching out the experts to discuss the
+                business idea and leads. Finally forming a learned team from the
+                best available options for the smooth flow of operations.
+              </p>
+            </div>
+            <div className="max-w-[450px] p-8 rounded-2xl shadow-lg   bg-rose-400">
+              <h1 className="font-semibold  text-xl mb-3">
+                Upgrading Services
+              </h1>
+              <p className="">
+                A lot of backend struggle finally gives way for AI software
+                integration. Helping the website to improve and creating our own
+                trading systems using the AI software to analyse and provide
+                secure and risk-free trades.
+              </p>
+            </div>
+            <div className="max-w-[450px] p-8 rounded-2xl shadow-lg   bg-red-400">
+              <h1 className="font-semibold  text-xl mb-3">Global Services</h1>
+              <p className="">
+                A global platform seeking to setup multiple branches and offices
+                to spread the business on a global scale. Reaching out to
+                business ventures, experts and audiences for setting up services
+                and encouraging people to gain financial strength.
+              </p>
+            </div>
+            <div className="max-w-[450px] p-8 rounded-2xl shadow-lg   bg-orange-400">
+              <h1 className="font-semibold  text-xl mb-3">The First Idea</h1>
+              <p className="">
+                Forming a business to setup services related to cryptocurrency.
+                Providing quality inputs, completing the checklists and setting
+                an online base for users to reach out for investments and
+                financing options for a better-quality life.
+              </p>
+            </div>
+          </div>
+
+          {/* 2 */}
+          <div className="flex  space-x-4 py-4  px-4 ">
+            <div className="max-w-[450px] p-8 rounded-2xl shadow-lg   bg-yellow-600">
+              <h1 className="font-semibold  text-xl mb-3">
+                Business Execution
+              </h1>
+              <p className="">
+                The ideas, manpower and finances put together to execute a
+                business like never before. Uploading the best software systems
+                to generate fluent work systems. Protecting the integrity of the
+                company against external issues.
+              </p>
+            </div>
+
+            <div className="max-w-[450px] p-8 rounded-2xl shadow-lg   bg-brown-400">
+              <h1 className="font-semibold  text-xl mb-3">
+                A Website For Everyone
+              </h1>
+              <p className="">
+                Acknowledging the changes and making improvements to help every
+                user understand the website better. Making subtle changes to
+                help users with easier options and reach global audience in
+                their individual capacity.
+              </p>
+            </div>
+
+            <div className="max-w-[450px] p-8 rounded-2xl shadow-lg   bg-light-green-500 -400">
+              <h1 className="font-semibold  text-xl mb-3">A New Face</h1>
+              <p className="">
+                With different parameters in perfect synchronisation, we will
+                look to strengthen the grip in the financial markets and be the
+                complete business a user can access. Tecmactrade will be a new
+              </p>
+            </div>
+
+            <div className="max-w-[450px] p-8 rounded-2xl shadow-lg   bg-light-blue-500 -400">
+              <h1 className="font-semibold  text-xl mb-3">Manpower</h1>
+              <p className="">
+                CEO Benjamin B Turbin is on the hunt for talent. Hiring
+                potential members, reaching out the experts to discuss the
+                business idea and leads. Finally forming a learned team from the
+                best available options for the smooth flow of operations.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -1043,122 +1210,6 @@ The First Idea</h1>
           </div>
         </div>
       </div> */}
-
-      {/* Design 3  */}
-      <div className="w-full min-h-[100vh]    font-poppins relative flex  items-center  ">
-        <img
-          src="./images/storybg.jpg"
-          className="z-0 opacity-50  object-cover "
-        />
-
-        <div className=" absolute w-full flex px-16 bg-opacity-40  justify-around  ">
-          <h1 className="text-7xl font-semibold  max-w-[500px] pb-2 max-h-max flex items-end ">
-            the story of OZO begins with trust.
-          </h1>
-          <p className="text-xl max-w-[550px]   ">
-            trust as a virtue has consistently played an essential role in every
-            great human achievement. and consistently, its importance has been
-            overlooked. not just by individuals, but by entire societies. we
-            felt it was time someone gave it the spotlight it deserves.
-            especially for the ones who live by this virtue: the trustworthy.
-            <br />
-            <br />
-            so we thought of creating a system that rewards its members for
-            doing good and being trustworthy. this way, trust as a virtue
-            becomes something to aspire to, just the way it should be. then we
-            went one step ahead: we built it. we know we are on the right track
-            because here you are.
-            <br />
-            <br />
-            if you make it to OZO, congratulations and welcome. we have a lot of
-            things planned for you.
-          </p>
-        </div>
-      </div>
-
-      {/* FAQ  */}
-
-      <div className="w-full my-28 ">
-        <div className="font-poppins mx-auto max-w-6xl space-y-16 ">
-          <h1 className="text-3xl text-center mb-16">FAQs</h1>
-
-          <div className="text-xl   ">
-            <p className="font-semibold mb-6">
-              how does CRED reward their users?
-            </p>
-            <p className="text-gray-500">
-              CRED partners with the best premier and luxury brands to bring you
-              an unmatched experience at the end of every credit card bill
-              payment cycle.
-            </p>
-          </div>
-          <div className="text-xl   ">
-            <p className="font-semibold mb-6">how to earn rewards on CRED?</p>
-            <p className="text-gray-500">
-              members can earn rewards in two different ways. CRED coins & gems.
-              CRED Coin Rewards: - when you pay your credit card bill on CRED,
-              for every rupee cleared on your bill you earn a CRED coin. - you
-              can then use earned CRED coins to claim exclusive rewards from
-              different brands. CRED Gem Rewards: - for every person that you
-              refer to CRED who makes a bill payment, you earn 10 gems.
-            </p>
-          </div>
-
-          <div className="text-xl   ">
-            <p className="font-semibold mb-6">
-              what do you get as a CRED Member?
-            </p>
-            <p className="text-gray-500">
-              as a CRED member, you instantly make your credit card payment
-              experience hassle-free by unlocking several perks only available
-              to CRED members. - seamless bill payment experience through modes
-              like upi, net banking and debit cards - timely credit card bill
-              payment reminders - automate your credit card bill payments -
-              expose hidden charges on your credit card with cred protect - get
-              real-time alerts on duplicate transactions on your credit card -
-              manage multiple credit cards on a single portal - keep a realtime
-              check on your credit score
-            </p>
-          </div>
-
-          <div className="text-xl   ">
-            <p className="font-semibold mb-6">
-              how does one become a member of CRED?
-            </p>
-            <p className="text-gray-500">
-              you can apply to be a member by signing up on CRED with your name
-              and valid mobile number(issued within India). CRED is India’s most
-              trustworthy and creditworthy community. This means we are
-              selective about the members we take. For membership an Experian
-              credit score of 750 or above is mandatory.
-            </p>
-          </div>
-
-          <div className="text-xl   ">
-            <p className="font-semibold mb-6">how to know your credit score?</p>
-            <p className="text-gray-500">
-              upon becoming a member, you can check and refresh your credit
-              score with a single click. CRED then proceeds to acquire your
-              updated credit score through a CIBIL score soft inquiry. on CRED,
-              you can access your credit score data anytime without any extra
-              charges. as a member, this helps you keep regular checks on your
-              credit score and re-evaluate your spending patterns to maintain a
-              healthy credit status. CRED offers Equifax credit score checker,
-              find your CRIF credit score for free, Experian credit score
-              checker for free.
-            </p>
-          </div>
-          <div className="text-xl   ">
-            <p className="font-semibold mb-6">banks supported on CRED</p>
-            <p className="text-gray-500">
-              CRED supports credit card bill payment for American Express,
-              Standard Chartered, Citibank, HSBC, HDFC, ICICI, SBI, AXIS, RBL,
-              PNB, and other top Indian banks. We support VISA, MasterCard,
-              American Express & RuPay cards.
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };

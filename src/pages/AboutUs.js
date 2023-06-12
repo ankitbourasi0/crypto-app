@@ -81,6 +81,41 @@ const AboutUs = () => {
         </div>
       </div>
 
+
+      <div className="w-full min-h-[100vh] font-poppins  relative  ">
+        <img
+          src="./images/holobg.jpg"
+          className="z-0  object-cover opacity-90 "
+        />
+        <div className="absolute  flex justify-around items-center top-40 min-h-[80vh] w-full">
+          <div className="w-1/2 flex justify-center items-center  py-12 px-10 ">
+            <img
+              src="./images/hologrambg.png"
+              className="w-4/5 relative opacity-90 animate-pulse "
+            />
+            <img src="./images/navlogo.png" className="absolute w-96 mt-8" />
+          </div>
+          <div className=" w-1/2 min-h-[80vh] py-16 px-16  flex flex-col justify-center ">
+            <h1 className="text-3xl mb-3  ">PERKS OF CONNECTING</h1>
+            <p className="text-6xl mb-8">with Ozo Pay</p>
+            <div className="text-lg space-y-5">
+              {" "}
+              <li>Minimum investment is just $25</li>
+              <li>Earn upto 325% profit just through your investments</li>
+              <li>
+                Tec and Mac wallet withdrawal gates will be open on every
+                tuesday
+              </li>
+              <li>Earn upto 25% of networking bonus</li>
+              <li>Principle returns upto 50%</li>
+              <li>24X7 backend support available</li>
+              <li>A registered business in 3 countries</li>
+              <li>Our office can be visited with a proper appointment</li>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Leadership  */}
       <div className=" py-20">
         <div className="xl:container mx-auto px-6 md:px-12">
