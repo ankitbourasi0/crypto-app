@@ -155,5 +155,5 @@ const Trade = () => {
     </div>
   );
 };
-
+    
 export default Trade;

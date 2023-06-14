@@ -173,7 +173,7 @@ const Home = () => {
       {/* Design 1  */}
       <div className="w-full min-h-[100vh] relative flex mb-16 items-center  ">
         <img
-          src="./images/ozopay.jpg"
+          src="./images/skydiving.jpg"
           className="z-0 opacity-80 object-cover  "
         />
 
