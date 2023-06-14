@@ -7,36 +7,174 @@ export default function Footer() {
         aria-label="Site Footer"
         class="bg-z  lg:grid lg:grid-cols-5"
       >
-        <div class="relative block h-32 lg:col-span-2 lg:h-full">
+        {/* <div class="relative block h-32 lg:col-span-2 lg:h-full">
           <img
             src={"./images/footer6.jpg"}
             alt=""
             className="absolute  inset-0 object-cover w-full h-full"
           />
           <h1 className=" text-white drop-shadow-lg font-serif text-7xl absolute top-1/2 left-1/2 -translate-x-1/2   -translate-y-1/2 text-center ">OZO</h1>
-          {/* <p className="absolute 
+          <p className="absolute 
            -bottom-8 left-7 text-white text-xs font-serif tracking-widest font-thin ">Technology & Games</p>
-         */}
+        
+        </div> */}
+
+       
+
+        <div class="px-4 py-16 sm:px-6 lg:col-span-5 lg:px-8 text-left">
+          
+          <div class="grid grid-cols-1 gap-8 sm:grid-cols-3">
+          <div className="text-left space-y-4 text-gray-500 px-6  text-lg ">
+          {/* Logo  */}
+          <img src="./images/navlogo.png" className="w-20"/>
+          <p className="mb-4 ">Experience lucrative investments with Ozo
+            Pay,  <br/> Invest your money wisely and enjoy impressive returns. Start your journey to financial growth today!
+          </p>
+
+          <ul className="space-y-4">
+            <li>support@ozopay.com</li>
+            <li>(+1) 452-764-9364</li>
+            <li>1353 Bingamon Branch Road Barrington, IL 6001</li>
+
+          </ul>
+
         </div>
 
-        <div class="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8 text-left">
-          <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
-            <div>
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 font-poppins  text-left">
+              <div>
+                <p class="font-medium text-2xl text-gray-400  ">
+                  Useful Links
+                </p>
+
+                <nav aria-label="Footer Navigation - Services" class="mt-6">
+                  <ul class="space-y-4 text-lg tracking-wider">
+                 
+
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 transition hover:opacity-75 "
+                      >
+                       Home 
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 transition hover:opacity-75 "
+                      >
+                    About Us 
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 transition hover:opacity-75 "
+                      >
+                        Feature
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 transition hover:opacity-75 "
+                      >
+                        Services
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 transition hover:opacity-75 "
+                      >
+                        Our Teams
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 transition hover:opacity-75 "
+                      >
+                        Gallery
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+              <div>
+                
+
+                <nav aria-label="Footer Navigation - Company" className="mt-14">
+                  <ul class="space-y-4 text-lg ">
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 transition hover:opacity-75 "
+                      >
+                       Our Process
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 transition hover:opacity-75 "
+                      >
+                        Our Services
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 transition hover:opacity-75 "
+                      >
+                        Our Careers
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 transition hover:opacity-75 "
+                      >
+                        FAQs
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 transition hover:opacity-75 "
+                      >
+                        Contact Us
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+
+
+            <div className="font-poppins">
               <p>
-                <span class="text-xs tracking-wide uppercase text-gray-500">
+                {/* <span class="text-xs tracking-wide uppercase text-gray-500">
                   Call us
-                </span>
+                </span> */}
 
                 <a
                   class="block text-2xl font-medium hover:opacity-75 text-white sm:text-3xl"
                 >
-                  0123456789
+                Subscribe Us
                 </a>
               </p>
 
-              <ul class="mt-8 space-y-1 text-sm text-gray-500">
-                <li>Monday to Friday: 10am - 5pm</li>
-                <li>Weekend: 10am - 3pm</li>
+              <ul class="mt-8 space-y-1 text-lg text-gray-500">
+             <p>He lay on his armour-like back,
+             <br/> and if he lifted 
+              his head his little be could</p>
               </ul>
 
               <ul class="flex gap-6 mt-8">
@@ -157,97 +295,12 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-
-            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2  text-left">
-              <div>
-                <p class="font-medium text-gray-400 ">
-                  Services
-                </p>
-
-                <nav aria-label="Footer Navigation - Services" class="mt-6">
-                  <ul class="space-y-4 text-sm">
-                 
-
-                    <li>
-                      <a
-                        href="#"
-                        class="text-gray-500 transition hover:opacity-75 "
-                      >
-                        Web Development
-                      </a>
-                    </li>
-
-                    <li>
-                      <a
-                        href="#"
-                        class="text-gray-500 transition hover:opacity-75 "
-                      >
-                        Mobile Development
-                      </a>
-                    </li>
-
-                    <li>
-                      <a
-                        href="#"
-                        class="text-gray-500 transition hover:opacity-75 "
-                      >
-                        Game Development
-                      </a>
-                    </li>
-
-                    <li>
-                      <a
-                        href="#"
-                        class="text-gray-500 transition hover:opacity-75 "
-                      >
-                        SEO Optimisation
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-
-              <div>
-                <p class="font-medium text-gray-400 ">Company</p>
-
-                <nav aria-label="Footer Navigation - Company" class="mt-6">
-                  <ul class="space-y-4 text-sm">
-                    <li>
-                      <a
-                        href="#"
-                        class="text-gray-500 transition hover:opacity-75 "
-                      >
-                        About
-                      </a>
-                    </li>
-
-                    <li>
-                      <a
-                        href="#"
-                        class="text-gray-500 transition hover:opacity-75 "
-                      >
-                        Meet the Team
-                      </a>
-                    </li>
-
-                    <li>
-                      <a
-                        href="#"
-                        class="text-gray-500 transition hover:opacity-75 "
-                      >
-                        Accounts Review
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
           </div>
 
-          <div class="pt-12 mt-12 border-t border-gray-100 ">
+          <div class="pt-12 mt-12 border-t border-gray-100 font-poppins ">
             <div class="sm:flex sm:items-center sm:justify-between">
               <nav aria-label="Footer Navigation - Support">
-                <ul class="flex flex-wrap gap-4 text-xs">
+                <ul class="flex flex-wrap gap-4 text-sm">
                   <li>
                     <a
                       href="#"
@@ -277,8 +330,8 @@ export default function Footer() {
                 </ul>
               </nav>
 
-              <p class="mt-8 text-xs text-gray-500  sm:mt-0">
-                &copy; 2023. Ajino Technology & Games. All rights reserved.
+              <p class="mt-8 text-sm text-gray-500  sm:mt-0">
+                &copy; All rights reserved by Ozo pay
               </p>
             </div>
           </div>

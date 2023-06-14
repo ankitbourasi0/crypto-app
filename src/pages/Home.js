@@ -5,9 +5,29 @@ import React from "react";
 // import {BiSolidBank} from "react-icons/bi";
 // import {BsFillCreditCard2BackFill} from "react-icons/bs";
 // import {FaMoneyBillTransfer} from "react-icons/fa";
-
+import { motion } from "framer-motion";
 import "swiper/css";
 
+
+// const container = {
+//   hidden: { opacity: 1, scale: 0 },
+//   visible: {
+//     opacity: 1,
+//     scale: 1,
+//     transition: {
+//       delayChildren: 0.3,
+//       staggerChildren: 0.2
+//     }
+//   }
+// };
+
+const item = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1
+  }
+};
 const Home = () => {
   return (
     <div className="w-full flex items-start justify-center  flex-col">
@@ -21,7 +41,7 @@ const Home = () => {
         <source src="./images/video/bganimation.mp4" />
       </video> */}
       {/* Main Page  */}
-      <div className="w-full flex min-h-[100vh] relative justify-center items-center ">
+      <div className="w-full flex min-h-[100vh] relative font-poppins justify-center items-center ">
         <video
           autoplay="true"
           loop="true"
@@ -45,12 +65,15 @@ const Home = () => {
               navigate the financial markets and make informed investment
               decisions. Join us today and unlock your earning potential.
             </p>
-            <div className="flex space-x-3">
+            <div className="flex space-x-0">
               {/* <button className="text-white my-2   bg-violet-700  shadow-white-700 shadow-md hover:bg-violet-800 hover:text-white  transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 border-2 rounded-full px-7 py-4 font-semibold text-lg tracking-wide">
                 Buy Tokens
               </button> */}
-              <button className="text-white w-56  shadow-white-700 shadow-md  hover:text-white transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 rounded-full  font-semibold text-lg tracking-wide">
-                <img src="./images/button.png" />
+              <button className="text-white w-56   shadow-white-700 shadow-md  hover:text-white transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 rounded-full  font-semibold text-lg tracking-wide">
+                <img src="./images/button.png" className="h-16" />
+              </button>
+              <button className="text-white w-56     shadow-white-700 shadow-md  hover:text-white transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 rounded-full  font-semibold text-lg tracking-wide">
+                <img src="./images/dashboard1.png" className="h-28" />
               </button>
             </div>
           </div>
@@ -66,8 +89,8 @@ const Home = () => {
       {/* What is OZo Trade  */}
       <div className="w-full flex h-full max-h-[100vh] relative justify-center items-center  ">
         <img
-          src="./images/homesection.jpeg"
-          className="z-0 opacity-40  max-h-[100vh] w-full object-cover "
+          src="./images/laptop1.jpg"
+          className="z-0 opacity-80  max-h-[100vh] w-full object-cover "
         />
         {/* <video
           autoplay="true"
@@ -80,7 +103,7 @@ const Home = () => {
         </video> */}
         <div className="flex justify-center absolute top-40 items-center  px-16">
           <div className="w-1/2 h-full  flex justify-center items-center">
-            <img src="./images/laptop.png" className="max-w-[550px]" />
+            {/* <img src="./images/laptop.png" className="" /> */}
           </div>
           <div className="w-1/2 text-left ">
             <h1 className="text-5xl   mb-12 font-semibold font-poppins">
@@ -120,6 +143,7 @@ const Home = () => {
           <source src="./images/video/finalbgvideo1.mp4" />
         </video> */}
 
+        
         <div className="max-w-6xl w-full mx-auto absolute  p-16 min-h-[50vh] my-24  grid grid-cols-4 gap-8 ">
           <div className="min-w-[150px] min-h-[150px] hover:scale-105  transition duration-500 transform  flex flex-col space-y-4 justify-center text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 shadow-cyan-500 ">
             <img src="./images/icons/interface.png" className="w-16" />
@@ -149,7 +173,7 @@ const Home = () => {
       {/* Design 1  */}
       <div className="w-full min-h-[100vh] relative flex mb-16 items-center  ">
         <img
-          src="./images/seriousmoney.jpg"
+          src="./images/ozopay.jpg"
           className="z-0 opacity-80 object-cover  "
         />
 
@@ -419,7 +443,7 @@ const Home = () => {
 
       {/* Design 2  */}
       <div className="w-full min-h-[100vh] relative flex font-poppins items-center  ">
-        <img src="./images/dog.jpg" className="z-0  opacity-60 object-cover " />
+        <img src="./images/dogbg.jpg" className="z-0  opacity-60 object-cover " />
 
         <div className=" absolute px-52 w-full  bg-opacity-40 py-[202px] ">
           <h1 className="text-8xl font-semibold mb-6">
@@ -459,7 +483,7 @@ const Home = () => {
           class="absolute z-0 w-auto opacity-50
             min-w-full object-cover max-h-screen max-w-none"
         >
-          <source src="./images/video/ozotokenvideo.mp4" />
+          <source src="./images/video/ozotokenvideo1.mp4" />
         </video>
         <div className="absolute w-full ml-44  flex justify-start items-center">
           <div className="max-w-2xl w-full text-left ">
@@ -665,8 +689,8 @@ const Home = () => {
       {/* Design 3  */}
       <div className="w-full min-h-[100vh]    font-poppins relative flex  items-center  ">
         <img
-          src="./images/storybg.jpg"
-          className="z-0 opacity-50  object-cover "
+          src="./images/story.png"
+          className="z-0 opacity-80  object-cover "
         />
 
         <div className=" absolute w-full flex px-16 bg-opacity-40  justify-around  ">
@@ -707,7 +731,7 @@ const Home = () => {
           <source src="./images/video/finalbgvideo1.mp4" />
         </video>
         <div className="absolute flex top-40 items-center w-full">
-          <div className="max-w-[550px] bg-neutral-900 -600 rounded-2xl  ml-48 py-12 px-10 ">
+          <div className="max-w-[550px] bg-neutral-900 rounded-2xl  ml-48 py-12 px-10 ">
             <h1 className="mb-6 text-2xl border-b-2 pb-6 text-center ">
               Calculate Your Income
             </h1>
@@ -760,7 +784,7 @@ const Home = () => {
             Youtube
           </button>
           <button className="text-white w-56 border-2 py-4 shadow-grey-700 shadow-2xl  hover:text-white transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 rounded-full  font-semibold text-lg tracking-wide">
-            Groww Digest
+          Blogs
           </button>
         </div>
       </div>
@@ -940,13 +964,13 @@ const Home = () => {
         </div>
       </div> */}
 
-      <div className="w-full font-poppins min-h-[100vh]">
+      {/* <div className="w-full font-poppins min-h-[100vh]">
         <h2 className="text-2xl text-center mb-6">ROADMAP</h2>
         <h1 className="text-4xl  text-center mb-6 font-semibold ">
           Ozo Pay STRATEGY AND PROJECT PLAN
         </h1>
         <div className="w-full min-h-[80vh] px-32  overflow-scroll  overflow-x-auto ">
-          {/* 1 */}
+       
           <div className="flex  space-x-4 py-4 px-4 ">
             <div className="max-w-[450px] p-8 rounded-2xl shadow-lg   bg-purple-800 -700 -400">
               <h1 className="font-semibold  text-xl mb-3">Manpower</h1>
@@ -988,7 +1012,7 @@ const Home = () => {
             </div>
           </div>
 
-          {/* 2 */}
+         
           <div className="flex  space-x-4 py-4  px-4 ">
             <div className="max-w-[450px] p-8 rounded-2xl shadow-lg   bg-yellow-600">
               <h1 className="font-semibold  text-xl mb-3">
@@ -1034,7 +1058,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Testimonals  */}
       {/* <div class="py-16 w-full flex justify-center items-center h-full mb-20 ">
