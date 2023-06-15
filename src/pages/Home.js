@@ -156,7 +156,6 @@ const Home = () => {
 
             <p className="">Exchange</p>
           </div>
-
           <div className=" min-h-[150px]  min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-violet-500 to-fuchsia-500 shadow-fuchsia-500 ">
             <img src="./images/icons/secure.png" className="w-16" />
 
