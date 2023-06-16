@@ -2,8 +2,143 @@ import React from "react";
 
 const Trade = () => {
   return (
-    <div className="w-full flex mb-8 ">
-      <div className="w-full max-w-6xl mx-auto my-20">
+    <div className="w-full font-poppins  mb-8 ">
+      <div className="w-full relative ">
+        <img src="./images/designbg1.jpg" />
+        <div className=" absolute top-56 left-56 flex justify-center items-center flex-col ">
+          <h1 className="text-7xl text-center  mb-6">
+            Cybersecurity that s always a <br />
+            step ahead
+          </h1>
+          <p className="text-xl text-center mb-6">
+            Feel truly safe online with AI-driven protection against hackers and
+            the <br />
+            latest viruses, malware, ransomware and spyware
+          </p>
+          <button className="px-6 py-4 rounded-2xl bg-purple-900 text-xl font-semibold">
+            Get Connect
+          </button>
+        </div>
+      </div>
+      <div className="w-full max-w-7xl mx-auto text-white flex justify-between space-x-10 items-center mt-44">
+        <div className="max-w-[350px] py-12 rounded-xl flex flex-col items-center justify-center text-center bg-neutral-900 px-6">
+          <img
+            src="./images/safety.png"
+            className="bg-green-500 p-4 w-24 rounded-full mb-6"
+          />
+          <h1 className="text-3xl mb-4 font-bold">Security Services</h1>
+          <p className="text-gray-500">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet
+          </p>
+        </div>
+        <div className="max-w-[350px] py-12 rounded-xl flex flex-col items-center justify-center text-center bg-neutral-900 px-6">
+          <img
+            src="./images/safety.png"
+            className="bg-green-500 p-4 w-24 rounded-full mb-6"
+          />
+          <h1 className="text-3xl mb-4 font-bold">Data Privacy</h1>
+          <p className="text-gray-500">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+        <div className="max-w-[350px] py-12 rounded-xl flex flex-col items-center justify-center text-center bg-neutral-900 px-6">
+          <img
+            src="./images/safety.png"
+            className="bg-green-500 p-4 w-24 rounded-full mb-6"
+          />
+          <h1 className="text-3xl mb-4 font-bold">Industry Certified</h1>
+          <p className="text-gray-500">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet
+          </p>
+        </div>
+      </div>
+
+      <div className="w-full mt-28 relative mb-24  min-h-[150vh] ">
+        {/* <img src="./images/security1.jpg" className="opacity-50 " /> */}
+
+<div className="w-full absolute top-44"><h1 className="text-5xl mb-6 font-semibold text-center ">Our Services</h1>
+      <p className="text-center max-w-[600px] mx-auto w-full text-xl mb-10 text-gray-500">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      </p></div>
+      <div className="w-full max-w-7xl absolute top-96 left-40 mx-auto text-white grid grid-cols-3 gap-10">
+        <div className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
+          <img
+            src="./images/safety.png"
+            className="bg-green-500 p-4 w-24 rounded-full mb-6"
+          />
+          <h1 className="text-3xl mb-4 font-bold">Threat Intelligence</h1>
+          <p className="text-gray-500">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit.
+          </p>
+        </div>
+        <div className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
+          <img
+            src="./images/safety.png"
+            className="bg-green-500 p-4 w-24 rounded-full mb-6"
+          />
+          <h1 className="text-3xl mb-4 font-bold">Security Assessment</h1>
+          <p className="text-gray-500">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. .
+          </p>
+        </div>
+        <div className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
+          <img
+            src="./images/safety.png"
+            className="bg-green-500 p-4 w-24 rounded-full mb-6"
+          />
+          <h1 className="text-3xl mb-4 font-bold">Compromise Assessment</h1>
+          <p className="text-gray-500">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit.
+          </p>
+        </div>
+        <div className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
+          <img
+            src="./images/safety.png"
+            className="bg-green-500 p-4 w-24 rounded-full mb-6"
+          />
+          <h1 className="text-3xl mb-4 font-bold">Incident Response</h1>
+          <p className="text-gray-500">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit.
+          </p>
+        </div>
+        <div className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
+          <img
+            src="./images/safety.png"
+            className="bg-green-500 p-4 w-24 rounded-full mb-6"
+          />
+          <h1 className="text-3xl mb-4 font-bold">Security Training</h1>
+          <p className="text-gray-500">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit.
+          </p>
+        </div>
+        <div className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
+          <img
+            src="./images/safety.png"
+            className="bg-green-500 p-4 w-24 rounded-full mb-6"
+          />
+          <h1 className="text-3xl mb-4 font-bold">Cyber Security Certification</h1>
+          <p className="text-gray-500">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit.
+          </p>
+        </div>
+      </div>
+      </div>
+
+      <div></div>
+      {/* <div className="w-full max-w-6xl mx-auto my-20">
         <h1 className="font-semibold font-poppins text-4xl my-6">
           TRADE <span className="text-cyan-500">STANDARDS</span> BY{" "}
           <span className="text-rose-500">OZOTRADE</span>
@@ -151,9 +286,9 @@ const Trade = () => {
           profit or a loss. One must therefore comprehend the fundamentals. A
           thorough understanding of how the forex market operates.
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };
-    
+
 export default Trade;

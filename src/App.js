@@ -15,6 +15,7 @@ import Footer from "./components/Footer";
 import AboutUs from "./pages/AboutUs";
 import Earning from "./pages/Earning";
 import Legal from "./pages/Legal";
+import Resources from "./pages/Resources";
 function App() {
   return (
     <div className="App bg-black text-white  min-h-screen    ">
@@ -28,6 +29,8 @@ function App() {
         <Route path="/trade" element={<Trade/>} />
         <Route path="/earning" element={<Earning/>} />
         <Route path="/legal" element={<Legal/>} />
+        <Route path="/resources" element={<Resources/>} />
+
 
         <Route path="/dashboard" element={<Sidebar/>} />
 
