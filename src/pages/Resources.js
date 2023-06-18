@@ -76,7 +76,7 @@ const Resources = () => {
        <h1 className="text-4xl">Countries</h1>
 
        </div>
-       <div className="px-16 py-24 max-w-[550px] overflow-scroll max-h-[550px]  space-y-8">
+       <div className="px-16 py-24 max-w-[550px] overflow-y-auto no-scrollbar  max-h-[550px]  space-y-8">
         <div className="w-full  bg-neutral-900 shadow-lg shadow-black flex text-xl items-center font-semibold rounded-xl border-2 border-purple-800 px-6 py-4 ">
           <img src="./images/countries/unitedstates.png" className="w-12" />
           <p className="pl-6 text-2xl">United States</p> 

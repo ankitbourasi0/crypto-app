@@ -2,9 +2,36 @@ import React from "react";
 
 const Earning = () => {
   return (
-    <div className="w-full">
+    <div className="w-full font-poppins">
       <div className="w-full text-center space-y-10 my-20 max-w-7xl mx-auto ">
-        <h1 className="font-semibold font-poppins  text-5xl">
+        <h1 className="text-6xl font-bold">Services</h1>
+        <p className="max-w-[700px] text-center w-full mx-auto">
+          Quis incididunt sunt occaecat irure officia magna Lorem ad ut ipsum.
+          commodo occaecat nostrud nisi proident sunt consectetur. Reprehenderit
+          laborum labore ullamco sint excepteur incididunt pariatur sint.
+        </p>
+        <div className="rounded-2xl  bg-neutral-800 p-8 flex items-center justify-between">
+          <div className="text-left flex justify-center  items-start space-y-3 flex-col">
+            <p className="text-purple-900 text-xl">Services</p>
+            <h2 className="text-3xl font-bold">
+              We Offering Best of
+              <br />
+              Variety of Security
+            </h2>
+          </div>
+          <div className="w-1/2 space-y-3 flex justify-center items-start flex-col ">
+            <p className="max-w-[200px] w-full border-t-2 border-purple-900"></p>
+            <p className="text-justify">
+              Irure officia quis id magna minim tempor incididunt ea proident
+              anim. Reprehenderit sint nulla sint pariatur incididunt ipsum duis
+              Lorem magna.
+            </p>
+            <button className="px-6 py-3 font-bold bg-purple-900 rounded-md">
+              Read more
+            </button>
+          </div>
+        </div>
+        {/* <h1 className="font-semibold font-poppins  text-5xl">
           INVESTMENT RETURNS
         </h1>
         <p className="font-poppins text-xl tracking-wider text-gray-400 text-justify">
@@ -27,245 +54,292 @@ const Earning = () => {
           any trade has various packages for you in Tecmactrade to earn a fixed
           daily return from investment. Check all the investment packages of
           Tecmactrade and buy them.
-        </p>
+        </p> */}
 
         <div className="w-full flex-col flex pt-16 justify-center  items-center mb-16">
-          <h1 className="font-semibold font-poppins  text-5xl">PACKAGES</h1>
-          <div className="max-w-[calc(100%-6rem)]  p-8 flex justify-between items-center w-full ">
-            {/*Micro */}
+          <h1 className="font-semibold font-poppins  text-5xl">
+            Business Plan
+          </h1>
+          <div className="max-w-[calc(100%-1rem)] space-x-6 py-8 flex justify-between items-center w-full ">
+            {/*Package 1*/}
             <div
               className={"w-full flex flex-col  justify-center items-center"}
             >
-              <div className="max-w-[350px] shadow-2xl hover:cursor-pointer ease-in-out delay-150 hover:scale-95  hover:translate-y-1  shadow-cyan-500 w-full transition duration-500 transform pb-5 bg-gradient-to-r from-cyan-500 to-blue-500  text-white border-4 flex-col rounded-2xl">
-                <h1
-                  className={
-                    "my-4 text-center pb-4 border-b-2 text-5xl font-bold "
-                  }
-                >
-                  MICRO
+              <div className="max-w-[350px] shadow-2xl hover:cursor-pointer ease-in-out delay-150 hover:scale-95  hover:translate-y-1  shadow-purple-700 w-full transition duration-500 transform pb-5 bg-gradient-to-tr  from-purple-600   text-white border-2 flex-col rounded-2xl">
+                <h1 className="my-3 text-center pb-4 border-b-2 text-3xl font-bold ">
+                  Package 1
                 </h1>
-                <h3 className={"my-4 text-center pb-4 text-3xl font-bold "}>
+                {/* <h3 className={"my-3 text-center pb-4 text-3xl font-bo3d "}>
                   $25 - $4999
-                </h3>
-                <div
-                  className={
-                    "w-full flex space-y-3 flex-col  items-center px-6"
-                  }
-                >
-                  <div
-                    className={
-                      "flex w-full text-lg font-bold justify-between items-center"
-                    }
-                  >
-                    <p>DAILY ROI</p>
-                    <p className={"font-semibold"}>1.60% - 1.90%</p>
+                </h3> */}
+                <div className="w-full flex space-y-3 flex-col  items-center px-6">
+                  <div className="flex w-full text-sm  justify-between items-center">
+                    <p>Minimum Deposit</p>
+                    <p className="">100$ - 3999$</p>
                   </div>
 
-                  <div
-                    className={
-                      "flex w-full text-lg font-bold justify-between items-center"
-                    }
-                  >
-                    <p>DURATION</p>
-                    <p className={"font-semibold"}>150 DAYS</p>
+                  <div className="flex w-full text-sm  justify-between items-center">
+                    <p>Binary</p>
+                    <p className="">10%</p>
                   </div>
-                  <div
-                    className={
-                      "flex w-full text-lg font-bold justify-between items-center"
-                    }
-                  >
-                    <p>RETURNS</p>
-                    <p className={"font-semibold"}>240% - 285%</p>
+                  <div className="flex w-full text-sm  justify-between items-center">
+                    <p>Package Duration</p>
+                    <p className="">200days</p>
                   </div>
-                  <div
-                    className={
-                      "flex w-full text-lg font-bold justify-between items-center"
-                    }
-                  >
-                    <p>REFERRAL</p>
-                    <p className={"font-semibold"}>9.00 %</p>
+                  <div className="flex w-full text-sm  justify-between items-center">
+                    <p>ROI</p>
+                    <p className="">1.2%</p>
                   </div>
-                  <div
-                    className={
-                      "flex w-full text-lg font-bold justify-between items-center"
-                    }
-                  >
-                    <p>BINARY</p>
-                    <p className={"font-semibold"}>10%</p>
+                  <div className="flex w-full text-sm  justify-between items-center">
+                    <p>Principle Returns</p>
+                    <p className="">100%</p>
                   </div>
-                  <div
-                    className={
-                      "flex w-full text-lg font-bold justify-between items-center"
-                    }
-                  >
-                    <p>CAPPING LIMIT</p>
-                    <p className={"font-semibold"}>$1500</p>
+                  <div className="flex w-full text-sm  justify-between items-center">
+                    <p>Capping Limit</p>
+                    <p className="">$600</p>
                   </div>
-                  <div
-                    className={
-                      "flex w-full text-lg font-bold justify-between items-center"
-                    }
-                  >
-                    <p>PRINCIPLE RETURNS</p>
-                    <p className={"font-semibold"}>25%</p>
+                  <div className="flex flex-col w-full text-sm  justify-center items-center">
+                    <p className="font-bold">Total Returns</p>
+                    <p className="">
+                      240% +100% Principle amount back
+                      <br />
+                    </p>
+                  </div>
+
+                  <div className="border-t-2 pt-2">
+                    <p>Referral bonus</p>
+
+                    <div className="flex w-full text-sm  justify-between items-center">
+                      <p>level 1</p>
+                      <p className="">5%</p>
+                    </div>
+                    <div className="flex w-full text-sm  justify-between items-center">
+                      <p>level 2</p>
+                      <p className="">3%</p>
+                    </div>
+                    <div className="flex w-full text-sm  justify-between items-center">
+                      <p>level 3</p>
+                      <p className="">1.5%</p>
+                    </div>
+                    <div className="flex flex-col w-full text-sm  justify-centeritems-center">
+                      <p className="font-bold">level 4 -7</p>
+                      <p className="">
+                        5% ozo token to be created 2 to ozo's token wallet
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/*NANO */}
-            <div className={"w-full flex flex-col justify-center items-center"}>
-              <div className="max-w-[350px] shadow-2xl  ease-in-out delay-150 hover:scale-95  hover:translate-y-1  shadow-purple-500  hover:cursor-pointer  transition duration-500 transform w-full pb-5 bg-gradient-to-r  from-purple-500 to-pink-500 text-white border-4 flex-col rounded-2xl">
-                <h1
-                  className={
-                    "my-4 text-center pb-4 border-b-2 text-5xl font-bold "
-                  }
-                >
-                  NANO
+            {/*Package 2*/}
+
+            <div
+              className={"w-full flex flex-col  justify-center items-center"}
+            >
+              <div className="max-w-[350px] shadow-2xl hover:cursor-pointer ease-in-out delay-150 hover:scale-95  hover:translate-y-1  shadow-purple-700 w-full transition duration-500 transform pb-5 bg-gradient-to-tr  from-purple-600   text-white border-2 flex-col rounded-2xl">
+                <h1 className="my-3 text-center pb-4 border-b-2 text-3xl font-bold ">
+                  Package 2
                 </h1>
-                <h3 className={"my-4 text-center pb-4 text-3xl font-bold "}>
-                  $5000 - $39999
-                </h3>
-                <div
-                  className={
-                    "w-full flex space-y-3 flex-col  items-center px-6"
-                  }
-                >
-                  <div
-                    className={
-                      "flex w-full text-lg font-bold justify-between items-center"
-                    }
-                  >
-                    <p>DAILY ROI</p>
-                    <p className={"font-semibold"}>1.90% - 2.20%</p>
+                {/* <h3 className={"my-3 text-center pb-4 text-3xl font-bo3d "}>
+                  $25 - $4999
+                </h3> */}
+                <div className="w-full flex space-y-3 flex-col  items-center px-6">
+                  <div className="flex w-full text-sm  justify-between items-center">
+                    <p>Minimum Deposit</p>
+                    <p className="">4000$-14999$</p>
                   </div>
 
-                  <div
-                    className={
-                      "flex w-full text-lg font-bold justify-between items-center"
-                    }
-                  >
-                    <p>DURATION</p>
-                    <p className={"font-semibold"}>140 DAYS</p>
+                  <div className="flex w-full text-sm  justify-between items-center">
+                    <p>Binary</p>
+                    <p className="">10%</p>
                   </div>
-                  <div
-                    className={
-                      "flex w-full text-lg font-bold justify-between items-center"
-                    }
-                  >
-                    <p>RETURNS</p>
-                    <p className={"font-semibold"}>266% - 308%</p>
+                  <div className="flex w-full text-sm  justify-between items-center">
+                    <p>Package Duration</p>
+                    <p className="">180days</p>
                   </div>
-                  <div
-                    className={
-                      "flex w-full text-lg font-bold justify-between items-center"
-                    }
-                  >
-                    <p>REFERRAL</p>
-                    <p className={"font-semibold"}>12.00 %</p>
+                  <div className="flex w-full text-sm  justify-between items-center">
+                    <p>ROI</p>
+                    <p className="">1.4%</p>
                   </div>
-                  <div
-                    className={
-                      "flex w-full text-lg font-bold justify-between items-center"
-                    }
-                  >
-                    <p>BINARY</p>
-                    <p className={"font-semibold"}>10%</p>
+                  <div className="flex w-full text-sm  justify-between items-center">
+                    <p>Principle Returns</p>
+                    <p className="">100%</p>
                   </div>
-                  <div
-                    className={
-                      "flex w-full text-lg font-bold justify-between items-center"
-                    }
-                  >
-                    <p>CAPPING LIMIT</p>
-                    <p className={"font-semibold"}>$4000</p>
+                  <div className="flex w-full text-sm  justify-between items-center">
+                    <p>Capping Limit</p>
+                    <p className=""> 2100$</p>
                   </div>
-                  <div
-                    className={
-                      "flex w-full text-lg font-bold justify-between items-center"
-                    }
-                  >
-                    <p>PRINCIPLE RETURNS</p>
-                    <p className={"font-semibold"}>35%</p>
+                  <div className="flex flex-col w-full text-sm  justify-center items-center">
+                    <p className="font-bold">Total Returns</p>
+                    <p className="">252% +100% Principle amount back</p>
+                  </div>
+
+                  <div className="border-t-2 pt-2">
+                    <p>Referral bonus</p>
+
+                    <div className="flex w-full text-sm  justify-between items-center">
+                      <p>level 1</p>
+                      <p className="">1- 6%</p>
+                    </div>
+                    <div className="flex w-full text-sm  justify-between items-center">
+                      <p>level 2</p>
+                      <p className="">2- 4%</p>
+                    </div>
+                    <div className="flex w-full text-sm  justify-between items-center">
+                      <p>level 3</p>
+                      <p className="">3- 2%</p>
+                    </div>
+                    <div className="flex flex-col w-full text-sm  justify-centeritems-center">
+                      <p className="font-bold">level 4 -7</p>
+                      <p className="">
+                        7- 5% ozo token to be created 2 to ozo's token wallet
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/*PICO*/}
-            <div className={"w-full flex flex-col justify-center items-center"}>
-              <div className="max-w-[350px] shadow-2xl ease-in-out delay-150 hover:scale-95  hover:translate-y-1  shadow-cyan-500     hover:cursor-pointer transition duration-500 transform w-full bg-gradient-to-r from-sky to-indigo-500 pb-5  text-white border-4 flex-col rounded-2xl">
-                <h1
-                  className={
-                    "my-4 text-center pb-4 border-b-2 text-5xl font-bold "
-                  }
-                >
-                  PICO
+            {/*Package 3*/}
+
+            <div
+              className={"w-full flex flex-col  justify-center items-center"}
+            >
+              <div className="max-w-[350px] shadow-2xl hover:cursor-pointer ease-in-out delay-150 hover:scale-95  hover:translate-y-1  shadow-purple-700 w-full transition duration-500 transform pb-5 bg-gradient-to-tr  from-purple-600   text-white border-2 flex-col rounded-2xl">
+                <h1 className="my-3 text-center pb-4 border-b-2 text-3xl font-bold ">
+                  Package 3
                 </h1>
-                <h3 className={"my-4 pb-4 text-center text-3xl font-bold "}>
-                  $40000 - $100000
-                </h3>
-                <div
-                  className={
-                    "w-full flex space-y-3 flex-col  items-center px-6"
-                  }
-                >
-                  <div
-                    className={
-                      "flex w-full text-lg font-bold justify-between items-center"
-                    }
-                  >
-                    <p>DAILY ROI</p>
-                    <p className={"font-semibold"}>2.20% - 2.50%</p>
+                {/* <h3 className={"my-3 text-center pb-4 text-3xl font-bo3d "}>
+                  $25 - $4999
+                </h3> */}
+                <div className="w-full flex space-y-3 flex-col  items-center px-6">
+                  <div className="flex w-full text-sm  justify-between items-center">
+                    <p>Minimum Deposit</p>
+                    <p className="">15000$-34999$</p>
                   </div>
 
-                  <div
-                    className={
-                      "flex w-full text-lg font-bold justify-between items-center"
-                    }
-                  >
-                    <p>DURATION</p>
-                    <p className={"font-semibold"}>130 DAYS</p>
+                  <div className="flex w-full text-sm  justify-between items-center">
+                    <p>Binary</p>
+                    <p className="">10%</p>
                   </div>
-                  <div
-                    className={
-                      "flex w-full text-lg font-bold justify-between items-center"
-                    }
-                  >
-                    <p>RETURNS</p>
-                    <p className={"font-semibold"}>286% - 325%</p>
+                  <div className="flex w-full text-sm  justify-between items-center">
+                    <p>Package Duration</p>
+                    <p className="">160days</p>
                   </div>
-                  <div
-                    className={
-                      "flex w-full text-lg font-bold justify-between items-center"
-                    }
-                  >
-                    <p>REFERRAL</p>
-                    <p className={"font-semibold"}>15.00 %</p>
+                  <div className="flex w-full text-sm  justify-between items-center">
+                    <p>ROI</p>
+                    <p className="">1.6%</p>
                   </div>
-                  <div
-                    className={
-                      "flex w-full text-lg font-bold justify-between items-center"
-                    }
-                  >
-                    <p>BINARY</p>
-                    <p className={"font-semibold"}>10.00 %</p>
+                  <div className="flex w-full text-sm  justify-between items-center">
+                    <p>Principle Returns</p>
+                    <p className="">100%</p>
                   </div>
-                  <div
-                    className={
-                      "flex w-full text-lg font-bold justify-between items-center"
-                    }
-                  >
-                    <p>CAPPING LIMIT</p>
-                    <p className={"font-semibold"}>$10000</p>
+                  <div className="flex w-full text-sm  justify-between items-center">
+                    <p>Capping Limit</p>
+                    <p className="">$6000</p>
                   </div>
-                  <div
-                    className={
-                      "flex w-full text-lg font-bold justify-between items-center"
-                    }
-                  >
-                    <p>PRINCIPLE RETURNS</p>
-                    <p className={"font-semibold"}>50%</p>
+                  <div className="flex flex-col w-full text-sm  justify-center items-center">
+                    <p className="font-bold">Total Returns</p>
+                    <p className="">
+                      256% +100% Principle amount back
+                      <br />
+                    </p>
+                  </div>
+
+                  <div className="border-t-2 pt-2">
+                    <p>Referral bonus</p>
+
+                    <div className="flex w-full text-sm  justify-between items-center">
+                      <p>level 1</p>
+                      <p className="">1- 7%</p>
+                    </div>
+                    <div className="flex w-full text-sm  justify-between items-center">
+                      <p>level 2</p>
+                      <p className="">2- 5%</p>
+                    </div>
+                    <div className="flex w-full text-sm  justify-between items-center">
+                      <p>level 3</p>
+                      <p className="">3- 3%</p>
+                    </div>
+                    <div className="flex flex-col w-full text-sm  justify-centeritems-center">
+                      <p className="font-bold">level 4 -7</p>
+                      <p className="">
+                        7- 5% ozo token to be created 2 to ozo's token wallet
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/*Package 4*/}
+
+            <div
+              className={"w-full flex flex-col  justify-center items-center"}
+            >
+              <div className="max-w-[350px] shadow-2xl hover:cursor-pointer ease-in-out delay-150 hover:scale-95  hover:translate-y-1  shadow-purple-700 w-full transition duration-500 transform pb-5 bg-gradient-to-tr  from-purple-600   text-white border-2 flex-col rounded-2xl">
+                <h1 className="my-3 text-center pb-4 border-b-2 text-3xl font-bold ">
+                  Package 4
+                </h1>
+                {/* <h3 className={"my-3 text-center pb-4 text-3xl font-bo3d "}>
+                  $25 - $4999
+                </h3> */}
+                <div className="w-full flex space-y-3 flex-col  items-center px-6">
+                  <div className="flex w-full text-sm  justify-between items-center">
+                    <p>Minimum Deposit</p>
+                    <p className="">35000$-100000$</p>
+                  </div>
+
+                  <div className="flex w-full text-sm  justify-between items-center">
+                    <p>Binary</p>
+                    <p className="">10%</p>
+                  </div>
+                  <div className="flex w-full text-sm  justify-between items-center">
+                    <p>Package Duration</p>
+                    <p className="">140days</p>
+                  </div>
+                  <div className="flex w-full text-sm  justify-between items-center">
+                    <p>ROI</p>
+                    <p className="">1.8%</p>
+                  </div>
+                  <div className="flex w-full text-sm  justify-between items-center">
+                    <p>Principle Returns</p>
+                    <p className="">100%</p>
+                  </div>
+                  <div className="flex w-full text-sm  justify-between items-center">
+                    <p>Capping Limit</p>
+                    <p className="">$15000</p>
+                  </div>
+                  <div className="flex flex-col w-full text-sm  justify-center items-center">
+                    <p className="font-bold">Total Returns</p>
+                    <p className="">
+                      252% +100% Principle amount back
+                      <br />
+                    </p>
+                  </div>
+
+                  <div className="border-t-2 pt-2">
+                    <p>Referral bonus</p>
+
+                    <div className="flex w-full text-sm  justify-between items-center">
+                      <p>level 1</p>
+                      <p className="">1- 8%</p>
+                    </div>
+                    <div className="flex w-full text-sm  justify-between items-center">
+                      <p>level 2</p>
+                      <p className="">2- 6%</p>
+                    </div>
+                    <div className="flex w-full text-sm  justify-between items-center">
+                      <p>level 3</p>
+                      <p className="">3- 4%</p>
+                    </div>
+                    <div className="flex flex-col w-full text-sm  justify-centeritems-center">
+                      <p className="font-bold">level 4-7</p>
+                      <p className="">
+                        7-5% ozo token to be created 2 to ozo's token wallet
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -273,7 +347,93 @@ const Earning = () => {
           </div>
         </div>
       </div>
-      <div className="border-t-2 mt-24 pt-24 w-full">
+
+      <div className="w-full mt-24 relative">
+        <img
+          src="./images/designbg2.jpg"
+          className="w-full max-h-[60vh] opacity-90"
+        />
+
+        <div className="flex absolute max-w-5xl w-full top-44 left-64 justify-between items-center">
+          <div className="">
+            <h2 className="text-3xl font-bold">
+              Contact us for deeply
+              <br />
+              information and services
+              <br />
+              customize.
+            </h2>
+          </div>
+
+          <div>
+            <button className="px-6 py-3 text-2xl font-bold bg-purple-900 rounded-md">
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div className="w-full flex min-h-[90vh] px-10 space-x-6 justify-between items-center">
+        <div className="w-1/2 p-8 grid grid-cols-2 gap-4">
+          <div className="max-w-[350px] w-full p-4 hover:scale-105 transition-all transform delay-150 duration-200 text-center space-x-2 hover:border-2 rounded-xl flex flex-col justify-center items-center   ">
+            <img src="./images/icons/secure.png" className="w-12" />
+            <h3 className="text-xl">Flexible Services</h3>
+            <p className="text-sm  text-gray-400">
+              Anim enim adipisicing nulla eiusmod tempor laboris officia amet
+              officia duis commodo.
+            </p>
+          </div>
+
+          <div className="max-w-[350px] w-full p-4 hover:scale-105 transition-all transform delay-150 duration-200 text-center space-x-2 hover:border-2 rounded-xl flex flex-col justify-center items-center   ">
+            <img src="./images/icons/secure.png" className="w-12" />
+            <h3 className="text-xl">24/7 Maintainance</h3>
+            <p className="text-sm  text-gray-400">
+              Anim enim adipisicing nulla eiusmod tempor laboris officia amet
+              officia duis commodo.
+            </p>
+          </div>
+          <div className="max-w-[350px] w-full p-4 hover:scale-105 transition-all transform delay-150 duration-200 text-center space-x-2 hover:border-2 rounded-xl flex flex-col justify-center items-center   ">
+            <img src="./images/icons/secure.png" className="w-12" />
+            <h3 className="text-xl">Expertize Services</h3>
+            <p className="text-sm  text-gray-400">
+              Anim enim adipisicing nulla eiusmod tempor laboris officia amet
+              officia duis commodo.
+            </p>
+          </div>
+          <div className="max-w-[350px] w-full p-4 hover:scale-105 transition-all transform delay-150 duration-200 text-center space-x-2 hover:border-2 rounded-xl flex flex-col justify-center items-center   ">
+            <img src="./images/icons/secure.png" className="w-12" />
+            <h3 className="text-xl">World highrated </h3>
+            <p className="text-sm  text-gray-400">
+              Anim enim adipisicing nulla eiusmod tempor laboris officia amet
+              officia duis commodo.
+            </p>
+          </div>
+        </div>
+        <div className="space-y-3 w-1/2 px-4">
+          <h2 className="text-xl text-purple-900">Why choose us </h2>
+          <h1 className="text-3xl font-bold ">
+            Enjoy Our Vecure Special Featured
+          </h1>
+          <p className="text-sm text-gray-400"> 
+            Elit fugiat quis nostrud duis eu enim. Qui excepteur dolor cillum
+            esse deserunt nisi cillum minim cillum. Nisi incididunt ipsum do
+            velit sit voluptate cillum aliqua. Laboris aliquip veniam commodo
+            aliquip qui nostrud. 
+          </p>
+          <ul className="text-base list-disc">
+            <li> Occaecat sint ullamco irurelaborum magna</li>
+            <li> nostrud dolor quis nulla </li>
+            <li> reprehenderit deserunt duis deserunt ipsum.</li>
+            <li> reprehenderit deserunt duis deserunt ipsum.</li>
+
+          </ul>
+          <button className="px-6 py-3 text-xl font-bold bg-purple-900 rounded-md">
+              Contact Us
+            </button>
+        </div>
+      </div>
+
+      {/* <div className="border-t-2 mt-24 pt-24 w-full">
         <div className="w-full text-center space-y-10 my-20 max-w-7xl mx-auto ">
           <h1 className="font-semibold font-poppins  text-5xl">
             AFFILIATE NETWORK
@@ -478,7 +638,7 @@ const Earning = () => {
             automates the payout of these referral rewards.
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

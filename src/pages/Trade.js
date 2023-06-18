@@ -20,6 +20,7 @@ const Trade = () => {
           </button>
         </div>
       </div>
+
       <div className="w-full max-w-7xl mx-auto text-white flex justify-between space-x-10 items-center mt-44">
         <div className="max-w-[350px] py-12 rounded-xl flex flex-col items-center justify-center text-center bg-neutral-900 px-6">
           <img
@@ -59,82 +60,129 @@ const Trade = () => {
         </div>
       </div>
 
-      <div className="w-full mt-28 relative mb-24  min-h-[150vh] ">
-        {/* <img src="./images/security1.jpg" className="opacity-50 " /> */}
+      <div className="w-full max-w-6xl mx-auto mt-28 mb-16 flex items-center justify-between min-h-[90vh] ">
+        <div className="text-5xl max-w-[250px] w-full space-y-6">
+          <div>
+            <h1 className="mb-3">3,452 +</h1>
+            <p className="text-xl text-purple-900">Cybersecurity Projects</p>
+          </div>
 
-<div className="w-full absolute top-44"><h1 className="text-5xl mb-6 font-semibold text-center ">Our Services</h1>
-      <p className="text-center max-w-[600px] mx-auto w-full text-xl mb-10 text-gray-500">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-      </p></div>
-      <div className="w-full max-w-7xl absolute top-96 left-40 mx-auto text-white grid grid-cols-3 gap-10">
-        <div className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
-          <img
-            src="./images/safety.png"
-            className="bg-green-500 p-4 w-24 rounded-full mb-6"
-          />
-          <h1 className="text-3xl mb-4 font-bold">Threat Intelligence</h1>
-          <p className="text-gray-500">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit.
-          </p>
+          <div>
+            <h1 className="mb-3">100%</h1>
+            <p className="text-xl text-purple-900">Service Guarantee</p>
+          </div>
+          <div>
+            <h1 className="mb-3">1,458 +</h1>
+            <p className="text-xl text-purple-900">Clients Protection</p>
+          </div>
+          <div>
+            <h1 className="mb-3">85+</h1>
+            <p className="text-xl text-purple-900">Team Experts</p>
+          </div>
         </div>
-        <div className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
-          <img
-            src="./images/safety.png"
-            className="bg-green-500 p-4 w-24 rounded-full mb-6"
-          />
-          <h1 className="text-3xl mb-4 font-bold">Security Assessment</h1>
-          <p className="text-gray-500">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. .
-          </p>
-        </div>
-        <div className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
-          <img
-            src="./images/safety.png"
-            className="bg-green-500 p-4 w-24 rounded-full mb-6"
-          />
-          <h1 className="text-3xl mb-4 font-bold">Compromise Assessment</h1>
-          <p className="text-gray-500">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit.
-          </p>
-        </div>
-        <div className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
-          <img
-            src="./images/safety.png"
-            className="bg-green-500 p-4 w-24 rounded-full mb-6"
-          />
-          <h1 className="text-3xl mb-4 font-bold">Incident Response</h1>
-          <p className="text-gray-500">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit.
-          </p>
-        </div>
-        <div className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
-          <img
-            src="./images/safety.png"
-            className="bg-green-500 p-4 w-24 rounded-full mb-6"
-          />
-          <h1 className="text-3xl mb-4 font-bold">Security Training</h1>
-          <p className="text-gray-500">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit.
-          </p>
-        </div>
-        <div className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
-          <img
-            src="./images/safety.png"
-            className="bg-green-500 p-4 w-24 rounded-full mb-6"
-          />
-          <h1 className="text-3xl mb-4 font-bold">Cyber Security Certification</h1>
-          <p className="text-gray-500">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit.
-          </p>
+
+        <div className="max-w-[900px] pl-10 w-full min-h-[70vh] relative h-full ">
+          <div className="max-w-[500px] min-h-[70vh] z-0  bg-gray-400 opacity-30 rounded-2xl  w-full "></div>
+
+          <div className=" z-10 absolute top-40 left-72">
+            <h1 className="text-4xl tracking-wider mb-4 ">
+              The Perfect Solution For
+              <br />
+              All The Protection
+              <br />
+              Question
+            </h1>
+            <p className="max-w-[450px] tracking-wider text-sm w-full">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
         </div>
       </div>
+
+      <div className="w-full  relative mb-24  min-h-[150vh] ">
+        {/* <img src="./images/security1.jpg" className="opacity-50 " /> */}
+
+        <div className="w-full absolute top-44">
+          <h1 className="text-5xl mb-6 font-semibold text-center ">
+            Our Services
+          </h1>
+          <p className="text-center max-w-[600px] mx-auto w-full text-xl mb-10 text-gray-500">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div className="w-full max-w-7xl absolute top-96 left-40 mx-auto text-white grid grid-cols-3 gap-10">
+          <div className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
+            <img
+              src="./images/safety.png"
+              className="bg-green-500 p-4 w-24 rounded-full mb-6"
+            />
+            <h1 className="text-3xl mb-4 font-bold">Threat Intelligence</h1>
+            <p className="text-gray-500">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+          <div className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
+            <img
+              src="./images/safety.png"
+              className="bg-green-500 p-4 w-24 rounded-full mb-6"
+            />
+            <h1 className="text-3xl mb-4 font-bold">Security Assessment</h1>
+            <p className="text-gray-500">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit. .
+            </p>
+          </div>
+          <div className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
+            <img
+              src="./images/safety.png"
+              className="bg-green-500 p-4 w-24 rounded-full mb-6"
+            />
+            <h1 className="text-3xl mb-4 font-bold">Compromise Assessment</h1>
+            <p className="text-gray-500">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+          <div className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
+            <img
+              src="./images/safety.png"
+              className="bg-green-500 p-4 w-24 rounded-full mb-6"
+            />
+            <h1 className="text-3xl mb-4 font-bold">Incident Response</h1>
+            <p className="text-gray-500">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+          <div className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
+            <img
+              src="./images/safety.png"
+              className="bg-green-500 p-4 w-24 rounded-full mb-6"
+            />
+            <h1 className="text-3xl mb-4 font-bold">Security Training</h1>
+            <p className="text-gray-500">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+          <div className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
+            <img
+              src="./images/safety.png"
+              className="bg-green-500 p-4 w-24 rounded-full mb-6"
+            />
+            <h1 className="text-3xl mb-4 font-bold">
+              Cyber Security Certification
+            </h1>
+            <p className="text-gray-500">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+        </div>
       </div>
 
       <div></div>
