@@ -1,13 +1,7 @@
-import React from "react";
-// import { TbAlertTriangleFilled } from "react-icons/tb";
-// import { GiSpellBook } from "react-icons/gi";
-// import { SiBitcoincash } from "react-icons/si";
-// import {BiSolidBank} from "react-icons/bi";
-// import {BsFillCreditCard2BackFill} from "react-icons/bs";
-// import {FaMoneyBillTransfer} from "react-icons/fa";
-import { motion } from "framer-motion";
+import React, { useEffect } from "react";
+import { motion as m, useScroll, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import "swiper/css";
-
 
 // const container = {
 //   hidden: { opacity: 1, scale: 0 },
@@ -22,13 +16,39 @@ import "swiper/css";
 // };
 
 const item = {
-  hidden: { y: 20, opacity: 0 },
+  hidden: { y: "10vh", opacity: 0 },
   visible: {
     y: 0,
-    opacity: 1
-  }
+    opacity: 1,
+  },
+};
+
+const Interfacecontainer = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.2,
+    },
+  },
+};
+const squareVariants = {
+  visible: { opacity: 1, scale: 2, transition: { duration: 1 } },
+  hidden: { opacity: 0, scale: 0 },
 };
 const Home = () => {
+  const { scrollYProgress } = useScroll();
+
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
   return (
     <div className="w-full flex items-start justify-center  flex-col">
       {/* <video
@@ -57,15 +77,42 @@ const Home = () => {
             {/* <h1 className="text-5xl mt-10  mb-12 font-poppins ">
               Step into a World of <span className="font-extrabold font-poppins text-6xl  text-teal-300 -600 -700 -400 ">Financial Freedom with Ozo Trade.</span>
             </h1> */}
-            <img src="./images/text2.png" className="mb-8 " />
-            <p className="font-poppins text-justify mb-6 ">
+            <m.div
+              variants={item}
+              initial="hidden"
+              animate="visible"
+              transition={{
+                duration: 0.8,
+                ease: "anticipate",
+              }}
+            >
+              <img src="./images/text2.png" className="mb-8 " />
+            </m.div>
+            <m.div
+              variants={item}
+              initial="hidden"
+              animate="visible"
+              transition={{
+                duration: 1.6,
+                ease: "anticipate",
+              }}
+              className="font-poppins text-justify mb-6 "
+            >
               Ozo Trade is a leading investment platform that empowers
               individuals to invest their money wisely and achieve significant
               returns. With our user-friendly platform, you can confidently
               navigate the financial markets and make informed investment
               decisions. Join us today and unlock your earning potential.
-            </p>
-            <div className="flex space-x-0">
+            </m.div>
+            <m.div
+              initial={{ y: "20vh", opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{
+                duration: 1.8,
+                ease: "anticipate",
+              }}
+              className="flex space-x-0"
+            >
               {/* <button className="text-white my-2   bg-violet-700  shadow-white-700 shadow-md hover:bg-violet-800 hover:text-white  transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 border-2 rounded-full px-7 py-4 font-semibold text-lg tracking-wide">
                 Buy Tokens
               </button> */}
@@ -75,7 +122,7 @@ const Home = () => {
               <button className="text-white w-56     shadow-white-700 shadow-md  hover:text-white transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 rounded-full  font-semibold text-lg tracking-wide">
                 <img src="./images/dashboard1.png" className="h-28" />
               </button>
-            </div>
+            </m.div>
           </div>
 
           {/* <div className="w-1/2 h-full  flex justify-center items-center">
@@ -106,10 +153,38 @@ const Home = () => {
             {/* <img src="./images/laptop.png" className="" /> */}
           </div>
           <div className="w-1/2 text-left ">
-            <h1 className="text-5xl   mb-12 font-semibold font-poppins">
+            <m.h1
+              className="text-5xl   mb-12 font-semibold font-poppins"
+              initial={{ y: "20vh", opacity: 0 }}
+              whileInView={{
+                y: 0,
+                opacity: 1,
+                transition: {
+                  duration: 1.1,
+                  ease: "anticipate",
+                },
+              }}
+              // viewport={{ once: true }}
+              // ref={ref}
+              // variants={squareVariants}
+              // animate={{ scale: 2 }}
+              // initial="hidden"
+            >
               OZO Pay
-            </h1>
-            <p className="font-poppins text-lg text-justify">
+            </m.h1>
+            <m.p
+              initial={{ x: 200, opacity: 0 }}
+              whileInView={{
+                x: 0,
+                opacity: 1,
+                transition: {
+                  duration: 1.6,
+                  ease: "anticipate",
+                },
+              }}
+              // viewport={{ once: true }}
+              className="font-poppins text-lg text-justify"
+            >
               Ozo pay is one of the platforms for trading cryptocurrencies and
               foreign exchange. We are focusing on better internet investment
               opportunities for the general public, assisting people in
@@ -126,7 +201,7 @@ const Home = () => {
               approaches with key information and trading guidelines for various
               coins. All of these have been successfully combined to produce
               favourable trading results.
-            </p>
+            </m.p>
           </div>
         </div>
       </div>
@@ -143,30 +218,82 @@ const Home = () => {
           <source src="./images/video/finalbgvideo1.mp4" />
         </video> */}
 
-        
-        <div className="max-w-6xl w-full mx-auto absolute  p-16 min-h-[50vh] my-24  grid grid-cols-4 gap-8 ">
-          <div className="min-w-[150px] min-h-[150px] hover:scale-105  transition duration-500 transform  flex flex-col space-y-4 justify-center text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 shadow-cyan-500 ">
+        <m.div className="max-w-6xl w-full mx-auto absolute  p-16 min-h-[50vh] my-24  grid grid-cols-4 gap-8 ">
+          <m.div
+             initial={{ scale: 0,opacity:0 }}
+             whileInView={{
+           
+              opacity: 1, scale: 1,
+             transition:{
+              duration: 0.3,
+        delay: 0.0,
+        ease: [0, 0.71, 0.2, 1.01]
+             }
+             }}
+             
+            viewport={{ once: true }}
+            className="min-w-[150px] min-h-[150px] hover:scale-105  transition duration-500 transform  flex flex-col space-y-4 justify-center text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 shadow-cyan-500 "
+          >
             <img src="./images/icons/interface.png" className="w-16" />
 
             <p className="">Interface</p>
-          </div>
+          </m.div>
 
-          <div className=" min-h-[150px] min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center  text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-sky to-indigo-500 shadow-indigo-500">
+          <m.div
+             initial={{ scale: 0,opacity:0 }}
+             whileInView={{
+           
+              opacity: 1, scale: 1,
+             transition:{
+              duration: 0.3,
+        delay: 0.2,
+        ease: [0, 0.71, 0.2, 1.01]
+             }
+             }}
+            // viewport={{ once: true }}
+            className=" min-h-[150px] min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center  text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-sky to-indigo-500 shadow-indigo-500"
+          >
             <img src="./images/icons/exchange.png" className="w-16" />
 
             <p className="">Exchange</p>
-          </div>
-          <div className=" min-h-[150px]  min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-violet-500 to-fuchsia-500 shadow-fuchsia-500 ">
+          </m.div>
+          <m.div
+             initial={{ scale: 0,opacity:0 }}
+             whileInView={{
+           
+              opacity: 1, scale: 1,
+             transition:{
+              duration: 0.3,
+        delay: 0.3,
+        ease: [0, 0.71, 0.2, 1.01]
+             }
+             }}
+            // viewport={{ once: true }}
+            className=" min-h-[150px]  min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-violet-500 to-fuchsia-500 shadow-fuchsia-500 "
+          >
             <img src="./images/icons/secure.png" className="w-16" />
 
             <p className="">Security</p>
-          </div>
+          </m.div>
 
-          <div className="min-h-[150px]  min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center  text-white font-semibold text-xl items-center shadow-2xl rounded-lg  bg-gradient-to-r from-purple-500 to-pink-500 shadow-purple-500 ">
+          <m.div
+            initial={{ scale: 0,opacity:0 }}
+            whileInView={{
+          
+             opacity: 1, scale: 1,
+            transition:{
+             duration: 0.3,
+       delay: 0.4,
+       ease: [0, 0.71, 0.2, 1.01]
+            }
+            }}
+            // viewport={{ once: true }}
+            className="min-h-[150px]  min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center  text-white font-semibold text-xl items-center shadow-2xl rounded-lg  bg-gradient-to-r from-purple-500 to-pink-500 shadow-purple-500 "
+          >
             <img src="./images/icons/profit.png" className="w-16" />
             <p className="">Investment </p>
-          </div>
-        </div>
+          </m.div>
+        </m.div>
       </div>
 
       {/* Design 1  */}
@@ -177,26 +304,74 @@ const Home = () => {
         />
 
         <div className=" absolute px-52 w-full font-poppins   bg-opacity-40 py-[202px] ">
-          <h1 className="text-7xl font-semibold  mb-6">
+          <m.h1
+            className="text-7xl font-semibold  mb-6"
+            initial={{ x: -50, opacity: 0 }}
+            whileInView={{
+              x: 0,
+              opacity: 1,
+              transition: {
+                duration: 0.5,
+                ease: "anticipate",
+              },
+            }}
+            // viewport={{ once: true }}
+          >
             we take your money <br />
             matters seriously
-          </h1>
-          <p className="text-3xl font-semibold mb-4   ">
+          </m.h1>
+          <m.p
+            className="text-3xl font-semibold mb-4   "
+            initial={{ x: -50, opacity: 0 }}
+            whileInView={{
+              x: 0,
+              opacity: 1,
+              transition: {
+                duration: 1.4,
+                ease: "anticipate",
+              },
+            }}
+            // viewport={{ once: true }}
+          >
             so that you don’t have to.
-          </p>
-          <p className="text-xl font-semibold mb-10 ">
+          </m.p>
+          <m.p
+            className="text-xl font-semibold mb-10 "
+            initial={{ x: -50, opacity: 0 }}
+            whileInView={{
+              x: 0,
+              opacity: 1,
+              transition: {
+                duration: 1.6,
+                ease: "anticipate",
+              },
+            }}
+            // viewport={{ once: true }}
+          >
             never miss a due date with reminders to help you pay your bills on
             time,
             <br /> instant settlements mean you never wait for your payments to
             go through
             <br /> and statement analysis lets you know where your money goes,
             always.
-          </p>
-          <button className="rounded-full bg-white px-14 py-6 ">
+          </m.p>
+          <m.button
+            className="rounded-full bg-white px-14 py-6 "
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{
+              opacity: 1,
+              scale: 1,
+              transition: {
+                duration: 2.0,
+                ease: "anticipate",
+              },
+            }}
+            // viewport={{ once: true }}
+          >
             <span className="text-black text-2xl font-semibold">
               Experience the upgrade
             </span>{" "}
-          </button>
+          </m.button>
         </div>
       </div>
 
@@ -442,29 +617,78 @@ const Home = () => {
 
       {/* Design 2  */}
       <div className="w-full min-h-[100vh] relative flex font-poppins items-center  ">
-        <img src="./images/dogbg.jpg" className="z-0  opacity-60 object-cover " />
+        <img
+          src="./images/dogbg.jpg"
+          className="z-0  opacity-60 object-cover "
+        />
 
         <div className=" absolute px-52 w-full  bg-opacity-40 py-[202px] ">
-          <h1 className="text-8xl font-semibold mb-6">
+          <m.h1
+            className="text-8xl font-semibold mb-6"
+            initial={{ x: 50, opacity: 0 }}
+            whileInView={{
+              x: 0,
+              opacity: 1,
+              transition: {
+                duration: 0.6,
+                ease: "anticipate",
+              },
+            }}
+            // viewport={{ once: true }}
+          >
             security first.
             <br />
             and second.
-          </h1>
-          <p className="text-3xl font-semibold mb-6   ">
+          </m.h1>
+          <m.p
+            initial={{ x: 50, opacity: 0 }}
+            whileInView={{
+              x: 0,
+              opacity: 1,
+              transition: {
+                duration: 1.4,
+                ease: "anticipate",
+              },
+            }}
+            // viewport={{ once: true }}
+            className="text-3xl font-semibold mb-6   "
+          >
             what’s yours remains only yours.
-          </p>
-          <p className="text-xl font-semibold mb-10 ">
+          </m.p>
+          <m.p
+            initial={{ x: 50, opacity: 0 }}
+            whileInView={{
+              x: 0,
+              opacity: 1,
+              transition: {
+                duration: 0.5,
+
+                ease: "anticipate",
+              },
+            }}
+            // viewport={{ once: true }}
+            className="text-xl font-semibold mb-10 "
+          >
             Ozo ensures that all your personal data and transactions are
             encrypted,
             <br /> and secured so what’s yours remains only yours. there’s no
             room for
             <br /> mistakes because we didn’t leave any
-          </p>
-          <button className="rounded-full bg-white px-14 py-6 ">
+          </m.p>
+          <m.button initial={{ x: 50, opacity: 0 }}
+            whileInView={{
+              x: 0,
+              opacity: 1,
+              transition: {
+                duration: 0.5,
+                delay:0.2,
+                ease: "anticipate",
+              },
+            }} className="rounded-full bg-white px-14 py-6 ">
             <span className="text-black text-2xl font-semibold">
               Become a member
             </span>{" "}
-          </button>
+          </m.button>
         </div>
       </div>
 
@@ -486,21 +710,47 @@ const Home = () => {
         </video>
         <div className="absolute w-full ml-44  flex justify-start items-center">
           <div className="max-w-2xl w-full text-left ">
-            <h1 className="font-semibold font-poppins text-5xl mb-6">
+            <m.h1   initial={{ x: -50, opacity: 0 }}
+            whileInView={{
+              x: 0,
+              opacity: 1,
+              transition: {
+                duration: 0.8,
+                ease: "anticipate",
+              },
+            }} className="font-semibold font-poppins text-5xl mb-6">
               Stunning Crypto Platform <br />
               <span className="text-4xl font-medium">
                 It's Great For Your Icon
               </span>{" "}
-            </h1>
-            <p className="  text-base mb-6">
+            </m.h1 >
+            <m.p  initial={{ x: -50, opacity: 0 }}
+            whileInView={{
+              x: 0,
+              opacity: 1,
+              transition: {
+                duration: 0.8,
+                delay:0.3,
+                ease: "anticipate",
+              },
+            }}  className="  text-base mb-6">
               From day one we designed and built a modern crypto template for
               beginners and experts alike. Make easy deposits and withdrawals,
               measure the performance of your portfolio, and track all your
               cryptocurrencies in one place.
-            </p>
+            </m.p >
 
             <div className="space-y-6 ">
-              <div className="flex items-center space-x-4">
+              <m.div  initial={{ y: -50, opacity: 0 }}
+            whileInView={{
+              y: 0,
+              opacity: 1,
+              transition: {
+                duration: 1.5,
+                delay:0.3,
+                ease: "anticipate",
+              },
+            }}  className="flex items-center space-x-4">
                 <img src="./images/transfer-money.png" className="w-12" />
                 <div className="font-poppins  text-xl">
                   Bank Transfer
@@ -509,8 +759,17 @@ const Home = () => {
                     platforms.
                   </p>
                 </div>
-              </div>
-              <div className="flex items-center space-x-4">
+              </m.div>
+              <m.div initial={{ y: -50, opacity: 0 }}
+            whileInView={{
+              y: 0,
+              opacity: 1,
+              transition: {
+                duration: 1.5,
+                delay:0.5,
+                ease: "anticipate",
+              },
+            }}  className="flex items-center space-x-4">
                 <img src="./images/debit.png" className="w-12" />
                 <div className="font-poppins  text-xl">
                   Credit Card
@@ -519,8 +778,17 @@ const Home = () => {
                     credit card.
                   </p>
                 </div>
-              </div>
-              <div className="flex items-center space-x-4">
+              </m.div>
+              <m.div initial={{ y: -50, opacity: 0 }}
+            whileInView={{
+              y: 0,
+              opacity: 1,
+              transition: {
+                duration: 1.5,
+                delay:0.7,
+                ease: "anticipate",
+              },
+            }}   className="flex items-center space-x-4">
                 <img src="./images/safety.png" className="w-12" />
                 <div className="font-poppins  text-xl">
                   Safe Transfer
@@ -528,7 +796,7 @@ const Home = () => {
                     You can exchange and send tokens in complete safety.
                   </p>
                 </div>
-              </div>
+              </m.div>
             </div>
           </div>
 
@@ -542,13 +810,51 @@ const Home = () => {
 
       {/* Cryptocurrency says  */}
       {/* Parent  */}
-      <h1 className="text-4xl text-center font-poppins font-bold  mb-16 mt-24 w-full">
+      <m.h1 initial={{ y: -50, opacity: 0 }}
+            whileInView={{
+              y: 0,
+              opacity: 1,
+              transition: {
+                duration: 1.5,
+                delay:0.7,
+                ease: "anticipate",
+              },
+            }} className="text-4xl text-center font-poppins font-bold  mb-16 mt-24 w-full">
         Cryptocurrency Use Case
-      </h1>
+      </m.h1>
 
-      <div className="grid grid-cols-2 mb-24 mx-auto max-w-7xl gap-x-16 gap-y-12">
+      <m.div
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{
+          opacity: 1,
+          scale: 1,
+          transition: {
+            delayChildren: 0.5,
+            staggerChildren: 0.2,
+          },
+        }}
+        className="grid grid-cols-2 mb-24 mx-auto max-w-7xl gap-x-16 gap-y-12"
+      >
         {/* 1  */}
-        <div className="max-w-[480px]  relative space-x-6 w-full flex items-center">
+        <m.div
+          initial={{
+            y: 20,
+            opacity: 0,
+        
+          }}
+          whileInView={{
+         
+              
+              y: 0,
+              opacity: 1,
+              transition: {
+                duration: 0.4,
+                ease: "anticipate",
+              },
+         
+          }}
+          className="max-w-[480px]  relative space-x-6 w-full flex items-center"
+        >
           {/* left  */}
           <img
             src="./images/animation/circleanimation.png"
@@ -564,9 +870,24 @@ const Home = () => {
               purchases on a daily, weekly or monthly basis.
             </p>
           </div>
-        </div>
+        </m.div>
         {/* 2  */}
-        <div className="max-w-[480px] space-x-6 relative w-full flex items-center">
+        <m.div
+          initial={{
+            y: 20,
+            opacity: 0,
+           
+          }}
+          whileInView={{
+              y: 0,
+              opacity: 1,
+              transition: {
+                duration: 0.8,
+                ease: "anticipate",
+              },
+          }}
+          className="max-w-[480px] space-x-6 relative w-full flex items-center"
+        >
           {/* left  */}
           <img
             src="./images/animation/circleanimation.png"
@@ -581,9 +902,27 @@ const Home = () => {
               your accounts with our user-friendly panel.
             </p>
           </div>
-        </div>
+        </m.div>
         {/* 3 */}
-        <div className="max-w-[450px] relative space-x-6  w-full flex items-center">
+        <m.div
+          initial={{
+            y: 20,
+            opacity: 0,
+         
+          }}
+          whileInView={{
+            
+            
+              y: 0,
+              opacity: 1,
+              transition: {
+                duration: 1.2,
+                ease: "anticipate",
+              },
+          
+          }}
+          className="max-w-[450px] relative space-x-6  w-full flex items-center"
+        >
           {/* left  */}
           <img
             src="./images/animation/circleanimation.png"
@@ -599,9 +938,27 @@ const Home = () => {
               investments and all your data are safe.
             </p>
           </div>
-        </div>
+        </m.div>
         {/* 4 */}
-        <div className="max-w-[480px] relative space-x-6  w-full flex items-center">
+        <m.div
+          initial={{
+            y: 20,
+            opacity: 0,
+       
+          }}
+          whileInView={{
+            
+         
+              y: 0,
+              opacity: 1,
+              transition: {
+                duration: 1.6,
+                ease: "anticipate",
+              },
+          
+          }}
+          className="max-w-[480px] relative space-x-6  w-full flex items-center"
+        >
           {/* left  */}
           <img
             src="./images/animation/circleanimation.png"
@@ -617,9 +974,27 @@ const Home = () => {
               write do it for you.
             </p>
           </div>
-        </div>
+        </m.div>
         {/* 5 */}
-        <div className="max-w-[480px]  relative space-x-6  w-full flex items-center">
+        <m.div
+          initial={{
+            y: 20,
+            opacity: 0,
+           
+          }}
+          whileInView={{
+           
+              
+              y: 0,
+              opacity: 1,
+              transition: {
+                duration: 2.0,
+                ease: "anticipate",
+              },
+          
+          }}
+          className="max-w-[480px]  relative space-x-6  w-full flex items-center"
+        >
           {/* left  */}
           <img
             src="./images/animation/circleanimation.png"
@@ -635,9 +1010,27 @@ const Home = () => {
               reports, video analyzes and expert opinions.
             </p>
           </div>
-        </div>
+        </m.div>
         {/* 6 */}
-        <div className="max-w-[480px]  relative space-x-6  w-full flex items-center">
+        <m.div
+          initial={{
+            y: 20,
+            opacity: 0,
+          
+          }}
+          whileInView={{
+          
+        
+              y: 0,
+              opacity: 1,
+              transition: {
+                duration: 2.4,
+                ease: "anticipate",
+              },
+          
+          }}
+          className="max-w-[480px]  relative space-x-6  w-full flex items-center"
+        >
           {/* left  */}
           <img
             src="./images/animation/circleanimation.png"
@@ -653,36 +1046,82 @@ const Home = () => {
               world-class technological infrastructure.
             </p>
           </div>
-        </div>
-      </div>
+        </m.div>
+      </m.div>
 
       {/* Document  */}
-      <h1 className="text-5xl font-poppins font-bold text-center  mt-24 w-full">
+      <m.h1 initial={{ y: -50, opacity: 0 }}
+            whileInView={{
+              y: 0,
+              opacity: 1,
+              transition: {
+                duration: 1.5,
+                delay:0.7,
+                ease: "anticipate",
+              },
+            }} className="text-5xl font-poppins font-bold text-center  mt-24 w-full">
         Document
-      </h1>
-      <div className="max-w-6xl w-full mx-auto  h-full p-16 min-h-[50vh] mb-24  grid grid-cols-4 gap-8 ">
-        <div className="min-w-[150px] min-h-[150px] hover:scale-105  transition duration-500 transform  flex flex-col space-y-4 justify-center text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 shadow-purple-500 ">
+      </m.h1>
+      <div  
+        className="max-w-6xl w-full mx-auto  h-full p-16 min-h-[50vh] mb-24  grid grid-cols-4 gap-8 ">
+        <m.div  initial={{ scale: 0,opacity:0 }}
+            whileInView={{
+          rotate:360,
+             opacity: 1, scale: 1,
+            transition:{
+             duration: 0.2,
+       delay: 0.1,
+       ease: [0, 0.71, 0.2, 1.01]
+            }
+            }}className="min-w-[150px] min-h-[150px] hover:scale-105  transition duration-500 transform  flex flex-col space-y-4 justify-center text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 shadow-purple-500 ">
           <img src="./images/icons/document.png" className="w-16" />
 
           <p className="">Privacy</p>
-        </div>
+        </m.div>
 
-        <div className=" min-h-[150px] min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center  text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 shadow-cyan-500 ">
+        <m.div   initial={{ scale: 0,opacity:0 }}
+            whileInView={{
+              rotate:360,
+             opacity: 1, scale: 1,
+            transition:{
+             duration: 0.2,
+       delay: 0.2,
+       ease: [0, 0.71, 0.2, 1.01]
+            }
+            }}className=" min-h-[150px] min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center  text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 shadow-cyan-500 ">
           <img src="./images/icons/document.png" className="w-16" />
 
           <p className="">Terms</p>
-        </div>
+        </m.div>
 
-        <div className=" min-h-[150px]  min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-violet-500 to-fuchsia-500 shadow-fuchsia-500">
+        <m.div  initial={{ scale: 0,opacity:0 }}
+            whileInView={{
+              rotate:360,
+             opacity: 1, scale: 1,
+            transition:{
+             duration: 0.2,
+       delay: 0.3,
+       ease: [0, 0.71, 0.2, 1.01]
+            }
+            }} className=" min-h-[150px]  min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center text-white font-semibold text-xl items-center shadow-2xl rounded-lg bg-gradient-to-r from-violet-500 to-fuchsia-500 shadow-fuchsia-500">
           <img src="./images/icons/document.png" className="w-16" />
 
           <p className="">Subscription</p>
-        </div>
+        </m.div>
 
-        <div className="min-h-[150px]  min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center  text-white font-semibold text-xl items-center shadow-2xl rounded-lg  bg-gradient-to-r from-sky to-indigo-500 shadow-indigo-500">
+        <m.div   initial={{ scale: 0,opacity:0 }}
+            whileInView={{
+              rotate:360,
+             opacity: 1, scale: 1,
+            transition:{
+             duration: 0.2,
+       delay: 0.4,
+       ease: [0, 0.71, 0.2, 1.01]
+            }
+            }} className="min-h-[150px]  min-w-[150px]  hover:scale-105 transition duration-500 transform flex flex-col space-y-4 justify-center  text-white font-semibold text-xl items-center shadow-2xl rounded-lg  bg-gradient-to-r from-sky to-indigo-500 shadow-indigo-500">
           <img src="./images/icons/document.png" className="w-16" />
           <p className="">White Papers </p>
-        </div>
+        </m.div>
       </div>
 
       {/* Design 3  */}
@@ -693,10 +1132,35 @@ const Home = () => {
         />
 
         <div className=" absolute w-full flex px-16 bg-opacity-40  justify-around  ">
-          <h1 className="text-7xl font-semibold  max-w-[500px] pb-2 max-h-max flex items-end ">
+          <m.h1 initial={{
+            x:-50,
+            opacity:0
+          }}
+          
+          whileInView={{
+            opacity:1,
+            x:0,
+            transition:{
+              duration:0.75,
+              easings:"easeInOut"
+            }
+          }}
+          className="text-7xl font-semibold  max-w-[500px] pb-2 max-h-max flex items-end ">
             the story of OZO begins with trust.
-          </h1>
-          <p className="text-xl max-w-[550px]   ">
+          </m.h1>
+          <m.p  initial={{
+            x:150,
+            opacity:0
+          }}
+          
+          whileInView={{
+            opacity:1,
+            x:0,
+            transition:{
+              duration:0.75,
+              easings:"easeInOut"
+            }
+          }} className="text-xl max-w-[550px]   ">
             trust as a virtue has consistently played an essential role in every
             great human achievement. and consistently, its importance has been
             overlooked. not just by individuals, but by entire societies. we
@@ -713,7 +1177,7 @@ const Home = () => {
             <br />
             if you make it to OZO, congratulations and welcome. we have a lot of
             things planned for you.
-          </p>
+          </m.p>
         </div>
       </div>
 
@@ -730,7 +1194,16 @@ const Home = () => {
           <source src="./images/video/finalbgvideo1.mp4" />
         </video>
         <div className="absolute flex top-40 items-center w-full">
-          <div className="max-w-[550px] bg-neutral-900 rounded-2xl  ml-48 py-12 px-10 ">
+          <m.div  initial={{ scale: 0.5,opacity:0 }}
+            whileInView={{
+            
+             opacity: 1, scale: 1,
+            transition:{
+             duration: 0.4,
+       delay: 0.4,
+       ease: [0, 0.71, 0.2, 1.01]
+            }
+            }} className="max-w-[550px] bg-neutral-900 rounded-2xl  ml-48 py-12 px-10 ">
             <h1 className="mb-6 text-2xl border-b-2 pb-6 text-center ">
               Calculate Your Income
             </h1>
@@ -761,30 +1234,69 @@ const Home = () => {
               className="border-2 border-gray-200 py-4 w-full bg-gray-700 rounded-2xl px-6"
               placeholder="Enter amount"
             />
-          </div>
+          </m.div>
           <div className="max-w-[550px]  border-r-4 pr-2 ml-16 flex items-center min-h-[40vh]">
-            <h1 className="mb-6 text-7xl text-right ">
+            <m.h1 initial={{
+            x:75,
+            opacity:0
+          }}
+          
+          whileInView={{
+            opacity:1,
+            x:0,
+            transition:{
+              duration:0.75,
+              easings:"easeInOut"
+            }
+          }} className="mb-6 text-7xl text-right ">
               get Income information with Ozo calculator.
-            </h1>
+            </m.h1>
           </div>
         </div>
       </div>
 
       {/* youtube videos oage  */}
       <div className="font-poppins mb-24   w-full max-h-[110vh]">
-        <h1 className="text-6xl text-center mt-12">
+        <m.h1 initial={{ y: -50, opacity: 0 }}
+            whileInView={{
+              y: 0,
+              opacity: 1,
+              transition: {
+                duration: 1.5,
+                delay:0.7,
+                ease: "anticipate",
+              },
+            }} className="text-6xl text-center mt-12">
           Finance simplified,
           <br />
           in your language
-        </h1>
+        </m.h1>
 
         <div className="w-full mt-24 flex justify-center space-x-14 items-center">
-          <button className="text-white w-56 border-2  py-4 shadow-grey-700 shadow-2xl  hover:text-white transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 rounded-full  font-semibold text-lg tracking-wide">
+          <m.button  initial={{ opacity: 0, scale: 0 }}
+            whileInView={{
+              opacity: 1,
+              scale: 1,
+              transition: {
+                duration: 1.6,
+                   delay:0.9,
+                ease: "anticipate",
+              },
+            }} className="text-white w-56 border-2  py-4 shadow-grey-700 shadow-2xl  hover:text-white transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 rounded-full  font-semibold text-lg tracking-wide">
             Youtube
-          </button>
-          <button className="text-white w-56 border-2 py-4 shadow-grey-700 shadow-2xl  hover:text-white transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 rounded-full  font-semibold text-lg tracking-wide">
-          Blogs
-          </button>
+          </m.button>
+          <m.button  initial={{ opacity: 0, scale: 0 }}
+            whileInView={{
+              opacity: 1,
+              scale: 1,
+              transition: {
+                duration: 1.6,
+                   delay:0.9,
+                ease: "anticipate",
+              },
+            }} className="text-white w-56 border-2 py-4 shadow-grey-700 shadow-2xl  hover:text-white transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 rounded-full  font-semibold text-lg tracking-wide">
+            Blogs
+          </m.button>
         </div>
       </div>
 
@@ -792,7 +1304,7 @@ const Home = () => {
         <div className="max-w-[380px] max-h-[280px] ease-in-out z-10 duration-300 h-full hover:rotate-0 hover:z-50 hover:cursor-pointer transform transition delay-300 hover:-translate-y-36 absolute left-[280px] bottom-6  -rotate-6 px-6 py-8 w-full bg-white rounded-2xl shadow-xl">
           <h2 className="mb-4 text-gray-600">Lorem ipsum</h2>
           <p>
-            rem Ipsum is simply dummy text of the printing and typesetting
+            lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
             and scrambled it to make a type specimen book.
@@ -829,7 +1341,7 @@ const Home = () => {
 
       <div className="w-full my-28 ">
         <div className="font-poppins mx-auto max-w-6xl space-y-16 ">
-          <h1 className="text-3xl text-center mb-16">FAQs</h1>
+          <h1  className="text-3xl text-center mb-16">FAQs</h1>
 
           <div className="text-xl   ">
             <p className="font-semibold mb-6">

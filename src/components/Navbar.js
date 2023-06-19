@@ -1,7 +1,7 @@
 import { Menu, MenuItem } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
-
+import {motion as m } from "framer-motion"
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -12,8 +12,17 @@ const Navbar = () => {
     setAnchorEl(null);
   };
   return (
-    <React.Fragment>
-      <div class="flex flex-wrap z-10">
+    <m.div>
+      <div  initial={{ y: -50, opacity: 0 }}
+            whileInView={{
+              y: 0,
+              opacity: 1,
+              transition: {
+                duration: 2.0,
+                delay:0.7,
+                ease: "anticipate",
+              },
+            }}  class="flex flex-wrap z-10">
         <section class="relative mx-auto">
           {/*//        <!-- navbar -->*/}
           <nav class="flex justify-between  bg-black text-opacity-100 text-white w-screen">
@@ -186,7 +195,7 @@ const Navbar = () => {
           </a>
         </div>
       </div>
-    </React.Fragment>
+    </m.div>
   );
 };
 
