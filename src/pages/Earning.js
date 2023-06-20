@@ -348,7 +348,7 @@ const Earning = () => {
         </div>
       </div>
 
-      <div className="w-full mt-24 relative">
+      <div className="w-full mt-24 mb-44 relative">
         <img
           src="./images/designbg2.jpg"
           className="w-full max-h-[60vh] opacity-90"
@@ -373,7 +373,7 @@ const Earning = () => {
         </div>
       </div>
 
-      <div className="w-full flex min-h-[90vh] px-10 space-x-6 justify-between items-center">
+      {/* <div className="w-full flex min-h-[90vh] px-10 space-x-6 justify-between items-center">
         <div className="w-1/2 p-8 grid grid-cols-2 gap-4">
           <div className="max-w-[350px] w-full p-4 hover:scale-105 transition-all transform delay-150 duration-200 text-center space-x-2 hover:border-2 rounded-xl flex flex-col justify-center items-center   ">
             <img src="./images/icons/secure.png" className="w-12" />
@@ -431,7 +431,7 @@ const Earning = () => {
               Contact Us
             </button>
         </div>
-      </div>
+      </div> */}
 
       {/* <div className="border-t-2 mt-24 pt-24 w-full">
         <div className="w-full text-center space-y-10 my-20 max-w-7xl mx-auto ">

@@ -25,8 +25,8 @@ const AboutUs = () => {
                   delay: 0.38,
                   ease: "anticipate",
                 },
-              }}  className="text-5xl  mb-12 font-semibold uppercase font-poppins">
-        Cryptocurrency <br /> in Every Wallet ™
+              }}  className="text-5xl text-center mb-12 font-semibold uppercase font-poppins">
+       Empowering <br/>Financial Success,<br/> Innovatively
       </m.h1>
 
       <m.img  initial={{ opacity: 0,y:-20 }}
@@ -61,7 +61,7 @@ const AboutUs = () => {
                   ease: "anticipate",
                 },
               }}  className="text-5xl text-center  mb-20 font-semibold uppercase font-poppins">
-        Accelerate the world’s <br /> transition to cryptocurrency.
+       Empowering Investors with<br/> Innovative Solutions in Cryptocurrency<br/> for Financial Prosperity
       </m.h1>
 
       <div className="w-full min-h-[110vh] mt-12 relative  flex justify-center items-center flex-col ">
@@ -88,17 +88,16 @@ const AboutUs = () => {
                   delay: 0.34,
                   ease: "anticipate",
                 },
-              }}  className="text-5xl text-center  mb-20 font-semibold uppercase font-poppins">
-            Powered by
-            <br /> cryptocurrency,
+              }}  className="text-4xl text-center  mb-20 font-semibold uppercase font-poppins">
+            Diversify your portfolio and<br/> maximize returns with cryptocurrency<br/> and forex investments
             <br /> <br />
-            the future of the internet:
-            <br /> Web3 will be more fair and equitable,
+            Tap into the growth potential<br/> of cryptocurrency and forex markets.
+
+          
             <br /> <br />
-            owned by the builders,
-            <br /> creators and users.
-            <br /> <br /> You. We believe it is your basic right <br />
-            to control your money, data and identity.
+            Achieve financial independence by investing<br/> in cryptocurrency and forex
+            
+            <br /> <br /> Participate in global investing opportunities with accessible cryptocurrency and forex market
           </m.h1>
           <m.button  initial={{ opacity: 0,y:50 }}
               whileInView={{
@@ -135,7 +134,7 @@ const AboutUs = () => {
                   ease: "anticipate",
                 },
               }}  className="text-xl mt-16 text-fuchsia-900 text-center mb-6 font-semibold uppercase font-poppins">
-            Our Partners
+           Commitment to Excellence
           </m.p>
           <m.h1  initial={{ opacity: 0,y:50 }}
               whileInView={{
@@ -146,9 +145,10 @@ const AboutUs = () => {
                   delay: 0.32,
                   ease: "anticipate",
                 },
-              }}  className="text-7xl text-center  mb-20 font-semibold  font-poppins">
-            Reaching the next billion users <br />
-            with the world’s best partners.
+              }}  className="text-5xl text-center  mb-20 font-semibold  font-poppins">
+           At One Ozo, we strive for excellence in everything we do, continuously improving our services to deliver 
+unparalleled value and satisfaction to our investors.
+
           </m.h1>
           <m.button  initial={{ opacity: 0,y:50 }}
               whileInView={{
@@ -240,12 +240,12 @@ const AboutUs = () => {
         </div>
       </div> */}
 
-      <div className="w-full min-h-[100vh] font-poppins  relative  ">
+      {/* <div className="w-full min-h-[100vh] font-poppins  relative  ">
         <img
           src="./images/holobg.jpg"
           className="z-0  object-cover opacity-90 "
         />
-        <div className="absolute  flex justify-around items-center top-40 min-h-[80vh] w-full">
+        <div className="absolute  flex justify-around items-center top-32 min-h-[80vh] w-full">
           <div className="w-1/2 flex justify-center items-center  py-12 px-10 ">
             <img
               src="./images/hologrambg.png"
@@ -273,8 +273,8 @@ const AboutUs = () => {
                   delay: 0.31,
                   ease: "anticipate",
                 },
-              }}  className="text-6xl mb-8">with Ozo Pay</m.p>
-            <div className="text-lg space-y-5">
+              }}  className="text-6xl mb-8">with Ozo One</m.p>
+            <div className="text-lg space-y-3">
               {" "}
               <m.li initial={{ opacity: 0,x:50 }}
               whileInView={{
@@ -285,7 +285,8 @@ const AboutUs = () => {
                   delay: 0.37,
                   ease: "anticipate",
                 },
-              }} >Minimum investment is just $25</m.li>
+              }} >Minimum investment starting from $100 for accessible entry.
+              </m.li>
               <m.li initial={{ opacity: 0,x:50 }}
               whileInView={{
                 x:0,
@@ -295,7 +296,7 @@ const AboutUs = () => {
                   delay: 0.41,
                   ease: "anticipate",
                 },
-              }} >Earn upto 325% profit just through your investments</m.li>
+              }} >Earn up to 1.8% daily ROI, maximizing investment growth.</m.li>
               <m.li initial={{ opacity: 0,x:50 }}
               whileInView={{
                 x:0,
@@ -306,8 +307,7 @@ const AboutUs = () => {
                   ease: "anticipate",
                 },
               }}>
-                Tec and Mac wallet withdrawal gates will be open on every
-                tuesday
+                Enjoy 100% principle returns on all investment packages.
               </m.li>
               <m.li initial={{ opacity: 0,x:50 }}
               whileInView={{
@@ -318,7 +318,8 @@ const AboutUs = () => {
                   delay: 0.52,
                   ease: "anticipate",
                 },
-              }}>Earn upto 25% of networking bonus</m.li>
+              }}>Benefit from high capping limits for ample earning opportunities.
+              </m.li>
               <m.li initial={{ opacity: 0,x:50 }}
               whileInView={{
                 x:0,
@@ -328,7 +329,7 @@ const AboutUs = () => {
                   delay: 0.57,
                   ease: "anticipate",
                 },
-              }}>Principle returns upto 50%</m.li>
+              }}>Lucrative referral program, earning bonuses on multiple levels.</m.li>
               <m.li initial={{ opacity: 0,x:50 }}
               whileInView={{
                 x:0,
@@ -338,7 +339,7 @@ const AboutUs = () => {
                   delay: 0.61,
                   ease: "anticipate",
                 },
-              }}>24X7 backend support available</m.li>
+              }}>Transparent and well-defined investment structure for clarity and confidence.</m.li>
               <m.li initial={{ opacity: 0,x:50 }}
               whileInView={{
                 x:0,
@@ -348,7 +349,7 @@ const AboutUs = () => {
                   delay: 0.67,
                   ease: "anticipate",
                 },
-              }}>A registered business in 3 countries</m.li>
+              }}>Flexible package durations from 140 to 200 days for convenience.</m.li>
               <m.li initial={{ opacity: 0,x:50 }}
               whileInView={{
                 x:0,
@@ -358,11 +359,34 @@ const AboutUs = () => {
                   delay: 0.71,
                   ease: "anticipate",
                 },
-              }}>Our office can be visited with a proper appointment</m.li>
+              }}>Additional benefits with transferable Ozo Tokens to Ozo Token Wallet.
+              </m.li>
+              <m.li initial={{ opacity: 0,x:50 }}
+              whileInView={{
+                x:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.77,
+                  ease: "anticipate",
+                },
+              }}>24/7 professional and responsive customer support for assistance.
+              </m.li>
+              <m.li initial={{ opacity: 0,x:50 }}
+              whileInView={{
+                x:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.81,
+                  ease: "anticipate",
+                },
+              }}>Registered business in multiple countries, establishing credibility and trust
+              </m.li>
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="w-full min-h-[110vh] relative  flex justify-center items-center flex-col ">
         <div className="mx-auto max-w-6xl  w-full flex justify-center items-center flex-col absolute">
@@ -413,8 +437,7 @@ const AboutUs = () => {
                   ease: "anticipate",
                 },
               }} className="text-xl text-center mb-6 font-semibold uppercase font-poppins">
-            Building a world-changing platform is a monumental task.
-            <br /> These are the people behind it.
+         Driven team of experts behind One Ozo's <br/>revolutionary investment platform
           </m.h1>
 
           <div
@@ -432,7 +455,7 @@ const AboutUs = () => {
                   ease: "anticipate",
                 },
               }} className="text-8xl text-center font-semibold uppercase font-poppins">
-                80M
+               50,000
               </m.h1>
               <m.span initial={{ opacity: 0,x:-50 }}
               whileInView={{
@@ -444,7 +467,7 @@ const AboutUs = () => {
                   ease: "anticipate",
                 },
               }} className="text-lg text-white text-center   font-poppins">
-                Users
+                Active Investors
               </m.span>
             </div>
             <div className="text-center">
@@ -458,7 +481,7 @@ const AboutUs = () => {
                   ease: "anticipate",
                 },
               }} className="text-8xl text-center font-semibold uppercase font-poppins">
-                90
+                120
               </m.h1>
               <m.span initial={{ opacity: 0,x:50 }}
               whileInView={{
@@ -887,47 +910,47 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="w-full min-h-[100vh] font-poppins">
+      <div className="w-full min-h-[120vh] mb-24 font-poppins">
         <div className="w-full max-w-5xl mx-auto flex justify-center items-center flex-col">
           <h1 className="text-5xl font-semibold mb-20">Our Values</h1>
           <div className="w-full flex space-x-10">
-            <div className="max-w-[380px] border-l-2 text-[32px] font-semibold">
+            <div className="max-w-[380px] border-l-2 text-[28px] font-semibold">
               <ul className="space-y-6 px-8 text-gray-600 ">
                 <button
                   className="text-left hover:text-white focus:text-white "
                   onClick={() => setValues("think")}
                 >
-                  Think Clearly
+                  Efficient Communication
                 </button>
                 <button
                   className="text-left hover:text-white  focus:text-white"
                   onClick={() => setValues("resource")}
                 >
-                  Be Resourceful
+                   Innovative Problem Solving
                 </button>
                 <button
                   className="text-left hover:text-white  focus:text-white"
                   onClick={() => setValues("stay")}
                 >
-                  Stay Determined
+                  Unwavering Resolve
                 </button>
                 <button
                   className="text-left hover:text-white focus:text-white "
                   onClick={() => setValues("big")}
                 >
-                  Dream Big
+                  Bold Innovation
                 </button>
                 <button
                   className="text-left hover:text-white focus:text-white "
                   onClick={() => setValues("take")}
                 >
-                  Take Ownership and Be Decisive
+                  Empowered Ownership
                 </button>{" "}
                 <button
                   className="text-left hover:text-white focus:text-white "
                   onClick={() => setValues("remain")}
                 >
-                  Remain Humble
+                 Humility First
                 </button>
               </ul>
             </div>
@@ -944,16 +967,9 @@ const AboutUs = () => {
                     ease: "anticipate",
                   },
                 }}>
-                  We consider clarity of thought to be the single most important
-                  trait we look for in our colleagues
-                  <br />
-                  <br />
-                  We think about the message we want to deliver before we speak,
-                  and know what is important and what is not
-                  <br />
-                  <br />
-                  We are concise and articulate, putting effort into making
-                  things simple and easy to understand
+            Clear, concise, and articulate communication drives our collaborative 
+environment. <br/><br/>We prioritize delivering messages with clarity, simplicity, and effectiveness,   <br/><br/>
+fostering understanding and driving impactful outcomes.
                 </m.p>
               )}
               {values == "resource" && (
@@ -967,16 +983,10 @@ const AboutUs = () => {
                     ease: "anticipate",
                   },
                 }}  >
-                  We go beyond the surface to gain a deep understanding of every
-                  issue
-                  <br />
-                  <br />
-                  We always find a way to get things done with what’s available,
-                  but we are not shy about asking for help when it’s needed
-                  <br />
-                  <br />
-                  We believe that great ideas can come from anywhere, regardless
-                  of seniority and experience
+                  Resourcefulness is our superpower. <br/><br/>We dive deep, seeking a 
+comprehensive understanding of challenges. With creativity and determination, we leverage available 
+resources and collaborate,<br/><br/> recognizing that valuable ideas can originate from anyone, regardless of rank 
+or experience.
                </m.p>
               )}
 
@@ -992,16 +1002,16 @@ const AboutUs = () => {
                   },
                 }}>
                   {" "}
-                  We never give up, carry each other through hard times, and
-                  recognise grit in our colleagues
+                   We persevere, supporting one another through challenges, acknowledging 
+resilience in our team. 
                   <br />
                   <br />
-                  We understand that building a world-changing company is a
-                  monumental task, but we love every minute of it
+                  We embrace the enormity of building an impactful company, finding joy 
+in the journey.
                   <br />
                   <br />
-                  We celebrate milestones together, recharge, and get back to
-                  work{" "}
+                  Together, we commemorate milestones, recharge, and recommit to our shared 
+purpose
                </m.p>
               )}
               {values == "big" && (
@@ -1016,15 +1026,16 @@ const AboutUs = () => {
                   },
                 }}>
                   {" "}
-                  We think big, take smart risks, and do things that have never
-                  been done before
+                  We dream big, daring to envision the extraordinary.
                   <br />
                   <br />
-                  We are not afraid to make tough choices that align with our
-                  long-term objectives
+                  With calculated risks, we 
+pioneer uncharted territories, fearlessly making tough decisions aligned with our long-term 
+goals.
                   <br />
                   <br />
-                  We know that it always seems impossible until it’s done
+                  We understand that what appears impossible at first becomes a reality through 
+unwavering determination
                </m.p>
               )}
               {values == "take" && (
@@ -1039,16 +1050,16 @@ const AboutUs = () => {
                   },
                 }}>
                   {" "}
-                  We are all empowered to take initiative, make the right
-                  decisions, and act as owners
+                  We embrace initiative, acting decisively and taking ownership of our 
+actions.
                   <br />
                   <br />
-                  We are committed to protecting our company culture and seek to
-                  bring in the best people we’ve ever worked with
+                  Safeguarding our vibrant culture, we attract exceptional talent, uniting the best minds.
                   <br />
                   <br />
-                  We aim to surprise and inspire with the quality and speed of
-                  our decision-making
+                  We strive to astonish and ignite, delivering swift, high-quality decision-making that exceeds 
+expectations.
+
                </m.p>
               )}
               {values == "remain" && (
@@ -1063,16 +1074,18 @@ const AboutUs = () => {
                   },
                 }}>
                   {" "}
-                  We don’t seek the limelight and focus on doing what is best
-                  for the company and the users
+                 We prioritize the company and users, shunning the spotlight.
                   <br />
                   <br />
-                  We leave our egos at the door and learn from our mistakes,
-                  knowing that we are always stronger as a team
+                  Egos stay outside as 
+we embrace lessons from missteps, recognizing our collective strength.
+
                   <br />
                   <br />
-                  We think twice before spending, but are aggressive when it
-                  comes to investing in what matters{" "}
+                  We exercise prudence in 
+expenditures, yet boldly invest in what holds significance, fostering growth and prosperity.
+
+
                </m.p>
               )}
             </div>

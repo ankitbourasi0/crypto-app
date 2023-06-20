@@ -5,7 +5,7 @@ const Trade = () => {
     <div className="w-full font-poppins  mb-8 ">
       <div className="w-full relative ">
         <img src="./images/designbg1.jpg" />
-        <div className=" absolute top-56 left-56 flex justify-center items-center flex-col ">
+        <div className=" absolute top-56 left-32 w-full max-w-7xl mx-auto flex justify-center items-center flex-col ">
           <m.h1  initial={{ y:-50,opacity:0 }}
             whileInView={{
           
@@ -15,9 +15,9 @@ const Trade = () => {
        delay: 0.4,
        ease: [0, 0.71, 0.2, 1.01]
             }
-            }} className="text-7xl text-center  mb-6">
-            Cybersecurity that s always a <br />
-            step ahead
+            }} className="text-6xl text-center   mb-6">
+          Enhanced Trade Standards: <br/>
+          One Ozo Sets the Bar Higher for <br/>Exceptional Investment Opportunities
           </m.h1>
           <m.p  initial={{ opacity:0 }}
             whileInView={{
@@ -29,9 +29,8 @@ const Trade = () => {
        ease: [0, 0.71, 0.2, 1.01]
             }
             }} className="text-xl text-center mb-6">
-            Feel truly safe online with AI-driven protection against hackers and
-            the <br />
-            latest viruses, malware, ransomware and spyware
+          One Ozo is committed to raising the bar in trade standards, providing exceptional investment <br/> 
+opportunities that surpass industry norms and deliver superior results for investors
           </m.p>
           <m.button   initial={{ opacity:0,scale:0 }}
             whileInView={{
@@ -48,7 +47,7 @@ const Trade = () => {
         </div>
       </div>
 
-      <div className="w-full max-w-7xl mx-auto text-white flex justify-between space-x-10 items-center mt-44">
+      <div className="w-full max-w-6xl mx-auto text-white flex justify-between space-x-10 items-center mt-44">
         <m.div  initial={{ opacity:0 }}
             whileInView={{
           
@@ -58,16 +57,15 @@ const Trade = () => {
        delay: 0.5,
        ease: [0, 0.71, 0.2, 1.01]
             }
-            }} className="max-w-[350px] py-12 rounded-xl flex flex-col items-center justify-center text-center bg-neutral-900 px-6">
+            }} className="max-w-[350px] min-h-[340px] py-6 rounded-xl flex flex-col items-center justify-center text-center bg-neutral-900 px-6">
           <img
             src="./images/safety.png"
             className="bg-green-500 p-4 w-24 rounded-full mb-6"
           />
-          <h1 className="text-3xl mb-4 font-bold">Security Services</h1>
-          <p className="text-gray-500">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet
+          <h1 className="text-2xl mb-4 font-bold">Transparency</h1>
+          <p className="text-gray-500 text-[16px]">
+          One Ozo maintains transparency in all trading activities, providing clear visibility into 
+investments and ensuring trust and confidence
           </p>
         </m.div>
         <m.div  initial={{ opacity:0 }}
@@ -79,16 +77,15 @@ const Trade = () => {
        delay: 0.6,
        ease: [0, 0.71, 0.2, 1.01]
             }
-            }} className="max-w-[350px] py-12 rounded-xl flex flex-col items-center justify-center text-center bg-neutral-900 px-6">
+            }} className="max-w-[350px] min-h-[340px] py-6 rounded-xl flex flex-col items-center justify-center text-center bg-neutral-900 px-6">
           <img
             src="./images/safety.png"
             className="bg-green-500 p-4 w-24 rounded-full mb-6"
           />
-          <h1 className="text-3xl mb-4 font-bold">Data Privacy</h1>
-          <p className="text-gray-500">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
+          <h1 className="text-2xl mb-4 font-bold">Accessibility</h1>
+          <p className="text-gray-500 text-[16px]">
+          One Ozo offers a user-friendly platform, enabling easy access to trading opportunities, 
+empowering investors to seize profitable moments
           </p>
         </m.div>
         <m.div  initial={{ opacity:0 }}
@@ -100,16 +97,15 @@ const Trade = () => {
        delay: 0.7,
        ease: [0, 0.71, 0.2, 1.01]
             }
-            }} className="max-w-[350px] py-12 rounded-xl flex flex-col items-center justify-center text-center bg-neutral-900 px-6">
+            }} className="max-w-[350px] min-h-[340px] py-6 rounded-xl flex flex-col items-center justify-center text-center bg-neutral-900 px-6">
           <img
             src="./images/safety.png"
             className="bg-green-500 p-4 w-24 rounded-full mb-6"
           />
-          <h1 className="text-3xl mb-4 font-bold">Industry Certified</h1>
-          <p className="text-gray-500">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet
+          <h1 className="text-2xl mb-4 font-bold">Reliability</h1>
+          <p className="text-gray-500 text-[16px]">
+          One Ozo ensures reliable trade execution and dependable performance, backed by robust 
+technology infrastructure and expert market analysis
           </p>
         </m.div>
       </div>
@@ -126,8 +122,8 @@ const Trade = () => {
        ease: [0, 0.71, 0.2, 1.01]
             }
             }}>
-            <h1 className="mb-3">3,452 +</h1>
-            <p className="text-xl text-purple-900">Cybersecurity Projects</p>
+            <h1 className="mb-3">50,000</h1>
+            <p className="text-xl text-purple-900">Investor Base</p>
           </m.div>
 
           <m.div  initial={{ y:50,opacity:0 }}
@@ -140,8 +136,8 @@ const Trade = () => {
        ease: [0, 0.71, 0.2, 1.01]
             }
             }}>
-            <h1 className="mb-3">100%</h1>
-            <p className="text-xl text-purple-900">Service Guarantee</p>
+            <h1 className="mb-3">$500</h1>
+            <p className="text-xl text-purple-900">Investment Capital</p>
           </m.div>
           <m.div  initial={{ y:50,opacity:0 }}
             whileInView={{
@@ -153,8 +149,8 @@ const Trade = () => {
        ease: [0, 0.71, 0.2, 1.01]
             }
             }}>
-            <h1 className="mb-3">1,458 +</h1>
-            <p className="text-xl text-purple-900">Clients Protection</p>
+            <h1 className="mb-3">100</h1>
+            <p className="text-xl text-purple-900">Traders Team</p>
           </m.div>
           <m.div  initial={{ y:50,opacity:0 }}
             whileInView={{
@@ -166,8 +162,21 @@ const Trade = () => {
        ease: [0, 0.71, 0.2, 1.01]
             }
             }}>
-            <h1 className="mb-3">85+</h1>
-            <p className="text-xl text-purple-900">Team Experts</p>
+            <h1 className="mb-3">85%</h1>
+            <p className="text-xl text-purple-900">Trade Success Rate</p>
+          </m.div>
+          <m.div  initial={{ y:50,opacity:0 }}
+            whileInView={{
+          
+             opacity: 1, y:0,
+            transition:{
+             duration: 0.9,
+       delay: 0.6,
+       ease: [0, 0.71, 0.2, 1.01]
+            }
+            }}>
+            <h1 className="mb-3">97%</h1>
+            <p className="text-xl text-purple-900">Investor Satisfaction</p>
           </m.div>
         </div>
 
@@ -194,25 +203,22 @@ const Trade = () => {
             }
             }} className=" z-10 absolute top-40 left-72">
             <h1 className="text-4xl tracking-wider mb-4 ">
-              The Perfect Solution For
-              <br />
-              All The Protection
-              <br />
-              Question
+            Impressive Investor Base<br/>
+             and Satisfaction Rates: <br/>
+             Unveiling One Ozo's Success
             </h1>
             <p className="max-w-[450px] tracking-wider text-sm w-full">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+            One Ozo boasts a substantial number of investors, while maintaining a high percentage of 
+satisfied clients. Our experienced team of traders ensures top-notch performance and service
             </p>
           </m.div>
         </div>
       </div>
 
-      <div className="w-full  relative mb-24  min-h-[150vh] ">
+      <div className="w-full  mb-24  min-h-[150vh] ">
         {/* <img src="./images/security1.jpg" className="opacity-50 " /> */}
 
-        <div className="w-full absolute top-44">
+        <div className="w-full mt-44">
           <m.h1   initial={{ y:-50,opacity:0 }}
             whileInView={{
           
@@ -239,7 +245,7 @@ const Trade = () => {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </m.p>
         </div>
-        <div className="w-full max-w-7xl absolute top-96 left-40 mx-auto text-white grid grid-cols-3 gap-10">
+        <div className="w-full max-w-6xl  mx-auto text-white grid grid-cols-3 gap-6">
           <m.div  initial={{opacity:0 }}
             whileInView={{
           
@@ -249,15 +255,16 @@ const Trade = () => {
        delay: 0.4,
        ease: [0, 0.71, 0.2, 1.01]
             }
-            }} className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
+            }} className="max-w-[320px] py-6 rounded-xl   bg-neutral-900 px-6">
             <img
               src="./images/safety.png"
-              className="bg-green-500 p-4 w-24 rounded-full mb-6"
+              className="bg-green-500 p-3 w-16 rounded-full mb-6"
             />
-            <h1 className="text-3xl mb-4 font-bold">Threat Intelligence</h1>
+            <h1 className="text-2xl mb-4 font-bold">Proven Trading Strategies
+</h1>
             <p className="text-gray-500">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
+            One Ozo implements tried and tested trading strategies, developed by industry experts, to 
+optimize investment performance and generate consistent returns.
             </p>
           </m.div> 
           <m.div  initial={{opacity:0 }}
@@ -269,15 +276,15 @@ const Trade = () => {
        delay: 0.5,
        ease: [0, 0.71, 0.2, 1.01]
             }
-            }}  className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
+            }}  className="max-w-[320px] py-6 rounded-xl   bg-neutral-900 px-6">
             <img
               src="./images/safety.png"
-              className="bg-green-500 p-4 w-24 rounded-full mb-6"
+              className="bg-green-500 p-3 w-16 rounded-full mb-6"
             />
-            <h1 className="text-3xl mb-4 font-bold">Security Assessment</h1>
+            <h1 className="text-2xl mb-4 font-bold"> Advanced Market Analysis</h1>
             <p className="text-gray-500">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit. .
+            With cutting-edge market analysis tools and techniques, One Ozo stays ahead of market trends, 
+enabling informed investment decisions for maximum profitability.
             </p>
           </m.div>
           <m.div  initial={{opacity:0 }}
@@ -289,15 +296,16 @@ const Trade = () => {
        delay: 0.6,
        ease: [0, 0.71, 0.2, 1.01]
             }
-            }}  className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
+            }}  className="max-w-[320px] py-6 rounded-xl   bg-neutral-900 px-6">
             <img
               src="./images/safety.png"
-              className="bg-green-500 p-4 w-24 rounded-full mb-6"
+              className="bg-green-500 p-3 w-16 rounded-full mb-6"
             />
-            <h1 className="text-3xl mb-4 font-bold">Compromise Assessment</h1>
+            <h1 className="text-2xl mb-4 font-bold"> Risk Management
+</h1>
             <p className="text-gray-500">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
+            One Ozo emphasizes effective risk management strategies to mitigate potential losses, ensuring 
+a balanced and secure approach to trading.
             </p>
           </m.div>
           <m.div  initial={{opacity:0 }}
@@ -309,15 +317,15 @@ const Trade = () => {
        delay: 0.7,
        ease: [0, 0.71, 0.2, 1.01]
             }
-            }}  className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
+            }}  className="max-w-[320px] py-6 rounded-xl   bg-neutral-900 px-6">
             <img
               src="./images/safety.png"
-              className="bg-green-500 p-4 w-24 rounded-full mb-6"
+              className="bg-green-500 p-3 w-16 rounded-full mb-6"
             />
-            <h1 className="text-3xl mb-4 font-bold">Incident Response</h1>
+            <h1 className="text-2xl mb-4 font-bold"> Competitive Trading Fees</h1>
             <p className="text-gray-500">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
+            One Ozo offers competitive trading fees, enabling investors to maximize their returns by 
+reducing costs and expenses associated with trading
             </p>
           </m.div>
           <m.div  initial={{opacity:0 }}
@@ -329,15 +337,15 @@ const Trade = () => {
        delay: 0.8,
        ease: [0, 0.71, 0.2, 1.01]
             }
-            }}  className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
+            }}  className="max-w-[320px] py-6 rounded-xl   bg-neutral-900 px-6">
             <img
               src="./images/safety.png"
-              className="bg-green-500 p-4 w-24 rounded-full mb-6"
+              className="bg-green-500 p-3 w-16 rounded-full mb-6"
             />
-            <h1 className="text-3xl mb-4 font-bold">Security Training</h1>
+            <h1 className="text-2xl mb-4 font-bold"> Regulatory Compliance</h1>
             <p className="text-gray-500">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
+            One Ozo operates in accordance with strict regulatory standards, ensuring legal compliance and 
+providing a trustworthy and secure trading environment
             </p>
           </m.div>
           <m.div  initial={{opacity:0 }}
@@ -349,17 +357,17 @@ const Trade = () => {
        delay: 0.9,
        ease: [0, 0.71, 0.2, 1.01]
             }
-            }}  className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
+            }}  className="max-w-[320px] py-6 rounded-xl   bg-neutral-900 px-6">
             <img
               src="./images/safety.png"
-              className="bg-green-500 p-4 w-24 rounded-full mb-6"
+              className="bg-green-500 p-3 w-16 rounded-full mb-6"
             />
-            <h1 className="text-3xl mb-4 font-bold">
-              Cyber Security Certification
+            <h1 className="text-2xl mb-4 font-bold">
+            Continuous Innovation
             </h1>
             <p className="text-gray-500">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
+            One Ozo is committed to continuous innovation, regularly introducing new features, tools, and 
+investment opportunities to enhance the trading experience for investors.
             </p>
           </m.div>
         </div>

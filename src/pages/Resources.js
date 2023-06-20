@@ -18,11 +18,8 @@ const Resources = () => {
             }}
             className="max-w-lg w-full mb-12 text-5xl font-extrabold"
           >
-            Discover,
-            <br />
-            collect and sell extraordinary
-            <br />
-            Crypto
+          Visual Assets<br/> for Trust: One Ozo's Compelling Multimedia Support
+
           </m.h1>
 
           <m.button
@@ -69,10 +66,10 @@ const Resources = () => {
               }}
               className="max-w-[400px] text-xs"
             >
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo
+             Elevate trust and confidence with One Ozo's extensive collection of visual assets. Immerse yourself in 
+captivating images, compelling videos, attention-grabbing banners, and insightful business plan PDFs, 
+reinforcing trust through engaging and informative multimedia support.
+
             </m.p>
           </div>
 

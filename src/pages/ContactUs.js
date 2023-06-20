@@ -259,13 +259,11 @@ const ContactUs = () => {
           Join us now
         </p>
         <h1 className="text-5xl">
-          Enter a new investment of
-          <br /> digital connected
+        Invest in the Digital Connected Era for Promising Returns 
         </h1>
         <p className="text-gray-400 max-w-[600px] mt-6"> 
-          "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their
-          exact original form, accompanied by English versions from the 1914
-          translation by H. Rackham.
+        Unlock the potential of the digital connected era with a new investment opportunity. Explore growth 
+prospects and maximize returns in this interconnected digital landscape.
         </p>
 
         <div className="flex w-full max-w-[450px] space-x-6">

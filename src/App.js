@@ -16,6 +16,8 @@ import AboutUs from "./pages/AboutUs";
 import Earning from "./pages/Earning";
 import Legal from "./pages/Legal";
 import Resources from "./pages/Resources";
+import Referral from "./pages/Referral"; 
+
 function App() {
   return (
     <div className="App bg-black text-white  min-h-screen    ">
@@ -27,7 +29,11 @@ function App() {
         <Route path="/blog" element={<Blog/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/trade" element={<Trade/>} />
-        <Route path="/earning" element={<Earning/>} />
+        <Route path="/earning" element={<Earning/>} >
+        </Route>
+
+        <Route path="/refferal" element={<Referral/>} />
+
         <Route path="/legal" element={<Legal/>} />
         <Route path="/resources" element={<Resources/>} />
 
