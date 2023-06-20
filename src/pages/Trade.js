@@ -1,28 +1,64 @@
 import React from "react";
-
+import {motion as m} from "framer-motion"
 const Trade = () => {
   return (
     <div className="w-full font-poppins  mb-8 ">
       <div className="w-full relative ">
         <img src="./images/designbg1.jpg" />
         <div className=" absolute top-56 left-56 flex justify-center items-center flex-col ">
-          <h1 className="text-7xl text-center  mb-6">
+          <m.h1  initial={{ y:-50,opacity:0 }}
+            whileInView={{
+          
+             opacity: 1, y:0,
+            transition:{
+             duration: 0.9,
+       delay: 0.4,
+       ease: [0, 0.71, 0.2, 1.01]
+            }
+            }} className="text-7xl text-center  mb-6">
             Cybersecurity that s always a <br />
             step ahead
-          </h1>
-          <p className="text-xl text-center mb-6">
+          </m.h1>
+          <m.p  initial={{ opacity:0 }}
+            whileInView={{
+          
+             opacity: 1,
+            transition:{
+             duration: 1.6,
+       delay: 0.6,
+       ease: [0, 0.71, 0.2, 1.01]
+            }
+            }} className="text-xl text-center mb-6">
             Feel truly safe online with AI-driven protection against hackers and
             the <br />
             latest viruses, malware, ransomware and spyware
-          </p>
-          <button className="px-6 py-4 rounded-2xl bg-purple-900 text-xl font-semibold">
+          </m.p>
+          <m.button   initial={{ opacity:0,scale:0 }}
+            whileInView={{
+          scale:1,
+             opacity: 1,
+            transition:{
+             duration: 0.8,
+       delay: 0.8,
+       ease: [0, 0.71, 0.2, 1.01]
+            }
+            }} className="px-6 py-4 rounded-2xl bg-purple-900 text-xl font-semibold">
             Get Connect
-          </button>
+          </m.button>
         </div>
       </div>
 
       <div className="w-full max-w-7xl mx-auto text-white flex justify-between space-x-10 items-center mt-44">
-        <div className="max-w-[350px] py-12 rounded-xl flex flex-col items-center justify-center text-center bg-neutral-900 px-6">
+        <m.div  initial={{ opacity:0 }}
+            whileInView={{
+          
+             opacity: 1,
+            transition:{
+             duration: 1.0,
+       delay: 0.5,
+       ease: [0, 0.71, 0.2, 1.01]
+            }
+            }} className="max-w-[350px] py-12 rounded-xl flex flex-col items-center justify-center text-center bg-neutral-900 px-6">
           <img
             src="./images/safety.png"
             className="bg-green-500 p-4 w-24 rounded-full mb-6"
@@ -33,8 +69,17 @@ const Trade = () => {
             sint. Velit officia consequat duis enim velit mollit. Exercitation
             veniam consequat sunt nostrud amet
           </p>
-        </div>
-        <div className="max-w-[350px] py-12 rounded-xl flex flex-col items-center justify-center text-center bg-neutral-900 px-6">
+        </m.div>
+        <m.div  initial={{ opacity:0 }}
+            whileInView={{
+          
+             opacity: 1,
+            transition:{
+             duration: 1.0,
+       delay: 0.6,
+       ease: [0, 0.71, 0.2, 1.01]
+            }
+            }} className="max-w-[350px] py-12 rounded-xl flex flex-col items-center justify-center text-center bg-neutral-900 px-6">
           <img
             src="./images/safety.png"
             className="bg-green-500 p-4 w-24 rounded-full mb-6"
@@ -45,8 +90,17 @@ const Trade = () => {
             sint. Velit officia consequat duis enim velit mollit. Exercitation
             veniam consequat sunt nostrud amet.
           </p>
-        </div>
-        <div className="max-w-[350px] py-12 rounded-xl flex flex-col items-center justify-center text-center bg-neutral-900 px-6">
+        </m.div>
+        <m.div  initial={{ opacity:0 }}
+            whileInView={{
+          
+             opacity: 1,
+            transition:{
+             duration: 1.0,
+       delay: 0.7,
+       ease: [0, 0.71, 0.2, 1.01]
+            }
+            }} className="max-w-[350px] py-12 rounded-xl flex flex-col items-center justify-center text-center bg-neutral-900 px-6">
           <img
             src="./images/safety.png"
             className="bg-green-500 p-4 w-24 rounded-full mb-6"
@@ -57,34 +111,88 @@ const Trade = () => {
             sint. Velit officia consequat duis enim velit mollit. Exercitation
             veniam consequat sunt nostrud amet
           </p>
-        </div>
+        </m.div>
       </div>
 
       <div className="w-full max-w-6xl mx-auto mt-28 mb-16 flex items-center justify-between min-h-[90vh] ">
         <div className="text-5xl max-w-[250px] w-full space-y-6">
-          <div>
+          <m.div  initial={{ y:50,opacity:0 }}
+            whileInView={{
+          
+             opacity: 1, y:0,
+            transition:{
+             duration: 0.9,
+       delay: 0.3,
+       ease: [0, 0.71, 0.2, 1.01]
+            }
+            }}>
             <h1 className="mb-3">3,452 +</h1>
             <p className="text-xl text-purple-900">Cybersecurity Projects</p>
-          </div>
+          </m.div>
 
-          <div>
+          <m.div  initial={{ y:50,opacity:0 }}
+            whileInView={{
+          
+             opacity: 1, y:0,
+            transition:{
+             duration: 0.9,
+       delay: 0.4,
+       ease: [0, 0.71, 0.2, 1.01]
+            }
+            }}>
             <h1 className="mb-3">100%</h1>
             <p className="text-xl text-purple-900">Service Guarantee</p>
-          </div>
-          <div>
+          </m.div>
+          <m.div  initial={{ y:50,opacity:0 }}
+            whileInView={{
+          
+             opacity: 1, y:0,
+            transition:{
+             duration: 0.9,
+       delay: 0.5,
+       ease: [0, 0.71, 0.2, 1.01]
+            }
+            }}>
             <h1 className="mb-3">1,458 +</h1>
             <p className="text-xl text-purple-900">Clients Protection</p>
-          </div>
-          <div>
+          </m.div>
+          <m.div  initial={{ y:50,opacity:0 }}
+            whileInView={{
+          
+             opacity: 1, y:0,
+            transition:{
+             duration: 0.9,
+       delay: 0.6,
+       ease: [0, 0.71, 0.2, 1.01]
+            }
+            }}>
             <h1 className="mb-3">85+</h1>
             <p className="text-xl text-purple-900">Team Experts</p>
-          </div>
+          </m.div>
         </div>
 
         <div className="max-w-[900px] pl-10 w-full min-h-[70vh] relative h-full ">
-          <div className="max-w-[500px] min-h-[70vh] z-0  bg-gray-400 opacity-30 rounded-2xl  w-full "></div>
+          <m.div  initial={{ x:50,opacity:0 }}
+            whileInView={{
+          
+             opacity: 1, x:0,
+            transition:{
+             duration: 0.9,
+       delay: 0.8,
+       ease: [0, 0.71, 0.2, 1.01]
+            }
+            }} className="max-w-[500px] min-h-[70vh] z-0  bg-gray-400 opacity-30 rounded-2xl  w-full "></m.div>
 
-          <div className=" z-10 absolute top-40 left-72">
+          <m.div  initial={{ x:-50,opacity:0 }}
+            whileInView={{
+          
+             opacity: 1, x:0,
+            transition:{
+             duration: 0.9,
+       delay: 0.95,
+       ease: [0, 0.71, 0.2, 1.01]
+            }
+            }} className=" z-10 absolute top-40 left-72">
             <h1 className="text-4xl tracking-wider mb-4 ">
               The Perfect Solution For
               <br />
@@ -97,7 +205,7 @@ const Trade = () => {
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
             </p>
-          </div>
+          </m.div>
         </div>
       </div>
 
@@ -105,16 +213,43 @@ const Trade = () => {
         {/* <img src="./images/security1.jpg" className="opacity-50 " /> */}
 
         <div className="w-full absolute top-44">
-          <h1 className="text-5xl mb-6 font-semibold text-center ">
+          <m.h1   initial={{ y:-50,opacity:0 }}
+            whileInView={{
+          
+             opacity: 1, y:0,
+            transition:{
+             duration: 0.9,
+       delay: 0.6,
+       ease: [0, 0.71, 0.2, 1.01]
+            }
+            }}  className="text-5xl mb-6 font-semibold text-center ">
             Our Services
-          </h1>
-          <p className="text-center max-w-[600px] mx-auto w-full text-xl mb-10 text-gray-500">
+          </m.h1>
+          <m.p   initial={{ y:-50,opacity:0 }}
+            whileInView={{
+          
+             opacity: 1, y:0,
+            transition:{
+             duration: 0.9,
+       delay: 0.75,
+       ease: [0, 0.71, 0.2, 1.01]
+            }
+            }}className="text-center max-w-[600px] mx-auto w-full text-xl mb-10 text-gray-500">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+          </m.p>
         </div>
         <div className="w-full max-w-7xl absolute top-96 left-40 mx-auto text-white grid grid-cols-3 gap-10">
-          <div className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
+          <m.div  initial={{opacity:0 }}
+            whileInView={{
+          
+             opacity: 1, 
+            transition:{
+             duration: 0.7,
+       delay: 0.4,
+       ease: [0, 0.71, 0.2, 1.01]
+            }
+            }} className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
             <img
               src="./images/safety.png"
               className="bg-green-500 p-4 w-24 rounded-full mb-6"
@@ -124,8 +259,17 @@ const Trade = () => {
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
             </p>
-          </div>
-          <div className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
+          </m.div> 
+          <m.div  initial={{opacity:0 }}
+            whileInView={{
+          
+             opacity: 1, 
+            transition:{
+             duration: 0.7,
+       delay: 0.5,
+       ease: [0, 0.71, 0.2, 1.01]
+            }
+            }}  className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
             <img
               src="./images/safety.png"
               className="bg-green-500 p-4 w-24 rounded-full mb-6"
@@ -135,8 +279,17 @@ const Trade = () => {
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit. .
             </p>
-          </div>
-          <div className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
+          </m.div>
+          <m.div  initial={{opacity:0 }}
+            whileInView={{
+          
+             opacity: 1, 
+            transition:{
+             duration: 0.7,
+       delay: 0.6,
+       ease: [0, 0.71, 0.2, 1.01]
+            }
+            }}  className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
             <img
               src="./images/safety.png"
               className="bg-green-500 p-4 w-24 rounded-full mb-6"
@@ -146,8 +299,17 @@ const Trade = () => {
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
             </p>
-          </div>
-          <div className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
+          </m.div>
+          <m.div  initial={{opacity:0 }}
+            whileInView={{
+          
+             opacity: 1, 
+            transition:{
+             duration: 0.7,
+       delay: 0.7,
+       ease: [0, 0.71, 0.2, 1.01]
+            }
+            }}  className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
             <img
               src="./images/safety.png"
               className="bg-green-500 p-4 w-24 rounded-full mb-6"
@@ -157,8 +319,17 @@ const Trade = () => {
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
             </p>
-          </div>
-          <div className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
+          </m.div>
+          <m.div  initial={{opacity:0 }}
+            whileInView={{
+          
+             opacity: 1, 
+            transition:{
+             duration: 0.7,
+       delay: 0.8,
+       ease: [0, 0.71, 0.2, 1.01]
+            }
+            }}  className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
             <img
               src="./images/safety.png"
               className="bg-green-500 p-4 w-24 rounded-full mb-6"
@@ -168,8 +339,17 @@ const Trade = () => {
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
             </p>
-          </div>
-          <div className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
+          </m.div>
+          <m.div  initial={{opacity:0 }}
+            whileInView={{
+          
+             opacity: 1, 
+            transition:{
+             duration: 0.7,
+       delay: 0.9,
+       ease: [0, 0.71, 0.2, 1.01]
+            }
+            }}  className="max-w-[350px] py-6 rounded-xl   bg-neutral-900 px-6">
             <img
               src="./images/safety.png"
               className="bg-green-500 p-4 w-24 rounded-full mb-6"
@@ -181,7 +361,7 @@ const Trade = () => {
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
             </p>
-          </div>
+          </m.div>
         </div>
       </div>
 

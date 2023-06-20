@@ -1,31 +1,94 @@
 import React, { useState } from "react";
-
+import {motion as m } from "framer-motion"
 const AboutUs = () => {
   const [values, setValues] = useState("think");
   return (
     <div className="bg-black w-full flex justify-center items-center flex-col">
-      <h1 className="text-xl mt-16 text-fuchsia-800  mb-6 font-semibold uppercase font-poppins">
+      <m.h1  initial={{ opacity: 0,y:-50 }}
+              whileInView={{
+                y:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.23,
+                  ease: "anticipate",
+                },
+              }}  className="text-xl mt-16 text-fuchsia-800  mb-6 font-semibold uppercase font-poppins">
         Our Vision
-      </h1>
-      <h1 className="text-5xl  mb-12 font-semibold uppercase font-poppins">
+      </m.h1>
+      <m.h1  initial={{ opacity: 0,y:-50 }}
+              whileInView={{
+                y:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.38,
+                  ease: "anticipate",
+                },
+              }}  className="text-5xl  mb-12 font-semibold uppercase font-poppins">
         Cryptocurrency <br /> in Every Wallet ™
-      </h1>
+      </m.h1>
 
-      <img src="./images/crypto-com-logo.webp" className="w-[550px] " />
-      <h1 className="text-xl mt-16 text-fuchsia-800 text-center   mb-6 font-semibold uppercase font-poppins">
+      <m.img  initial={{ opacity: 0,y:-20 }}
+              whileInView={{
+                y:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.51,
+                  ease: "anticipate",
+                },
+              }}  src="./images/crypto-com-logo.webp" className="w-[550px] " />
+      <m.h1 initial={{ opacity: 0,y:-50 }}
+              whileInView={{
+                y:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.23,
+                  ease: "anticipate",
+                },
+              }}  className="text-xl mt-16 text-fuchsia-800 text-center   mb-6 font-semibold uppercase font-poppins">
         Our Mission
-      </h1>
-      <h1 className="text-5xl text-center  mb-20 font-semibold uppercase font-poppins">
+      </m.h1>
+      <m.h1  initial={{ opacity: 0,y:-50 }}
+              whileInView={{
+                y:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.38,
+                  ease: "anticipate",
+                },
+              }}  className="text-5xl text-center  mb-20 font-semibold uppercase font-poppins">
         Accelerate the world’s <br /> transition to cryptocurrency.
-      </h1>
+      </m.h1>
 
       <div className="w-full min-h-[110vh] mt-12 relative  flex justify-center items-center flex-col ">
         <img src="./images/designbg1.jpg" className="opacity-60" />
         <div className="mx-auto max-w-6xl  w-full flex justify-center items-center flex-col absolute">
-          <p className="text-xl mt-16 text-fuchsia-800 text-center mb-6 font-semibold uppercase font-poppins">
+          <m.p  initial={{ opacity: 0,y:-50 }}
+              whileInView={{
+                y:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.2,
+                  ease: "anticipate",
+                },
+              }}  className="text-xl mt-16 text-fuchsia-800 text-center mb-6 font-semibold uppercase font-poppins">
             WHY it Matters
-          </p>
-          <h1 className="text-5xl text-center  mb-20 font-semibold uppercase font-poppins">
+          </m.p>
+          <m.h1  initial={{ opacity: 0,y:50 }}
+              whileInView={{
+                y:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.34,
+                  ease: "anticipate",
+                },
+              }}  className="text-5xl text-center  mb-20 font-semibold uppercase font-poppins">
             Powered by
             <br /> cryptocurrency,
             <br /> <br />
@@ -36,10 +99,19 @@ const AboutUs = () => {
             <br /> creators and users.
             <br /> <br /> You. We believe it is your basic right <br />
             to control your money, data and identity.
-          </h1>
-          <button className="text-white w-56 border-2 font-poppins hover:bg-black hover:opacity-80 hover:border-2 py-4 shadow-grey-700 shadow-2xl  transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 rounded-full  font-semibold text-lg tracking-wide">
+          </m.h1>
+          <m.button  initial={{ opacity: 0,y:50 }}
+              whileInView={{
+                y:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.41,
+                  ease: "anticipate",
+                },
+              }}  className="text-white w-56 border-2 font-poppins hover:bg-black hover:opacity-80 hover:border-2 py-4 shadow-grey-700 shadow-2xl  transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 rounded-full  font-semibold text-lg tracking-wide">
             Start the Journey
-          </button>
+          </m.button>
         </div>
       </div>
 
@@ -53,16 +125,43 @@ const AboutUs = () => {
             min-w-full object-cover max-h-[110vh] max-w-none"
         />
         <div className="mx-auto max-w-7xl  w-full flex justify-center items-center flex-col absolute">
-          <p className="text-xl mt-16 text-fuchsia-900 text-center mb-6 font-semibold uppercase font-poppins">
+          <m.p  initial={{ opacity: 0,y:-50 }}
+              whileInView={{
+                y:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.2,
+                  ease: "anticipate",
+                },
+              }}  className="text-xl mt-16 text-fuchsia-900 text-center mb-6 font-semibold uppercase font-poppins">
             Our Partners
-          </p>
-          <h1 className="text-7xl text-center  mb-20 font-semibold  font-poppins">
+          </m.p>
+          <m.h1  initial={{ opacity: 0,y:50 }}
+              whileInView={{
+                y:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.32,
+                  ease: "anticipate",
+                },
+              }}  className="text-7xl text-center  mb-20 font-semibold  font-poppins">
             Reaching the next billion users <br />
             with the world’s best partners.
-          </h1>
-          <button className="text-white w-56 border-2 font-poppins hover:bg-black hover:opacity-80 hover:border-2 py-4 shadow-grey-700 shadow-2xl  transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 rounded-full  font-semibold text-lg tracking-wide">
+          </m.h1>
+          <m.button  initial={{ opacity: 0,y:50 }}
+              whileInView={{
+                y:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.32,
+                  ease: "anticipate",
+                },
+              }}  className="text-white w-56 border-2 font-poppins hover:bg-black hover:opacity-80 hover:border-2 py-4 shadow-grey-700 shadow-2xl  transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 rounded-full  font-semibold text-lg tracking-wide">
             Learn More
-          </button>
+          </m.button>
         </div>
       </div>
 
@@ -155,21 +254,111 @@ const AboutUs = () => {
             <img src="./images/navlogo.png" className="absolute w-96 mt-8" />
           </div>
           <div className=" w-1/2 min-h-[80vh] py-16 px-16  flex flex-col justify-center ">
-            <h1 className="text-3xl mb-3  ">PERKS OF CONNECTING</h1>
-            <p className="text-6xl mb-8">with Ozo Pay</p>
+            <m.h1  initial={{ opacity: 0,y:50 }}
+              whileInView={{
+                y:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.25,
+                  ease: "anticipate",
+                },
+              }}  className="text-3xl mb-3  ">PERKS OF CONNECTING</m.h1>
+            <m.p initial={{ opacity: 0,y:50 }}
+              whileInView={{
+                y:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.31,
+                  ease: "anticipate",
+                },
+              }}  className="text-6xl mb-8">with Ozo Pay</m.p>
             <div className="text-lg space-y-5">
               {" "}
-              <li>Minimum investment is just $25</li>
-              <li>Earn upto 325% profit just through your investments</li>
-              <li>
+              <m.li initial={{ opacity: 0,x:50 }}
+              whileInView={{
+                x:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.37,
+                  ease: "anticipate",
+                },
+              }} >Minimum investment is just $25</m.li>
+              <m.li initial={{ opacity: 0,x:50 }}
+              whileInView={{
+                x:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.41,
+                  ease: "anticipate",
+                },
+              }} >Earn upto 325% profit just through your investments</m.li>
+              <m.li initial={{ opacity: 0,x:50 }}
+              whileInView={{
+                x:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.47,
+                  ease: "anticipate",
+                },
+              }}>
                 Tec and Mac wallet withdrawal gates will be open on every
                 tuesday
-              </li>
-              <li>Earn upto 25% of networking bonus</li>
-              <li>Principle returns upto 50%</li>
-              <li>24X7 backend support available</li>
-              <li>A registered business in 3 countries</li>
-              <li>Our office can be visited with a proper appointment</li>
+              </m.li>
+              <m.li initial={{ opacity: 0,x:50 }}
+              whileInView={{
+                x:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.52,
+                  ease: "anticipate",
+                },
+              }}>Earn upto 25% of networking bonus</m.li>
+              <m.li initial={{ opacity: 0,x:50 }}
+              whileInView={{
+                x:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.57,
+                  ease: "anticipate",
+                },
+              }}>Principle returns upto 50%</m.li>
+              <m.li initial={{ opacity: 0,x:50 }}
+              whileInView={{
+                x:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.61,
+                  ease: "anticipate",
+                },
+              }}>24X7 backend support available</m.li>
+              <m.li initial={{ opacity: 0,x:50 }}
+              whileInView={{
+                x:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.67,
+                  ease: "anticipate",
+                },
+              }}>A registered business in 3 countries</m.li>
+              <m.li initial={{ opacity: 0,x:50 }}
+              whileInView={{
+                x:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.71,
+                  ease: "anticipate",
+                },
+              }}>Our office can be visited with a proper appointment</m.li>
             </div>
           </div>
         </div>
@@ -177,58 +366,157 @@ const AboutUs = () => {
 
       <div className="w-full min-h-[110vh] relative  flex justify-center items-center flex-col ">
         <div className="mx-auto max-w-6xl  w-full flex justify-center items-center flex-col absolute">
-          <p className="text-xl mt-16 text-fuchsia-800 text-center mb-6 font-semibold uppercase font-poppins">
+          <m.p initial={{ opacity: 0,y:-50 }}
+              whileInView={{
+                y:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.21,
+                  ease: "anticipate",
+                },
+              }} className="text-xl mt-16 text-fuchsia-800 text-center mb-6 font-semibold uppercase font-poppins">
             Our Team
-          </p>
-          <h1 className="text-5xl text-center mb-6 font-semibold uppercase font-poppins">
+          </m.p>
+          <m.h1 initial={{ opacity: 0,y:50 }}
+              whileInView={{
+                y:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.27,
+                  ease: "anticipate",
+                },
+              }} className="text-5xl text-center mb-6 font-semibold uppercase font-poppins">
             One vision.
             <br />
-          </h1>
-          <span className=" text-5xl text-center  mb-12 font-semibold uppercase font-poppins">
+          </m.h1>
+          <m.span initial={{ opacity: 0,y:50 }}
+              whileInView={{
+                y:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.32,
+                  ease: "anticipate",
+                },
+              }} className=" text-5xl text-center  mb-12 font-semibold uppercase font-poppins">
             One global team.
-          </span>
-          <h1 className="text-xl text-center mb-6 font-semibold uppercase font-poppins">
+          </m.span>
+          <m.h1 initial={{ opacity: 0,y:50 }}
+              whileInView={{
+                y:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.37,
+                  ease: "anticipate",
+                },
+              }} className="text-xl text-center mb-6 font-semibold uppercase font-poppins">
             Building a world-changing platform is a monumental task.
             <br /> These are the people behind it.
-          </h1>
+          </m.h1>
 
           <div
             className=" my-16
           flex space-x-24 text-light-blue-700"
           >
             <div className="text-center">
-              <h1 className="text-8xl text-center font-semibold uppercase font-poppins">
+              <m.h1 initial={{ opacity: 0,y:50 }}
+              whileInView={{
+                y:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.42,
+                  ease: "anticipate",
+                },
+              }} className="text-8xl text-center font-semibold uppercase font-poppins">
                 80M
-              </h1>
-              <span className="text-lg text-white text-center   font-poppins">
+              </m.h1>
+              <m.span initial={{ opacity: 0,x:-50 }}
+              whileInView={{
+                x:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.47,
+                  ease: "anticipate",
+                },
+              }} className="text-lg text-white text-center   font-poppins">
                 Users
-              </span>
+              </m.span>
             </div>
             <div className="text-center">
-              <h1 className="text-8xl text-center font-semibold uppercase font-poppins">
+              <m.h1 initial={{ opacity: 0,y:50 }}
+              whileInView={{
+                y:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.46,
+                  ease: "anticipate",
+                },
+              }} className="text-8xl text-center font-semibold uppercase font-poppins">
                 90
-              </h1>
-              <span className="text-lg text-white text-center   font-poppins">
+              </m.h1>
+              <m.span initial={{ opacity: 0,x:50 }}
+              whileInView={{
+                x:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.52,
+                  ease: "anticipate",
+                },
+              }} className="text-lg text-white text-center   font-poppins">
                 Countries
-              </span>
+              </m.span>
             </div>
           </div>
 
-          <button className="text-white w-56 border-2 font-poppins hover:bg-black hover:opacity-80 hover:border-2 py-4 shadow-grey-700 shadow-2xl  transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 rounded-full  font-semibold text-lg tracking-wide">
+          <m.button initial={{ opacity: 0,y:50 }}
+              whileInView={{
+                x:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.52,
+                  ease: "anticipate",
+                },
+              }} className="text-white w-56 border-2 font-poppins hover:bg-black hover:opacity-80 hover:border-2 py-4 shadow-grey-700 shadow-2xl  transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 rounded-full  font-semibold text-lg tracking-wide">
             Start the Journey
-          </button>
+          </m.button>
         </div>
       </div>
       {/* Leadership  */}
       <div className=" py-20">
         <div className="xl:container mx-auto px-6 md:px-12">
           <div className="mb-28">
-            <h2 className="mb-4 text-center text-2xl  font-poppins font-bold text-white md:text-5xl">
+            <m.h2 initial={{ opacity: 0,y:-50 }}
+              whileInView={{
+                y:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.21,
+                  ease: "anticipate",
+                },
+              }} className="mb-4 text-center text-2xl  font-poppins font-bold text-white md:text-5xl">
               Meet Our Executive Team
-            </h2>
+            </m.h2>
           </div>
           <div className="grid gap-24 md:grid-cols-5 md:gap-12 font-poppins">
-            <div className="group space-y-4 text-center">
+            <m.div initial={{ opacity: 0,x:50 }}
+              whileInView={{
+                x:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.25,
+                  ease: "anticipate",
+                },
+              }} className="group space-y-4 text-center">
               <div className="mx-auto h-56 w-56  overflow-hidden rounded-2xl md:h-40 md:w-40 lg:h-56 lg:w-56">
                 <img
                   className="mx-auto h-full w-full  scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
@@ -293,8 +581,17 @@ const AboutUs = () => {
                   </svg>
                 </a>
               </div>
-            </div>
-            <div className="group space-y-4 text-center">
+            </m.div>
+            <m.div initial={{ opacity: 0,x:50 }}
+              whileInView={{
+                x:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.30,
+                  ease: "anticipate",
+                },
+              }} className="group space-y-4 text-center">
               <div className="mx-auto h-56 w-56  overflow-hidden rounded-2xl md:h-40 md:w-40 lg:h-56 lg:w-56">
                 <img
                   className="mx-auto h-full w-full - scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
@@ -359,8 +656,17 @@ const AboutUs = () => {
                   </svg>
                 </a>
               </div>
-            </div>
-            <div className="group space-y-4 text-center">
+            </m.div>
+            <m.div initial={{ opacity: 0,x:50 }}
+              whileInView={{
+                x:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.35,
+                  ease: "anticipate",
+                },
+              }} className="group space-y-4 text-center">
               <div className="mx-auto h-56 w-56  overflow-hidden rounded-2xl md:h-40 md:w-40 lg:h-56 lg:w-56">
                 <img
                   className="mx-auto h-full w-full - scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
@@ -425,8 +731,17 @@ const AboutUs = () => {
                   </svg>
                 </a>
               </div>
-            </div>
-            <div className="group space-y-4 text-center">
+            </m.div>
+            <m.div initial={{ opacity: 0,x:50 }}
+              whileInView={{
+                x:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.40,
+                  ease: "anticipate",
+                },
+              }} className="group space-y-4 text-center">
               <div className="mx-auto h-56 w-56  overflow-hidden rounded-2xl md:h-40 md:w-40 lg:h-56 lg:w-56">
                 <img
                   className="mx-auto h-full w-full - scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
@@ -491,9 +806,18 @@ const AboutUs = () => {
                   </svg>
                 </a>
               </div>
-            </div>
+            </m.div>
 
-            <div className="group space-y-4 text-center">
+            <m.div initial={{ opacity: 0,x:50 }}
+              whileInView={{
+                x:0,
+                opacity: 1,
+                transition: {
+                  duration: 0.7,
+                  delay: 0.45,
+                  ease: "anticipate",
+                },
+              }} className="group space-y-4 text-center">
               <div className="mx-auto h-56 w-56  overflow-hidden rounded-2xl md:h-40 md:w-40 lg:h-56 lg:w-56">
                 <img
                   className="mx-auto h-full w-full - scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
@@ -558,7 +882,7 @@ const AboutUs = () => {
                   </svg>
                 </a>
               </div>
-            </div>
+            </m.div>
           </div>
         </div>
       </div>
@@ -610,7 +934,16 @@ const AboutUs = () => {
 
             <div className="text-3xl flex justify-center items-center font-semibold min-h-[380px]">
               {values == "think" && (
-                <>
+                <m.p initial={{ opacity: 0,x:50 }}
+                whileInView={{
+                  x:0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.7,
+                  
+                    ease: "anticipate",
+                  },
+                }}>
                   We consider clarity of thought to be the single most important
                   trait we look for in our colleagues
                   <br />
@@ -621,10 +954,19 @@ const AboutUs = () => {
                   <br />
                   We are concise and articulate, putting effort into making
                   things simple and easy to understand
-                </>
+                </m.p>
               )}
               {values == "resource" && (
-                <>
+                <m.p  initial={{ opacity: 0,x:50 }}
+                whileInView={{
+                  x:0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.7,
+                  
+                    ease: "anticipate",
+                  },
+                }}  >
                   We go beyond the surface to gain a deep understanding of every
                   issue
                   <br />
@@ -635,11 +977,20 @@ const AboutUs = () => {
                   <br />
                   We believe that great ideas can come from anywhere, regardless
                   of seniority and experience
-                </>
+               </m.p>
               )}
 
               {values == "stay" && (
-                <>
+                <m.p  initial={{ opacity: 0,x:50 }}
+                whileInView={{
+                  x:0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.7,
+                  
+                    ease: "anticipate",
+                  },
+                }}>
                   {" "}
                   We never give up, carry each other through hard times, and
                   recognise grit in our colleagues
@@ -651,10 +1002,19 @@ const AboutUs = () => {
                   <br />
                   We celebrate milestones together, recharge, and get back to
                   work{" "}
-                </>
+               </m.p>
               )}
               {values == "big" && (
-                <>
+                <m.p  initial={{ opacity: 0,x:50 }}
+                whileInView={{
+                  x:0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.7,
+                  
+                    ease: "anticipate",
+                  },
+                }}>
                   {" "}
                   We think big, take smart risks, and do things that have never
                   been done before
@@ -665,10 +1025,19 @@ const AboutUs = () => {
                   <br />
                   <br />
                   We know that it always seems impossible until it’s done
-                </>
+               </m.p>
               )}
               {values == "take" && (
-                <>
+                <m.p  initial={{ opacity: 0,x:50 }}
+                whileInView={{
+                  x:0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.7,
+                  
+                    ease: "anticipate",
+                  },
+                }}>
                   {" "}
                   We are all empowered to take initiative, make the right
                   decisions, and act as owners
@@ -680,10 +1049,19 @@ const AboutUs = () => {
                   <br />
                   We aim to surprise and inspire with the quality and speed of
                   our decision-making
-                </>
+               </m.p>
               )}
               {values == "remain" && (
-                <>
+                <m.p  initial={{ opacity: 0,x:50 }}
+                whileInView={{
+                  x:0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.7,
+                  
+                    ease: "anticipate",
+                  },
+                }}>
                   {" "}
                   We don’t seek the limelight and focus on doing what is best
                   for the company and the users
@@ -695,7 +1073,7 @@ const AboutUs = () => {
                   <br />
                   We think twice before spending, but are aggressive when it
                   comes to investing in what matters{" "}
-                </>
+               </m.p>
               )}
             </div>
 

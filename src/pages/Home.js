@@ -23,32 +23,9 @@ const item = {
   },
 };
 
-const Interfacecontainer = {
-  hidden: { opacity: 1, scale: 0 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      delayChildren: 0.3,
-      staggerChildren: 0.2,
-    },
-  },
-};
-const squareVariants = {
-  visible: { opacity: 1, scale: 2, transition: { duration: 1 } },
-  hidden: { opacity: 0, scale: 0 },
-};
+
 const Home = () => {
-  const { scrollYProgress } = useScroll();
-
-  const controls = useAnimation();
-  const [ref, inView] = useInView();
-
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
-  }, [controls, inView]);
+  
   return (
     <div className="w-full flex items-start justify-center  flex-col">
       {/* <video
