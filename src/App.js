@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Signup from "./components/Signup";
 import Blog from "./pages/Blog";
-import Dashboard from "./pages/Dashboard";
+import Dashboard from "./pages/Dashboard/index";
 import Home from "./pages/Home";
 import Trade from "./pages/Trade";
 import ContactUs from "./pages/ContactUs";
@@ -37,8 +37,9 @@ function App() {
         <Route path="/legal" element={<Legal/>} />
         <Route path="/resources" element={<Resources/>} />
 
+        <Route path="/dashboard" element={<Dashboard />} />
 
-        <Route path="/dashboard" element={<Sidebar/>} />
+        {/* <Route path="/dashboard" element={<Sidebar/>} /> */}
 
 
       </Routes>

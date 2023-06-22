@@ -1,8 +1,9 @@
 import { Menu, MenuItem } from "@mui/material";
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import {motion as m } from "framer-motion"
 const Navbar = () => {
+ 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -11,6 +12,8 @@ const Navbar = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
+  
+ 
   return (
     <m.div>
       <div  initial={{ y: -50, opacity: 0 }}
@@ -45,9 +48,19 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link class="hover:text-gray-200" to="/earning">
-                    Earning
-                  </Link>
+                <div class="relative">
+  <button id="dropdown-btn" class="bg-blue-500 text-white px-4 py-2 rounded focus:outline-none">
+    Dropdown
+  </button>
+  <ul id="dropdown-menu" class="absolute hidden bg-white text-gray-700 py-2 rounded  shadow-lg mt-2">
+    <li class="px-4 py-2 hover:bg-gray-200">Option 1</li>
+    <li class="px-4 py-2 hover:bg-gray-200">Option 2</li>
+    <li class="px-4 py-2 hover:bg-gray-200">Option 3</li>
+  </ul>
+</div>
+
+
+
                 </li>
                 <li>
                   <Link class="hover:text-gray-200" to="/resources">
@@ -74,10 +87,10 @@ const Navbar = () => {
                     Blog
                   </Link>
                 </li>
-                <a className="" href="#">
+                <Link to="/dashboard" className="" href="#">
                 <img class="h-14  " src="./images/dashboard2.png" alt="logo" />
                      
-              </a>
+              </Link>
 
               </ul>
               {/*//            <!-- Header Icons -->*/}

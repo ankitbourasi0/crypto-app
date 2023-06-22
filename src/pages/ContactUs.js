@@ -15,7 +15,7 @@ const ContactUs = () => {
                   delay: 0,
                   ease: "anticipate",
                 },
-              }} className="text-6xl mb-6">Contact Us</m.h1>
+              }} className="text-6xl mb-6 font-semibold">Contact Us</m.h1>
           <m.p  initial={{ opacity: 0,y:50 }}
               whileInView={{
                 y:0,
@@ -25,7 +25,7 @@ const ContactUs = () => {
                   delay: 0.2,
                   ease: "anticipate",
                 },
-              }} className="font-semibold">
+              }} className="font-semibold ml-1">
             Questions? Comments? Want to <br />
             schedule a demo? We'd love to chat!
           </m.p>
@@ -81,7 +81,7 @@ const ContactUs = () => {
                   delay: 0.33,
                   ease: "anticipate",
                 },
-              }}  className="text-6xl mb-6">
+              }}  className="text-6xl font-semibold mb-6">
             Send Us A <br /> Message
           </m.h1>
           <m.span initial={{ opacity: 0,x:50 }}
@@ -258,10 +258,10 @@ const ContactUs = () => {
         <p className="text-xl px-3 py-2 mb-6 bg-gray-300 text-black font-semibold rounded-full">
           Join us now
         </p>
-        <h1 className="text-5xl">
+        <h1 className="text-5xl font-semibold">
         Invest in the Digital Connected Era for Promising Returns 
         </h1>
-        <p className="text-gray-400 max-w-[600px] mt-6"> 
+        <p className="text-gray-400 font-medium max-w-[600px] mt-6"> 
         Unlock the potential of the digital connected era with a new investment opportunity. Explore growth 
 prospects and maximize returns in this interconnected digital landscape.
         </p>

@@ -2,7 +2,7 @@ import React from "react";
 import { motion as m } from "framer-motion";
 const Resources = () => {
   return (
-    <div className="w-full font-poppins pb-24  bg-gradient-to-tr from-purple-600  ">
+    <div className="w-full font-poppins pb-24   ">
       <div className="max-w-6xl min-h-[90vh] mb-12 justify-between flex pt-44 w-full mx-auto">
         <div>
           <m.h1
@@ -207,8 +207,10 @@ reinforcing trust through engaging and informative multimedia support.
         </div>
       </div>
 
-      <div className="w-full max-w-6xl flex justify-between  mx-auto">
-        <div className="w-1/4">
+      <div className="w-full relative">
+        <img src="./images/resources.png"/>
+        <div className="w-full max-w-7xl absolute top-28 right-20 flex justify-between  mx-auto">
+        <div className="w-[350px] ml-28 text-center">
           <m.h1  initial={{opacity:0,y:-50 }}
             whileInView={{
           y:0,
@@ -218,7 +220,7 @@ reinforcing trust through engaging and informative multimedia support.
        delay: 0.34,
        ease: "anticipate"
             }
-            }}  className="text-4xl">Countries</m.h1>
+            }}  className="text-4xl font-semibold">Different Language Business Plan</m.h1>
         </div>
         <div className="px-16 py-24 max-w-[550px] overflow-y-auto no-scrollbar  max-h-[550px]  space-y-8">
           <m.div  initial={{opacity:0,x:50 }}
@@ -469,6 +471,7 @@ reinforcing trust through engaging and informative multimedia support.
             <p className="pl-6 text-2xl">Hong Kong</p>
           </m.div>
         </div>
+      </div>
       </div>
       <m.div  initial={{opacity:0,y:50 }}
             whileInView={{

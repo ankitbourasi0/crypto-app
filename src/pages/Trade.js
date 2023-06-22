@@ -4,7 +4,16 @@ const Trade = () => {
   return (
     <div className="w-full font-poppins  mb-8 ">
       <div className="w-full relative ">
-        <img src="./images/designbg1.jpg" />
+      <video
+          autoplay="true"
+          loop="true"
+          muted="true"
+          class=" z-0 w-auto 
+            min-w-full  object-cover "
+        >
+          <source src="./images/video/tradevideo.mp4" />
+        </video>
+        {/* <img src="./images/designbg1.jpg" /> */}
         <div className=" absolute top-56 left-32 w-full max-w-7xl mx-auto flex justify-center items-center flex-col ">
           <m.h1  initial={{ y:-50,opacity:0 }}
             whileInView={{
@@ -15,7 +24,7 @@ const Trade = () => {
        delay: 0.4,
        ease: [0, 0.71, 0.2, 1.01]
             }
-            }} className="text-6xl text-center   mb-6">
+            }} className="text-6xl text-center font-semibold   mb-6">
           Enhanced Trade Standards: <br/>
           One Ozo Sets the Bar Higher for <br/>Exceptional Investment Opportunities
           </m.h1>
@@ -28,7 +37,7 @@ const Trade = () => {
        delay: 0.6,
        ease: [0, 0.71, 0.2, 1.01]
             }
-            }} className="text-xl text-center mb-6">
+            }} className="text-xl text-center font-medium mb-6">
           One Ozo is committed to raising the bar in trade standards, providing exceptional investment <br/> 
 opportunities that surpass industry norms and deliver superior results for investors
           </m.p>
@@ -111,7 +120,7 @@ technology infrastructure and expert market analysis
       </div>
 
       <div className="w-full max-w-6xl mx-auto mt-28 mb-16 flex items-center justify-between min-h-[90vh] ">
-        <div className="text-5xl max-w-[250px] w-full space-y-6">
+        <div className="text-5xl max-w-[250px] font-semibold w-full space-y-6">
           <m.div  initial={{ y:50,opacity:0 }}
             whileInView={{
           
@@ -123,7 +132,7 @@ technology infrastructure and expert market analysis
             }
             }}>
             <h1 className="mb-3">50,000</h1>
-            <p className="text-xl text-purple-900">Investor Base</p>
+            <p className="text-xl text-purple-900">Active Investor Base</p>
           </m.div>
 
           <m.div  initial={{ y:50,opacity:0 }}
@@ -136,7 +145,7 @@ technology infrastructure and expert market analysis
        ease: [0, 0.71, 0.2, 1.01]
             }
             }}>
-            <h1 className="mb-3">$500</h1>
+            <h1 className="mb-3">$500M</h1>
             <p className="text-xl text-purple-900">Investment Capital</p>
           </m.div>
           <m.div  initial={{ y:50,opacity:0 }}
@@ -202,12 +211,12 @@ technology infrastructure and expert market analysis
        ease: [0, 0.71, 0.2, 1.01]
             }
             }} className=" z-10 absolute top-40 left-72">
-            <h1 className="text-4xl tracking-wider mb-4 ">
+            <h1 className="text-4xl font-semibold tracking-wider mb-4 ">
             Impressive Investor Base<br/>
              and Satisfaction Rates: <br/>
              Unveiling One Ozo's Success
             </h1>
-            <p className="max-w-[450px] tracking-wider text-sm w-full">
+            <p className="max-w-[450px] font-medium tracking-wider text-sm w-full">
             One Ozo boasts a substantial number of investors, while maintaining a high percentage of 
 satisfied clients. Our experienced team of traders ensures top-notch performance and service
             </p>
@@ -228,7 +237,7 @@ satisfied clients. Our experienced team of traders ensures top-notch performance
        delay: 0.6,
        ease: [0, 0.71, 0.2, 1.01]
             }
-            }}  className="text-5xl mb-6 font-semibold text-center ">
+            }}  className="text-5xl mb-6 font-bold text-center ">
             Our Services
           </m.h1>
           <m.p   initial={{ y:-50,opacity:0 }}

@@ -25,7 +25,7 @@ const AboutUs = () => {
                   delay: 0.38,
                   ease: "anticipate",
                 },
-              }}  className="text-5xl text-center mb-12 font-semibold uppercase font-poppins">
+              }}  className="text-5xl text-center mb-12 font-semibold  font-poppins">
        Empowering <br/>Financial Success,<br/> Innovatively
       </m.h1>
 
@@ -38,7 +38,7 @@ const AboutUs = () => {
                   delay: 0.51,
                   ease: "anticipate",
                 },
-              }}  src="./images/crypto-com-logo.webp" className="w-[550px] " />
+              }}  src="./images/logo.png" className="w-[550px] " />
       <m.h1 initial={{ opacity: 0,y:-50 }}
               whileInView={{
                 y:0,
@@ -60,7 +60,7 @@ const AboutUs = () => {
                   delay: 0.38,
                   ease: "anticipate",
                 },
-              }}  className="text-5xl text-center  mb-20 font-semibold uppercase font-poppins">
+              }}  className="text-5xl text-center  mb-20 font-semibold  font-poppins">
        Empowering Investors with<br/> Innovative Solutions in Cryptocurrency<br/> for Financial Prosperity
       </m.h1>
 
@@ -88,7 +88,7 @@ const AboutUs = () => {
                   delay: 0.34,
                   ease: "anticipate",
                 },
-              }}  className="text-4xl text-center  mb-20 font-semibold uppercase font-poppins">
+              }}  className="text-4xl text-center  mb-20 font-semibold  font-poppins">
             Diversify your portfolio and<br/> maximize returns with cryptocurrency<br/> and forex investments
             <br /> <br />
             Tap into the growth potential<br/> of cryptocurrency and forex markets.
@@ -116,11 +116,11 @@ const AboutUs = () => {
 
       <div className="w-full min-h-[110vh] relative  flex justify-center items-center flex-col ">
         <video
-          src="./images/video/aboutus.mp4"
+          src="./images/video/aboutusvideo.mp4"
           autoplay="true"
           loop="true"
           muted="true"
-          class="absolute z-0 w-auto opacity-50
+          class="absolute z-0 w-auto opacity-80
             min-w-full object-cover max-h-[110vh] max-w-none"
         />
         <div className="mx-auto max-w-7xl  w-full flex justify-center items-center flex-col absolute">
@@ -436,7 +436,7 @@ unparalleled value and satisfaction to our investors.
                   delay: 0.37,
                   ease: "anticipate",
                 },
-              }} className="text-xl text-center mb-6 font-semibold uppercase font-poppins">
+              }} className="text-xl text-center mb-6 font-semibold  font-poppins">
          Driven team of experts behind One Ozo's <br/>revolutionary investment platform
           </m.h1>
 

@@ -21,10 +21,7 @@ module.exports = withMT({
     },
     fontFamily: {
       'poppins': ['Poppins', 'sans-serif'],
-      'Bonita':['Bonita'],
-      'Lobster':['Lobster'],
-      'NOOB':['NOOB'],
-      'Zighead':['Zighead']
+    
     },
     extend: {
       animation: {

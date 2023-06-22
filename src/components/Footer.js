@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className=" text-white bg-neutral-950">
+    <div className=" text-white bg-neutral-950  w-full font-poppins  ">
       <footer
         aria-label="Site Footer"
-        class="bg-z  lg:grid lg:grid-cols-5"
+        class="bg-z  max-w-5xl mx-auto lg:grid lg:grid-cols-5"
       >
         {/* <div class="relative block h-32 lg:col-span-2 lg:h-full">
           <img
@@ -24,7 +24,7 @@ export default function Footer() {
         <div class="px-4 py-16 sm:px-6 lg:col-span-5 lg:px-8 text-left">
           
           <div class="grid grid-cols-1 gap-8 sm:grid-cols-3">
-          <div className="text-left space-y-4 text-gray-500 px-6  text-lg ">
+          <div className="text-left space-y-4 text-gray-200 px-6  text-sm font-normal ">
           {/* Logo  */}
           <img src="./images/navlogo.png" className="w-20"/>
           <p className="mb-4 ">Experience lucrative investments with Ozo
@@ -42,18 +42,18 @@ export default function Footer() {
 
             <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 font-poppins  text-left">
               <div>
-                <p class="font-medium text-2xl text-gray-400  ">
+                <p class="font-medium text-2xl text-gray-200  ">
                   Useful Links
                 </p>
 
                 <nav aria-label="Footer Navigation - Services" class="mt-6">
-                  <ul class="space-y-4 text-lg tracking-wider">
+                  <ul class="space-y-4 text-sm tracking-wider">
                  
 
                     <li>
                       <a
                         href="#"
-                        class="text-gray-500 transition hover:opacity-75 "
+                        class="text-gray-400 transition hover:opacity-75 "
                       >
                        Home 
                       </a>
@@ -62,7 +62,7 @@ export default function Footer() {
                     <li>
                       <a
                         href="#"
-                        class="text-gray-500 transition hover:opacity-75 "
+                        class="text-gray-400 transition hover:opacity-75 "
                       >
                     About Us 
                       </a>
@@ -71,7 +71,7 @@ export default function Footer() {
                     <li>
                       <a
                         href="#"
-                        class="text-gray-500 transition hover:opacity-75 "
+                        class="text-gray-400 transition hover:opacity-75 "
                       >
                         Feature
                       </a>
@@ -80,7 +80,7 @@ export default function Footer() {
                     <li>
                       <a
                         href="#"
-                        class="text-gray-500 transition hover:opacity-75 "
+                        class="text-gray-400 transition hover:opacity-75 "
                       >
                         Services
                       </a>
@@ -88,7 +88,7 @@ export default function Footer() {
                     <li>
                       <a
                         href="#"
-                        class="text-gray-500 transition hover:opacity-75 "
+                        class="text-gray-400 transition hover:opacity-75 "
                       >
                         Our Teams
                       </a>
@@ -96,7 +96,7 @@ export default function Footer() {
                     <li>
                       <a
                         href="#"
-                        class="text-gray-500 transition hover:opacity-75 "
+                        class="text-gray-400 transition hover:opacity-75 "
                       >
                         Gallery
                       </a>
@@ -109,11 +109,11 @@ export default function Footer() {
                 
 
                 <nav aria-label="Footer Navigation - Company" className="mt-14">
-                  <ul class="space-y-4 text-lg ">
+                  <ul class="space-y-4 text-sm ">
                     <li>
                       <a
                         href="#"
-                        class="text-gray-500 transition hover:opacity-75 "
+                        class="text-gray-400 transition hover:opacity-75 "
                       >
                        Our Process
                       </a>
@@ -122,7 +122,7 @@ export default function Footer() {
                     <li>
                       <a
                         href="#"
-                        class="text-gray-500 transition hover:opacity-75 "
+                        class="text-gray-400 transition hover:opacity-75 "
                       >
                         Our Services
                       </a>
@@ -131,7 +131,7 @@ export default function Footer() {
                     <li>
                       <a
                         href="#"
-                        class="text-gray-500 transition hover:opacity-75 "
+                        class="text-gray-400 transition hover:opacity-75 "
                       >
                         Our Careers
                       </a>
@@ -139,7 +139,7 @@ export default function Footer() {
                     <li>
                       <a
                         href="#"
-                        class="text-gray-500 transition hover:opacity-75 "
+                        class="text-gray-400 transition hover:opacity-75 "
                       >
                         FAQs
                       </a>
@@ -147,7 +147,7 @@ export default function Footer() {
                     <li>
                       <a
                         href="#"
-                        class="text-gray-500 transition hover:opacity-75 "
+                        class="text-gray-400 transition hover:opacity-75 "
                       >
                         Contact Us
                       </a>
@@ -165,13 +165,13 @@ export default function Footer() {
                 </span> */}
 
                 <a
-                  class="block text-2xl font-medium hover:opacity-75 text-white sm:text-3xl"
+                  class="block text-2xl font-medium hover:opacity-75 text-white "
                 >
                 Subscribe Us
                 </a>
               </p>
 
-              <ul class="mt-8 space-y-1 text-lg text-gray-500">
+              <ul class="mt-8 space-y-1 text-sm text-gray-400">
              <p>He lay on his armour-like back,
              <br/> and if he lifted 
               his head his little be could</p>
@@ -183,7 +183,7 @@ export default function Footer() {
                     href="/"
                     rel="noreferrer"
                     target="_blank"
-                    class=" transition hover:opacity-75 text-gray-500"
+                    class=" transition hover:opacity-75 text-gray-400"
                   >
                     <span class="sr-only">Facebook</span>
 
@@ -207,7 +207,7 @@ export default function Footer() {
                     href="/"
                     rel="noreferrer"
                     target="_blank"
-                    class="transition hover:opacity-75 text-gray-500"
+                    class="transition hover:opacity-75 text-gray-400"
                   >
                     <span class="sr-only">Instagram</span>
 
@@ -231,7 +231,7 @@ export default function Footer() {
                     href="/"
                     rel="noreferrer"
                     target="_blank"
-                    class="text-gray-500 transition hover:opacity-75 "
+                    class="text-gray-400 transition hover:opacity-75 "
                   >
                     <span class="sr-only">Twitter</span>
 
@@ -251,7 +251,7 @@ export default function Footer() {
                     href="/"
                     rel="noreferrer"
                     target="_blank"
-                    class="text-gray-500 transition hover:opacity-75 "
+                    class="text-gray-400 transition hover:opacity-75 "
                   >
                     <span class="sr-only">GitHub</span>
 
@@ -275,7 +275,7 @@ export default function Footer() {
                     href="/"
                     rel="noreferrer"
                     target="_blank"
-                    class="text-gray-500 transition hover:opacity-75 "
+                    class="text-gray-400 transition hover:opacity-75 "
                   >
                     <span class="sr-only">Dribbble</span>
 
@@ -297,8 +297,11 @@ export default function Footer() {
             </div>
           </div>
 
-          <div class="pt-12 mt-12 border-t border-gray-100 font-poppins ">
-            <div class="sm:flex sm:items-center sm:justify-between">
+         
+        </div>
+      </footer>
+      <div class="min-h-[10vh] flex mt-12 w-full  border-gray-100 bg-black font-poppins ">
+            <div class="sm:flex sm:items-center w-full max-w-4xl mx-auto sm:justify-between">
               <nav aria-label="Footer Navigation - Support">
                 <ul class="flex flex-wrap gap-4 text-sm">
                   <li>
@@ -335,8 +338,6 @@ export default function Footer() {
               </p>
             </div>
           </div>
-        </div>
-      </footer>
     </div>
   );
 }

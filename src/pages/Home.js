@@ -42,9 +42,9 @@ const Home = () => {
           loop="true"
           muted="true"
           class="absolute z-0 w-auto 
-            min-w-full object-cover max-h-screen max-w-none"
+            max-w-full object-cover max-h-screen "
         >
-          <source src="./images/video/firstvideo.mp4" />
+          <source src="./images/video/mainpage.mp4" />
         </video>
         {/* <img src="./images/animation/mainintro.gif" className=""/> */}
         <div className="flex w-full max-w-7xl top-40 absolute items-center">
@@ -96,7 +96,7 @@ const Home = () => {
                 <img src="./images/button.png" className="h-14" />
               </button>
               <button className="text-white      shadow-white-700 shadow-md  hover:text-white transition ease-in-out delay-150 hover:scale-95  hover:translate-y-1 rounded-full  font-semibold text-lg tracking-wide">
-                <img src="./images/dashboard1.png" className="h-24" />
+                <img src="./images/dashboardfinal.png" className="h-[68px]" />
               </button>
             </m.div>
           </div>
@@ -110,10 +110,10 @@ const Home = () => {
             </div> */}
 
       {/* What is OZo Trade  */}
-      <div className="w-full flex h-full max-h-[100vh] relative justify-center items-center  ">
+      <div className="w-full flex h-full mt-44 max-h-[100vh] relative justify-center items-center  ">
         <img
-          src="./images/laptop1.jpg"
-          className="z-0 opacity-80  max-h-[100vh] w-full object-cover "
+          src="./images/laptop2.jpg"
+          className="z-0 opacity-80  max-w-full w-full  "
         />
         {/* <video
           autoplay="true"
@@ -130,7 +130,7 @@ const Home = () => {
           </div>
           <div className="w-1/2 text-left ">
             <m.h1
-              className="text-5xl   mb-12 font-semibold font-poppins"
+              className="text-5xl   mb-12 font-bold font-poppins"
               initial={{ y: "20vh", opacity: 0 }}
               whileInView={{
                 y: 0,
@@ -495,15 +495,15 @@ any queries or concerns promptly and effectively.
       {/* </div> */}
 
       {/* Design 1  */}
-      <div className="w-full min-h-[100vh] relative flex mb-16 items-center  ">
+      <div className="w-full min-h-[100vh] relative flex mb-16 mt-28  items-center  ">
         <img
           src="./images/skydiving.jpg"
-          className="z-0 opacity-80 object-cover  "
+          className="z-0 opacity-80 object-cover max-w-full "
         />
 
         <div className=" absolute px-52 w-full font-poppins   bg-opacity-40 py-[202px] ">
           <m.h1
-            className="text-7xl font-semibold  mb-6"
+            className="text-7xl font-bold  mb-6"
             initial={{ x: -50, opacity: 0 }}
             whileInView={{
               x: 0,
@@ -582,7 +582,7 @@ platform, so you can have peace of mind <br/>and enjoy worry-free financial stab
           loop="true"
           muted="true"
           class="absolute z-0 w-auto opacity-50
-            min-w-full object-cover max-h-screen max-w-none"
+            max-w-full object-cover max-h-screen "
         >
           <source src="./images/video/ozotokenvideo1.mp4" />
         </video>
@@ -598,7 +598,7 @@ platform, so you can have peace of mind <br/>and enjoy worry-free financial stab
                   ease: "anticipate",
                 },
               }}
-              className="font-semibold font-poppins text-5xl mb-6"
+              className="font-bold font-poppins text-5xl mb-6"
             >
              OZO Token: Unlock Lucrative Promotions<br />
               <span className="text-4xl font-medium">
@@ -703,12 +703,12 @@ benefits.
       <div className="w-full min-h-[100vh] relative flex font-poppins items-center  ">
         <img
           src="./images/dogbg.jpg"
-          className="z-0  opacity-60 object-cover "
+          className="z-0  opacity-60 object-cover max-w-full "
         />
 
         <div className=" absolute px-52 w-full  bg-opacity-40 py-[202px] ">
           <m.h1
-            className="text-8xl font-semibold mb-6"
+            className="text-8xl font-bold mb-6"
             initial={{ x: 50, opacity: 0 }}
             whileInView={{
               x: 0,
@@ -855,7 +855,7 @@ your funds and personal information,<br/> ensuring the utmost protection for you
       <div className="w-full min-h-[100vh]    font-poppins relative flex  items-center  ">
         <img
           src="./images/story.png"
-          className="z-0 opacity-80  object-cover "
+          className="z-0 opacity-80  max-w-full object-cover "
         />
 
         <div className=" absolute w-full flex px-16 bg-opacity-40  justify-around  ">
@@ -872,7 +872,7 @@ your funds and personal information,<br/> ensuring the utmost protection for you
                 easings: "easeInOut",
               },
             }}
-            className="text-7xl font-semibold  max-w-[550px] pb-2 max-h-max flex items-end "
+            className="text-7xl font-bold  max-w-[550px] pb-2 max-h-max flex items-end "
           >
             the story of One Ozo begin with trust
           </m.h1>
@@ -917,7 +917,7 @@ Ozo and experience the power of trust in your investment endeavors
           loop="true"
           muted="true"
           class="absolute z-0 w-auto opacity-50
-            min-w-full object-cover max-h-[110vh] max-w-none"
+            max-w-full object-cover max-h-[110vh] "
         >
           <source src="./images/video/finalbgvideo1.mp4" />
         </video>
@@ -989,7 +989,7 @@ Ozo and experience the power of trust in your investment endeavors
       </div>
 
       {/* youtube videos oage  */}
-      <div className="font-poppins mb-24   w-full max-h-[110vh]">
+      <div className="font-poppins mb-24 max-w-full  w-full max-h-[110vh]">
         <m.h1
           initial={{ y: -50, opacity: 0 }}
           whileInView={{
@@ -1001,7 +1001,7 @@ Ozo and experience the power of trust in your investment endeavors
               ease: "anticipate",
             },
           }}
-          className="text-6xl text-center mt-12"
+          className="text-6xl text-center  font-semibold  mt-12"
         >
           Finance simplified,
           <br />
@@ -1083,7 +1083,7 @@ Ozo and experience the power of trust in your investment endeavors
 
       <div className="w-full my-28 ">
         <div className="font-poppins mx-auto max-w-6xl space-y-12 ">
-          <h1 className="text-3xl text-center mb-16">FAQs</h1>
+          <h1 className="text-4xl text-center font-bold mb-16">FAQs</h1>
 
           <div className="text-xl   ">
             <p className="font-semibold mb-4">
