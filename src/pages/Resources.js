@@ -473,6 +473,22 @@ reinforcing trust through engaging and informative multimedia support.
         </div>
       </div>
       </div>
+
+      <m.h1
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{
+          y: 0,
+          opacity: 1,
+          transition: {
+            duration: 0.7,
+            delay: 0.66,
+            ease: "anticipate",
+          },
+        }}
+        className="text-3xl font-semibold mb-8 mt-24 text-center"
+      >
+        Tutorials
+      </m.h1>
       <m.div  initial={{opacity:0,y:50 }}
             whileInView={{
           y:0,

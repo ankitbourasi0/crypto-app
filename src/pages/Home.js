@@ -44,7 +44,7 @@ const Home = () => {
           class="absolute z-0 w-auto 
             max-w-full object-cover max-h-screen "
         >
-          <source src="./images/video/mainpage.mp4" />
+          <source src="./images/video/bgvideo3.mp4" />
         </video>
         {/* <img src="./images/animation/mainintro.gif" className=""/> */}
         <div className="flex w-full max-w-7xl top-40 absolute items-center">
@@ -110,10 +110,10 @@ const Home = () => {
             </div> */}
 
       {/* What is OZo Trade  */}
-      <div className="w-full flex h-full mt-44 max-h-[100vh] relative justify-center items-center  ">
+      <div className="w-full flex h-full mt-44 mb-24 relative justify-center items-center  ">
         <img
-          src="./images/laptop2.jpg"
-          className="z-0 opacity-80  max-w-full w-full  "
+          src="./images/image.png"
+          className="z-0 opacity-100 max-w-full object-contain  w-full  "
         />
         {/* <video
           autoplay="true"
@@ -140,7 +140,7 @@ const Home = () => {
                   ease: "anticipate",
                 },
               }}
-              // viewport={{ once: true }}
+              viewport={{ once: true }}
               // ref={ref}
               // variants={squareVariants}
               // animate={{ scale: 2 }}
@@ -178,11 +178,9 @@ const Home = () => {
             </m.p>
           </div>
         </div>
-      </div>
-
-      {/* Cryptocurrency says  */}
-      {/* Parent  */}
-      <m.h1
+             
+        <div className=" w-full absolute left-16   top-[850px]">
+        <m.h1
         initial={{ y: -50, opacity: 0 }}
         whileInView={{
           y: 0,
@@ -193,11 +191,10 @@ const Home = () => {
             ease: "anticipate",
           },
         }}
-        className="text-4xl text-center font-poppins font-bold  mb-16 mt-24 w-full"
+        className="text-4xl text-center font-poppins font-bold w-full"
       >
        Why Choose One Ozo for Your Investment?
       </m.h1>
-
       <m.div
         initial={{ opacity: 0, scale: 0 }}
         whileInView={{
@@ -208,7 +205,7 @@ const Home = () => {
             staggerChildren: 0.2,
           },
         }}
-        className="grid grid-cols-2 mb-24 mx-auto max-w-7xl gap-x-16 gap-y-12"
+        className="grid grid-cols-2 mt-24 mb-24  mx-auto max-w-7xl gap-x-16 gap-y-12"
       >
         {/* 1  */}
         <m.div
@@ -404,6 +401,14 @@ any queries or concerns promptly and effectively.
           </div>
         </m.div>
       </m.div>
+
+        </div>
+      </div>
+
+      {/* Cryptocurrency says  */}
+      {/* Parent  */}
+      
+      
       {/* Center Div  */}
       {/* <div className="w-full flex justify-center mb-16 min-h-[100vh]  items-center relative "> */}
       {/* <video
