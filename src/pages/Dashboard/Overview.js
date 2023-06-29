@@ -2,12 +2,13 @@ import React from 'react'
 
 const Overview = () => {
   return (
-    <div className="flex w-full  py-4 px-16">
+   <div className='bg-black max-w-full'>
+     <div className="flex w-full  py-4 px-8">
     {/* left  */}
     <div className="w-full px-4">
-      <div className="flex w-full space-x-3 px-2 mb-3 ">
+      <div className="flex w-full space-x-3  mb-3 ">
         {/* 1 */}
-        <div className="rounded-xl max-w-[340px] max-h-[200px] w-full bg-neutral-900 space-y-8 p-4">
+        <div className="rounded-xl max-w-[360px] max-h-[200px] w-full bg-neutral-900 space-y-8 p-4">
           <div className="w-full flex items-center space-x-4">
             <div className="p-1 border-4 border-fuchsia-600 -400 w-[70px] flex justify-center items-center rounded-full">
               <img
@@ -25,7 +26,7 @@ const Overview = () => {
           </div>
         </div>
         {/* 2 */}
-        <div className="rounded-xl max-w-[340px] max-h-[200px]  w-full bg-neutral-900 space-y-8 p-4">
+        <div className="rounded-xl max-w-[360px] max-h-[200px]  w-full bg-neutral-900 space-y-8 p-4">
           <div className="w-full flex items-center space-x-4">
             <div className="p-1 border-4 flex justify-center items-center  border-fuchsia-600 -400 w-[70px] rounded-full">
               <img
@@ -43,7 +44,7 @@ const Overview = () => {
           </div>
         </div>
         {/* 3 */}
-        <div className="rounded-xl max-w-[340px] max-h-[200px] w-full bg-neutral-900 space-y-8 p-4">
+        <div className="rounded-xl max-w-[360px] max-h-[200px] w-full bg-neutral-900 space-y-8 p-4">
           <div className="w-full flex items-center space-x-4">
             <div className="p-1 border-4 flex justify-center items-center  border-fuchsia-600 -400 w-[70px] rounded-full">
               <img
@@ -65,77 +66,96 @@ const Overview = () => {
       {/* 2nd row  */}
       <div className="w-full flex justify-around ">
         {/* 1 */}
-        <div className="rounded-xl max-w-[250px] max-h-[220px] w-full bg-neutral-900 space-y-4 p-4">
+        <div className="rounded-xl max-w-[210px] max-h-[220px] w-full bg-zinc-900  p-4">
           <div className="w-full flex items-center justify-between ">
             <h3 className="font-medium ">Deposit wallet</h3>
 
-            <div className="p-1 -400 w-[60px] flex justify-center items-center rounded-full">
+            <div className="p-1 -400 w-[50px] flex justify-center items-center rounded-full">
               <img
-                src="./images/dashboard/investment2.png"
+                src="./images/dashboard/wallet.png" 
                 className="p-2"
               />
             </div>
           </div>
           <div className="">
-            <h2 className="text-xl font-medium mb-2">$45.215.000</h2>
+            <h2 className="font-medium mb-5">$45.215.000</h2>
             <button className=" bg-gradient-to-b from-fuchsia-300 to-purple-800 rounded-full px-4 py-1 text-sm ">
               Recharge
             </button>
           </div>
         </div>
         {/* 2 */}
-        <div className="rounded-xl max-w-[250px] max-h-[220px] w-full bg-neutral-900 space-y-4 p-4">
+        <div className="rounded-xl max-w-[210px] max-h-[220px] w-full bg-zinc-900  p-4">
           <div className="w-full flex items-center justify-between ">
             <h3 className="font-medium ">ROI wallet</h3>
 
-            <div className="p-1 -400 w-[60px] flex justify-center items-center rounded-full">
+            <div className="p-1 -400 w-[50px] flex justify-center items-center rounded-full">
               <img
-                src="./images/dashboard/investment2.png"
+                src="./images/dashboard/return.png"
                 className="p-2"
               />
             </div>
           </div>
           <div className="">
-            <h2 className="text-xl font-medium mb-2">$50.215.000</h2>
+            <h2 className="font-medium mb-5">$50.215.000</h2>
             <button className=" bg-gradient-to-b from-fuchsia-300 to-purple-800 rounded-full px-4 py-1 text-sm ">
               Re-invest
             </button>
           </div>
         </div>
         {/* 3 */}
-        <div className="rounded-xl max-w-[250px] max-h-[220px] w-full bg-neutral-900 space-y-4 p-4">
+        <div className="rounded-xl max-w-[210px] max-h-[220px] w-full bg-zinc-900  p-4">
           <div className="w-full flex items-center justify-between ">
-            <h3 className="font-medium ">R&B wallet</h3>
+            <h3 className="font-medium ">Interest wallet</h3>
 
-            <div className="p-1 -400 w-[60px] flex justify-center items-center rounded-full">
+            <div className="p-1 -400 w-[50px] flex justify-center items-center rounded-full">
               <img
-                src="./images/dashboard/investment2.png"
+                src="./images/dashboard/interest.png"
                 className="p-2"
               />
             </div>
           </div>
           <div className="">
-            <h2 className="text-xl font-medium mb-2">$60.215.000</h2>
+            <h2 className="font-medium mb-5">$0.215.000</h2>
             <button className=" bg-gradient-to-b from-fuchsia-300 to-purple-800 rounded-full px-4 py-1 text-sm ">
               Withdraw
             </button>
           </div>
         </div>
         {/* 4 */}
-
-        <div className="rounded-xl max-w-[250px] text-gray-900 max-h-[220px] w-full bg-gradient-to-b from-fuchsia-300 to-purple-800  space-y-4 p-4">
+        <div className="rounded-xl max-w-[210px] max-h-[220px] w-full bg-zinc-900  p-4">
           <div className="w-full flex items-center justify-between ">
-            <h3 className="font-medium ">OZO Token</h3>
+            <h3 className="font-medium ">R&B wallet</h3>
 
-            <div className="p-1 -400 w-[60px] flex justify-center items-center rounded-full">
+            <div className="p-1 -400 w-[50px] flex justify-center items-center rounded-full">
               <img
-                src="./images/dashboard/investment2.png"
-                className="p-2 text-gray-900"
+                src="./images/dashboard/deposit.png"
+                className="p-2"
               />
             </div>
           </div>
           <div className="">
-            <h2 className="text-xl font-medium mb-2">$70.215.000</h2>
+            <h2 className="font-medium mb-5">$60.215.000</h2>
+            <button className=" bg-gradient-to-b from-fuchsia-300 to-purple-800 rounded-full px-4 py-1 text-sm ">
+              Withdraw
+            </button>
+          </div>
+        </div>
+
+{/* 5 */}
+        <div className="rounded-xl max-w-[210px] text-gray-900 max-h-[220px] w-full bg-gradient-to-b from-fuchsia-300 to-purple-800   p-4">
+          <div className="w-full flex items-center justify-between ">
+            <h3 className="font-medium ">OZO Token</h3>
+
+            <div className="p-1 pt-2 -400 w-[70px] flex justify-center items-center rounded-full">
+              <img
+                src="./images/navlogo.png"
+                className="p-2 text-gray-900 "
+              />
+            </div>
+          </div>
+          <div className="">
+            <h2 className="font-medium mb-5">$70.215.000</h2>
             <button className="bg-black rounded-full px-4 py-1 text-sm text-white ">
               Reinvest
             </button>
@@ -167,7 +187,7 @@ const Overview = () => {
           </div>
         </div>
         {/* right  */}
-        <div className="bg-neutral-900 p-4 rounded-3xl">
+        <div className="bg-zinc-900 p-4 rounded-3xl">
       <h1 className="text-xl pl-2 mb-2">Quick Actions</h1>
 <div className="flex space-x-3 mb-2">
 <button className="border-2 px-4 py-2 rounded-xl flex justify-between w-full items-center  border-neutral-600"><img src="./images/dashboard/investment2.png" className="w-6 "/> <p className="">Deposit</p> <img src="./images/dashboard/next.png" className="w-5 h-5 "/></button>
@@ -191,7 +211,7 @@ const Overview = () => {
     </div>
 
     {/* right  */}
-    <div className="px-6 py-8 max-w-[330px] w-full bg-neutral-900 rounded-xl ">
+    <div className="px-6 py-8 max-w-[330px] w-full bg-neutral-950 rounded-xl ">
       <h2 className="font-medium text-xl">
         Total earning
         <br />
@@ -202,7 +222,36 @@ const Overview = () => {
         <p className="text-xl ">$989.450</p>
       </div>
     </div>
+
+    
   </div>
+
+  <div className=" w-full max-w-full pb-24">
+      <h1 className='text-4xl my-8 font-semibold'>
+            Referral Details
+        </h1>
+
+            <div className='bg-black w-full items-center px-12 py-4 justify-between flex '>
+            <input
+                type="checkbox"
+                className="rounded-sm bg-black border-2 p-2"
+                name="referral"
+                id="referralDetail"
+              />
+                <div className=''>SI No</div>
+                <div className=''>Package</div>
+                <div className=''>Days</div>
+                <div className=''>Invested</div>
+                <div className=''>Email</div>
+                <div className=''>Expiry</div>
+                <div className=''>Payment through</div>
+                <div className=''>Payment type</div>
+
+
+
+            </div>
+      </div>
+   </div>
   )
 }
 
