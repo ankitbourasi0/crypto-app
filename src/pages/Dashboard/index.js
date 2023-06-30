@@ -4,6 +4,7 @@ import Investment from "./Investment";
 import Genealogy from "./Genealogy";
 import Tickets from "./Tickets";
 import Reports from "./Reports";
+import Profile from "./Profile";
 
 const Dashboard = () => {
   const [nav, setNav] = useState("Overview");
@@ -11,10 +12,12 @@ const Dashboard = () => {
   const [genealogyState, setgenealogyState] = useState("Referral");
   const [tickets, setTickets] = useState("Submit");
   const [reportState, setReportState] = useState("roi");
+  const [profileStateNav, setprofileStateNav] = useState("Profile");
+
 
   return (
     <div className="w-full bg-black min-h-[110vh] font-poppins">
-      <div className="w-full flex flex-col  items-center pt-16  min-h-[30vh] bg-gradient-to-tr from-fuchsia-950 to-black">
+      <div className="w-full flex flex-col  items-center pt-10 min-h-[180px] pb-5 bg-gradient-to-tr from-fuchsia-950 to-black">
         <div className="rounded-full  z-0 flex justify-between items-center bg-neutral-900 py-2 w-full max-w-7xl px-6 mx-auto">
           <div className="flex ">
             <img src="./images/logo.png" className="w-10" />
@@ -22,7 +25,7 @@ const Dashboard = () => {
           </div>
 
           <div className="">
-            <ul className="flex  text-lg font-medium items-center justify-around">
+            <ul className="flex  text-[16px]  items-center space-x-8">
               <li className="  focus-within:bg-white focus-within:text-gray-900 rounded-full  px-2 py-1 ">
                 <button onClick={() => setNav("Overview")}> Overview </button>
               </li>
@@ -65,9 +68,14 @@ const Dashboard = () => {
               />
             </div>
 
-            <div className="rounded-full flex justify-center items-center w-10 bg-black">
-              <img src="./images/dashboard/image.png" className=" p-[10px]" />
+            <div className="rounded-full flex justify-center items-center w-10  bg-black">
+             
+             
+            <button onClick={() => setNav("Profile")}>
+              <img src="./images/dashboard/user.png" className=" p-[10px]" />
+              </button>
             </div>
+
           </div>
         </div>
         {nav == "Investment" && (
@@ -96,16 +104,16 @@ const Dashboard = () => {
         )}
         {nav == "Genealogy" && (
           <div className="w-full flex justify-center items-center min-h-[10vh]">
-            <div className="max-w-[24rem] mt-6  flex justify-between w-full rounded-full border-2  ">
+            <div className="max-w-[18rem] mt-6  flex justify-between w-full rounded-full border-2  ">
               <button
                 onClick={() => setgenealogyState("Referral")}
-                className=" rounded-full py-2 px-12 text-xl focus-within:bg-gradient-to-r focus-within:from-indigo-800 focus-within:to-purple-700"
+                className=" rounded-full py-2 px-8  focus-within:bg-gradient-to-r focus-within:from-indigo-800 focus-within:to-purple-700"
               >
                 Referral
               </button>
               <button
                 onClick={() => setgenealogyState("Binary")}
-                className=" rounded-full py-2 px-12 text-xl focus-within:bg-gradient-to-r focus-within:from-indigo-800 focus-within:to-purple-700"
+                className=" rounded-full py-2 px-8  focus-within:bg-gradient-to-r focus-within:from-indigo-800 focus-within:to-purple-700"
               >
                 Binary tree
               </button>
@@ -115,22 +123,24 @@ const Dashboard = () => {
 
         {nav == "Tickets" && (
           <div className="w-full flex justify-center items-center min-h-[10vh]">
-            <div className="max-w-[24rem] mt-6  flex justify-between w-full rounded-full border-2  ">
+            <div className="max-w-[20rem] mt-6  flex justify-between w-full rounded-full border-2  ">
               <button
                 onClick={() => setTickets("Submit")}
-                className=" rounded-full py-2 px-8 text-xl focus-within:bg-gradient-to-r focus-within:from-indigo-800 focus-within:to-purple-700"
+                className=" rounded-full py-2 px-6  focus-within:bg-gradient-to-r focus-within:from-indigo-800 focus-within:to-purple-700"
               >
                 Submit a Ticket
               </button>
               <button
                 onClick={() => setTickets("list")}
-                className=" rounded-full py-2 px-8 text-xl focus-within:bg-gradient-to-r focus-within:from-indigo-800 focus-within:to-purple-700"
+                className=" rounded-full py-2 px-6  focus-within:bg-gradient-to-r focus-within:from-indigo-800 focus-within:to-purple-700"
               >
                Ticket list
               </button>
             </div>
           </div>
         )}
+
+
 
 {nav == "Reports" && (
           <div className="w-full flex justify-center items-center min-h-[10vh]">
@@ -162,12 +172,32 @@ const Dashboard = () => {
             </div>
           </div>
         )}
+
+{nav == "Profile" && (
+          <div className="w-full flex justify-center items-center min-h-[10vh]">
+            <div className="max-w-[14rem] mt-6  flex justify-between w-full rounded-full border-2  ">
+              <button
+                onClick={() => setprofileStateNav("Profile")}
+                className=" rounded-full py-2 px-8  focus-within:bg-gradient-to-r focus-within:from-indigo-800 focus-within:to-purple-700"
+              >
+                Profile
+              </button>
+              <button
+                onClick={() =>  setprofileStateNav("kyc")}
+                className=" rounded-full py-2 px-8  focus-within:bg-gradient-to-r focus-within:from-indigo-800 focus-within:to-purple-700"
+              >
+               KYC
+              </button>
+            </div>
+          </div>
+        )}
       </div>
       {nav == "Overview" && <Overview />}
       {nav == "Investment" && <Investment investmentState={investmentState} />}
       {nav == "Genealogy" && <Genealogy genealogyState={genealogyState} />}
       {nav == "Tickets" && <Tickets tickets={tickets}/>}
       {nav == "Reports" && <Reports reportState={reportState}/>}
+      {nav == "Profile" && <Profile profileStateNav={profileStateNav}/>}
     </div>
   );
 };

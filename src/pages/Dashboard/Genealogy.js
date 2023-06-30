@@ -2,10 +2,10 @@ import React from 'react'
 
 const Genealogy = () => {
   return (
-    <div className="min-h-[80vh] bg-neutral-900 pt-14 pb-16   w-full">
+    <div className="min-h-[90vh] bg-neutral-900 pt-4 pb-16   w-full">
          <div className='w-full max-w-6xl mx-auto'>
 
-         <h1 className='text-5xl my-12 font-semibold'>
+         <h1 className='text-5xl mt-12 mb-6 font-semibold'>
             Invite Friends
         </h1>
 
@@ -21,7 +21,7 @@ const Genealogy = () => {
       </div>
         </div>
 
-        <h1 className='text-4xl my-12 font-semibold'>
+        <h1 className='text-4xl mt-12 mb-6 font-semibold'>
             Referral Details
         </h1>
 
