@@ -41,7 +41,7 @@ const Dashboard = () => {
           </div>
         </Carousel>
       </div>
-
+      
       {/* Heading  */}
       <h1 className="font-semibold text-5xl mb-6 pt-10  text-white text-center ">
         Analysis

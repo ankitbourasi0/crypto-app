@@ -57,15 +57,15 @@ const Navbar = () => {
                       <AiOutlineCaretUp className="h-8 text-white" />
                     )}
                   </button>
-                  {!open && (
+                  {open && (
                     <div className="absolute z-10 text-sm font-light  min-w-[200px]  space-y-2  w-full rounded-lg bg-opacity-60  bg-black top-16  text-white">
-                        <div className="hover:bg-gray-900 px-4 py-3  rounded-lg"> 
-                          <Link to="earning">Investment</Link>
+                        <div  className="hover:bg-gray-900 px-4 py-3 rounded-lg"> 
+                          <Link onClick={()=>setOpen(prev=> !prev)} to="earning">Investment</Link>
                         </div>
-                        <div className="hover:bg-gray-900 px-4  py-3   rounded-lg">
-                          <Link to="refferal">Referral and Binary</Link>
+                        <div className="hover:bg-gray-900 px-4  py-3  rounded-lg">
+                          <Link onClick={()=>setOpen(prev=> !prev)} to="refferal">Referral and Binary</Link>
                         </div>
-                        <div className="hover:bg-gray-900 px-4  py-3   rounded-lg">
+                        <div onClick={()=>setOpen(prev=> !prev)} className="hover:bg-gray-900 px-4  py-3  rounded-lg">
                           <Link to="extrabonus">Extra bonus for referral</Link>
                         </div>
                     </div>
